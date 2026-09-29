@@ -14,11 +14,11 @@ const DURATION_ADD = { '60 phút': 0, '90 phút': 150000, '120 phút': 300000 };
 const PACK_MULT = { 'Gói đơn buổi': 1, 'Liệu trình 5 buổi': 4, 'Liệu trình VIP 10 buổi': 8 };
 const OIL_ADD = { 'Không chọn': 0, 'Tràm trà': 0, 'Oải hương': 50000, 'Hoa hồng': 80000 };
 const PRODUCTS = {
-  pr1: { name: 'Serum Vitamin C 30ml', price: 420000 }, pr2: { name: 'Toner hoa hồng 200ml', price: 250000 },
-  pr3: { name: 'Mặt nạ collagen (hộp 10)', price: 290000 }, pr4: { name: 'Kem chống nắng SPF50', price: 360000 },
-  pr5: { name: 'Sữa rửa mặt dịu nhẹ', price: 210000 }, pr6: { name: 'Tinh dầu oải hương 50ml', price: 180000 },
-  pr7: { name: 'Muối tắm thảo dược', price: 120000 }, pr8: { name: 'Dầu gội thảo mộc 500ml', price: 230000 },
-  pr9: { name: 'Dưỡng mi Mi Xinh', price: 280000 },
+  pr1: { name: 'Serum Vitamin C 30ml', price: 599000 }, pr2: { name: 'Toner hoa hồng 200ml', price: 449000 },
+  pr3: { name: 'Mặt nạ collagen 10 miếng', price: 699000 }, pr4: { name: 'Kem chống nắng SPF50', price: 649000 },
+  pr5: { name: 'Sữa rửa mặt dịu nhẹ', price: 549000 }, pr6: { name: 'Tinh dầu oải hương 50ml', price: 999000 },
+  pr7: { name: 'Muối tắm thảo dược', price: 399000 }, pr8: { name: 'Dầu gội thảo mộc 500ml', price: 699000 },
+  pr9: { name: 'Dưỡng mi Mi Xinh', price: 499000 },
 };
 // 9 gói dịch vụ (trang Gói dịch vụ) – giá gói cố định
 const PACKAGES = {
