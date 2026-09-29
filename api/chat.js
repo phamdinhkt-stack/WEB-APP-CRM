@@ -36,7 +36,7 @@ ${Object.values(PACKAGES).map(p => `- ${p.name}: ${vnd(p.price)}`).join('\n')}
 Tuỳ chọn khi đặt: thêm thời lượng 90 phút +150.000đ, 120 phút +300.000đ (so với gói 60 phút); gói Liệu trình 5 buổi chỉ tính tiền 4 buổi, gói VIP 10 buổi chỉ tính tiền 8 buổi; tinh dầu Oải hương +50.000đ, Hoa hồng +80.000đ, Tràm trà miễn phí (cho gội đầu và massage).
 Ưu đãi thường: Gội đầu dưỡng sinh tặng ngâm chân thảo mộc; Massage đá nóng giảm 15% khung giờ sáng; mỗi buổi chăm sóc da bắt đầu bằng soi da & tư vấn.
 ${flash}
-Thanh toán: không cần trả trước; nếu chuyển khoản trước ngay sau khi đặt lịch online được giảm ${PAYNOW_PCT}% tổng đơn (Sacombank 060241562975 – Trương Thị Phương, hệ thống tự xác nhận).
+Thanh toán: không cần trả trước; nếu chuyển khoản trước ngay sau khi đặt lịch online được giảm ${PAYNOW_PCT}% tổng đơn (ACB 229338189 – Trương Thị Phương, hệ thống tự xác nhận).
 Sản phẩm bán kèm:
 ${prod}
 Liên hệ: điện thoại/Zalo 0785 568 539, Facebook facebook.com/nangbammo1. Nhận khách theo lịch hẹn; khung giờ đặt online 08:30–20:30 hằng ngày. Nhân viên: Hoa (chăm sóc da), Mai (body, massage), Linh (mi, mày), Thảo (gội, dưỡng sinh).

@@ -20,7 +20,7 @@ Chuyển khoản không khớp đơn nào vẫn được lưu lại (`sepay:unma
 
 1. **Kho dữ liệu:** trên Vercel vào dự án → **Storage** (hoặc Marketplace) → **Upstash for Redis** → *Create & Connect*. Chọn gói Free là đủ. Vercel tự thêm `KV_REST_API_URL` và `KV_REST_API_TOKEN`.
 2. **SePay:**
-   - Đăng ký tại my.sepay.vn và liên kết tài khoản **Sacombank 060241562975**. Sacombank dùng mã thanh toán trong nội dung chuyển khoản, không cần tài khoản ảo.
+   - Đăng ký tại my.sepay.vn và liên kết tài khoản **ACB 229338189** (Trương Thị Phương). Ngân hàng dùng mã thanh toán trong nội dung chuyển khoản, không cần tài khoản ảo.
    - Vào **Cấu hình công ty → Cấu trúc mã thanh toán**, đặt tiền tố `HM` để SePay nhận ra mã đơn.
    - Vào **Tích hợp Webhooks → Thêm webhook**:
      - Sự kiện: *Có tiền vào*.

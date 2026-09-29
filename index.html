@@ -463,7 +463,7 @@ function vietqr(bin,acc,amount,info){
   return p+crc16(p);
 }
 
-const BANK={bin:'970403',code:'STB',acc:'060241562975',name:'Truong Thi Phuong',label:'Sacombank · 060241562975',holder:'Trương Thị Phương'};
+const BANK={bin:'970416',code:'ACB',acc:'229338189',name:'Truong Thi Phuong',label:'ACB · 229338189',holder:'Trương Thị Phương'};
 const IMG={facial:'assets/hoa-mai-facial.jpg',hairwash:'assets/hoa-mai-hairwash.jpg',hotstone:'assets/hoa-mai-hotstone.jpg'};
 const services=[
  {code:'DV01',slug:'cham-soc-da-co-ban',name:'Chăm sóc da cơ bản',category:'Chăm sóc da',short:'Làm sạch, cân bằng và phục hồi làn da.',desc:'Liệu trình gồm soi da, làm sạch kép, tẩy tế bào chết dịu nhẹ, xông hơi, hút bã nhờn, massage và đắp mặt nạ theo tình trạng da.',min:60,price:350000,img:IMG.facial,featured:true},
@@ -779,7 +779,7 @@ function doneView(d){
      <div class="pay-lines">${d.items.map(i=>`<div><span>${esc(i.name)}</span><span>${vnd(i.price)}</span></div>`).join('')}${d.products.map(p=>`<div><span>${esc(p.name)} × ${p.qty}</span><span>${vnd(p.price*p.qty)}</span></div>`).join('')}
       <div class="sub"><span>Tạm tính</span><span>${vnd(tot)}</span></div><div class="sub dc"><span>Ưu đãi thanh toán ngay −${PAYNOW_PCT}%</span><span>−${vnd(disc)}</span></div><div class="tt"><span>Cần thanh toán</span><b>${vnd(amt)}</b></div></div>
      <div class="qrbox">${QRGEN.svg(vietqr(BANK.bin,BANK.acc,amt,d.code),220)}<p>Quét mã bằng app ngân hàng – số tiền & nội dung đã điền sẵn</p></div>
-     <table class="kv pay-kv">${tr('Ngân hàng','Sacombank')}${tr('Số tài khoản',`<b>${BANK.acc}</b> <button class="cp" type="button" data-copy="${BANK.acc}" data-what="số tài khoản">Chép</button>`)}${tr('Chủ tài khoản',BANK.holder)}${tr('Số tiền',`<b class="price">${vnd(amt)}</b> <button class="cp" type="button" data-copy="${amt}" data-what="số tiền">Chép</button>`)}${tr('Nội dung',`<b>${esc(d.code)}</b> <button class="cp" type="button" data-copy="${esc(d.code)}" data-what="nội dung">Chép</button>`)}</table>
+     <table class="kv pay-kv">${tr('Ngân hàng','ACB')}${tr('Số tài khoản',`<b>${BANK.acc}</b> <button class="cp" type="button" data-copy="${BANK.acc}" data-what="số tài khoản">Chép</button>`)}${tr('Chủ tài khoản',BANK.holder)}${tr('Số tiền',`<b class="price">${vnd(amt)}</b> <button class="cp" type="button" data-copy="${amt}" data-what="số tiền">Chép</button>`)}${tr('Nội dung',`<b>${esc(d.code)}</b> <button class="cp" type="button" data-copy="${esc(d.code)}" data-what="nội dung">Chép</button>`)}</table>
      ${d.server?`<div class="pay-wait"><span class="spin"></span><div><b>${d.payStatus==='partial'?`Đã nhận ${vnd(d.payReceived)}, còn thiếu ${vnd(amt-d.payReceived)}`:'Đang chờ thanh toán…'}</b><small>Hệ thống tự xác nhận qua SePay ngay khi tiền về, bạn không cần làm gì thêm.</small></div></div>
      <button class="btn ghost sm" type="button" data-act="pay-done" style="width:100%;margin-top:8px">Đã chuyển khoản nhưng chưa thấy xác nhận? Báo spa</button>`
      :`<button class="btn luxe lg" type="button" data-act="pay-done" style="width:100%;margin-top:14px">${ic('check')}Tôi đã chuyển khoản</button>`}
