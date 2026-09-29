@@ -3,9 +3,16 @@ const crypto = require('crypto');
 
 /* ---------- Kho dữ liệu: Upstash Redis (Vercel Marketplace → Upstash) qua REST ---------- */
 const MEM = new Map(); // chỉ dùng khi chạy thử (KV_MOCK=1)
+// Vercel có thể đặt tiền tố tùy chọn khi Connect (VD STORAGE_KV_REST_API_URL) hoặc chỉ tạo REDIS_URL/KV_URL.
 function kvConf() {
-  const url = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL;
-  const token = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN;
+  const env = process.env, keys = Object.keys(env);
+  const find = sfx => env[sfx] || env[keys.find(k => k.endsWith('_' + sfx) && env[k])];
+  let url = find('KV_REST_API_URL') || find('UPSTASH_REDIS_REST_URL');
+  let token = find('KV_REST_API_TOKEN') || find('UPSTASH_REDIS_REST_TOKEN');
+  if (!url || !token) { // rediss://default:<token>@<host>:6379 → REST https://<host>, cùng token (Upstash)
+    const m = String(find('REDIS_URL') || find('KV_URL') || '').match(/^rediss?:\/\/[^:]*:([^@]+)@([^:/]+)/);
+    if (m && /upstash\.io$/.test(m[2])) { url = 'https://' + m[2]; token = decodeURIComponent(m[1]); }
+  }
   return url && token ? { url: url.replace(/\/$/, ''), token } : null;
 }
 const kvReady = () => !!(process.env.KV_MOCK || kvConf());
