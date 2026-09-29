@@ -7793,27 +7793,18 @@ function renderShell(){
 function kpi(color,label,value,icon,tab,sub){return `<button type="button" class="kpi" style="--k:${color}" data-act="tab" data-tab="${tab}"><span class="kh">${label}${I(icon)}</span><span class="kv">${value}</span>${sub?`<span class="ks">${sub}</span>`:''}</button>`}
 function viewDash(){
   const t=T(),pays=all('payments'),sales=all('sales'),appts=all('appointments');
-  const sumP=f=>pays.filter(f).reduce((s,p)=>s+(p.amount||0),0);
-  const revT=sumP(p=>p.date===TODAY),revY=sumP(p=>p.date===addDays(TODAY,-1));
-  const invT=sales.filter(s=>s.date===TODAY).length;
   const todays=appts.filter(a=>a.date===TODAY&&a.status!=='cancelled').sort((a,b)=>toMin(a.time)-toMin(b.time));
   const pend=appts.filter(a=>a.status==='booked'&&a.date>=TODAY).length;
-  const revM=sumP(p=>monthOf(p.date)===CUR_M),expM=all('expenses').filter(e=>monthOf(e.date)===CUR_M).reduce((s,e)=>s+(e.amount||0),0);
   const staffN=activeStaff().length,here=activeStaff().filter(s=>{const a=attDay(s.id,TODAY);return a&&(a.s==='present'||a.s==='late')}).length;
   let h=pageHead('dash','Bảng điều khiển',`Tổng quan hoạt động ${esc(settings().name)} theo thời gian thực`,`<button class="btn primary" type="button" data-act="new-appt">${I('plus')}Đặt lịch</button><button class="btn" type="button" data-act="tab" data-tab="pos">${I('pos')}Mở thu ngân</button>`);
   h+=`<div class="tiles">
-   ${kpi('var(--b-green)','Doanh thu hôm nay',money(revT),'money','inv',revY?`Hôm qua ${money(revY)}`:'')}
-   ${kpi('var(--b-blue)','Hóa đơn hôm nay',invT+' hóa đơn','inv','inv')}
    ${kpi('var(--accent)','Lịch hẹn hôm nay',todays.length,'appts','cal',`${todays.filter(a=>a.status==='done').length} đã xong`)}
    ${kpi('var(--warn)','Chờ xác nhận',pend,'hourglass','appts','Lịch sắp tới chưa xác nhận')}
-   ${kpi('var(--b-purple)','Doanh thu tháng này',money(revM),'report','report')}
-   ${kpi('var(--b-red)','Chi phí tháng này',money(expM),'exp','exp',`Lãi tạm tính ${money(revM-expM)}`)}
    ${kpi('var(--ink)','Tổng '+t.cust,all('customers').length,'crm','customers',`${all('customers').filter(c=>monthOf(c.createdAt)===CUR_M).length} mới tháng này`)}
    ${kpi('var(--b-cyan)','Nhân viên đang làm',staffN,'staff','staff',`${here}/${staffN} có mặt hôm nay`)}</div>`;
-  const days=[];for(let i=13;i>=0;i--){const d=addDays(TODAY,-i);const v=sumP(p=>p.date===d);days.push({l:dm(d),l2:(d===TODAY?'Hôm nay':WD[parseYmd(d).getDay()])+' '+dm(d),v,tip:money(v)})}
   const cat={};appts.filter(a=>a.status==='done'&&monthOf(a.date)===CUR_M).forEach(a=>{const sv=get('services',a.serviceId);const k=catOf(sv);cat[k]=(cat[k]||0)+(a.value||(sv&&sv.price)||0)});
   sales.filter(s=>monthOf(s.date)===CUR_M).forEach(s=>(s.items||[]).filter(i=>i.type==='prod').forEach(i=>{cat['Bán sản phẩm']=(cat['Bán sản phẩm']||0)+i.price*i.qty}));
-  h+=`<div class="grid2"><section class="panel"><div class="panel-h accent"><span class="ic">${I('report')}</span><h2>Doanh thu 14 ngày qua</h2><span class="count num">${money(days.reduce((s,x)=>s+x.v,0))}</span></div><div class="chart">${barChartSVG(days,{label:'Doanh thu 14 ngày'})}</div></section>
+  h+=`<div>
    <section class="panel"><div class="panel-h accent"><span class="ic">${I('svc')}</span><h2>Doanh thu theo nhóm dịch vụ</h2><span class="count">${monthLabel(CUR_M)}</span></div>${donutBlock(cat)}</section></div>`;
   const td=todayData();const low=all('products').filter(p=>p.active!==false&&(p.stock||0)<=(p.minStock||0));
   const debtT=Object.values(derive().debt).reduce((s,v)=>s+v,0);
