@@ -1,0 +1,33 @@
+{
+ "active": true,
+ "badge": "FLASH SALE",
+ "title": "Flash Sale cuối tuần",
+ "subtitle": "Ưu đãi giới hạn – số suất có hạn, đặt ngay kẻo lỡ!",
+ "start": "2026-09-28T00:00",
+ "end": "2026-10-31T23:59",
+ "image": "hotstone",
+ "code": "FLASH30",
+ "freq": "session",
+ "items": [
+  {
+   "name": "Chăm sóc da cơ bản",
+   "price": 350000,
+   "sale": 249000,
+   "limit": 20
+  },
+  {
+   "name": "Gội đầu dưỡng sinh",
+   "price": 150000,
+   "sale": 99000,
+   "limit": 30
+  },
+  {
+   "name": "Massage body đá nóng",
+   "price": 450000,
+   "sale": 329000,
+   "limit": 15
+  }
+ ],
+ "note": "Áp dụng khi đặt lịch trong thời gian chương trình.",
+ "updatedAt": "2026-09-28T00:00:00.000Z"
+}

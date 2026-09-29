@@ -1,0 +1,21 @@
+VUA APP - CRM cho spa, tham my vien va nha khoa
+================================================
+
+CACH MO APP
+1. Giai nen file zip nay.
+2. Bam dup vao file index.html (hoac chuot phai > Open with > Google Chrome).
+3. App mo ngay voi du lieu mau "Spa Hoa Mai". Bam nut "Nha khoa" o tren cung de xem ban nha khoa.
+
+LUU Y
+- Du lieu anh nhap duoc luu trong trinh duyet cua may nay (localStorage).
+  Mo bang trinh duyet khac hoac may khac se khong thay du lieu do.
+- Khong xoa lich su duyet web / du lieu trang neu muon giu du lieu.
+
+CAC FILE
+- index.html : toan bo app (da kem san du lieu mau)
+- seed.json  : du lieu mau (dung khi dua len GitHub Pages)
+- README.md  : gioi thieu tinh nang va cau truc du lieu
+
+DUA LEN GITHUB
+github.com > New repository > ten "vua-app" > Create
+> "uploading an existing file" > keo 3 file index.html, seed.json, README.md vao > Commit changes.

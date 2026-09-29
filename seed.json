@@ -1,0 +1,6337 @@
+{
+ "ws/nhakhoa/advances": {
+  "v1": {
+   "staffId": "b3",
+   "amount": 2000000,
+   "note": "Tạm ứng",
+   "date": "2026-09-12"
+  }
+ },
+ "ws/nhakhoa/attendance": {
+  "b1_2026-09": {
+   "staffId": "b1",
+   "month": "2026-09",
+   "days": {
+    "01": {
+     "s": "absent"
+    },
+    "02": {
+     "s": "present",
+     "in": "08:20",
+     "out": "17:36"
+    },
+    "03": {
+     "s": "present",
+     "in": "08:29",
+     "out": "17:56"
+    },
+    "04": {
+     "s": "late",
+     "in": "08:45",
+     "out": "17:31"
+    },
+    "05": {
+     "s": "present",
+     "in": "08:13",
+     "out": "17:59"
+    },
+    "07": {
+     "s": "present",
+     "in": "08:16",
+     "out": "17:45"
+    },
+    "08": {
+     "s": "present",
+     "in": "08:23",
+     "out": "17:55"
+    },
+    "09": {
+     "s": "present",
+     "in": "08:12",
+     "out": "17:55"
+    },
+    "10": {
+     "s": "present",
+     "in": "08:22",
+     "out": "17:44"
+    },
+    "11": {
+     "s": "present",
+     "in": "08:12",
+     "out": "17:53"
+    },
+    "12": {
+     "s": "present",
+     "in": "08:14",
+     "out": "17:30"
+    },
+    "14": {
+     "s": "present",
+     "in": "08:24",
+     "out": "17:55"
+    },
+    "15": {
+     "s": "present",
+     "in": "08:29",
+     "out": "17:56"
+    },
+    "16": {
+     "s": "present",
+     "in": "08:25",
+     "out": "17:51"
+    },
+    "17": {
+     "s": "present",
+     "in": "08:14",
+     "out": "17:47"
+    },
+    "18": {
+     "s": "present",
+     "in": "08:10",
+     "out": "17:30"
+    },
+    "19": {
+     "s": "present",
+     "in": "08:13",
+     "out": "17:46"
+    },
+    "21": {
+     "s": "present",
+     "in": "08:14",
+     "out": "17:43"
+    },
+    "22": {
+     "s": "present",
+     "in": "08:16",
+     "out": "17:56"
+    },
+    "23": {
+     "s": "present",
+     "in": "08:10",
+     "out": "17:38"
+    },
+    "24": {
+     "s": "present",
+     "in": "08:26",
+     "out": "17:37"
+    },
+    "25": {
+     "s": "present",
+     "in": "08:20"
+    }
+   }
+  },
+  "b2_2026-09": {
+   "staffId": "b2",
+   "month": "2026-09",
+   "days": {
+    "01": {
+     "s": "present",
+     "in": "08:23",
+     "out": "17:56"
+    },
+    "02": {
+     "s": "present",
+     "in": "08:21",
+     "out": "17:58"
+    },
+    "03": {
+     "s": "present",
+     "in": "08:28",
+     "out": "17:56"
+    },
+    "04": {
+     "s": "present",
+     "in": "08:23",
+     "out": "17:56"
+    },
+    "05": {
+     "s": "present",
+     "in": "08:26",
+     "out": "17:34"
+    },
+    "07": {
+     "s": "present",
+     "in": "08:26",
+     "out": "17:46"
+    },
+    "08": {
+     "s": "late",
+     "in": "08:47",
+     "out": "17:32"
+    },
+    "09": {
+     "s": "present",
+     "in": "08:14",
+     "out": "17:35"
+    },
+    "10": {
+     "s": "present",
+     "in": "08:29",
+     "out": "17:53"
+    },
+    "11": {
+     "s": "present",
+     "in": "08:11",
+     "out": "17:40"
+    },
+    "12": {
+     "s": "present",
+     "in": "08:26",
+     "out": "17:47"
+    },
+    "14": {
+     "s": "present",
+     "in": "08:13",
+     "out": "17:58"
+    },
+    "15": {
+     "s": "present",
+     "in": "08:17",
+     "out": "17:36"
+    },
+    "16": {
+     "s": "present",
+     "in": "08:13",
+     "out": "17:46"
+    },
+    "17": {
+     "s": "present",
+     "in": "08:10",
+     "out": "17:54"
+    },
+    "18": {
+     "s": "present",
+     "in": "08:12",
+     "out": "17:44"
+    },
+    "19": {
+     "s": "present",
+     "in": "08:26",
+     "out": "17:49"
+    },
+    "21": {
+     "s": "present",
+     "in": "08:18",
+     "out": "17:44"
+    },
+    "22": {
+     "s": "present",
+     "in": "08:25",
+     "out": "17:46"
+    },
+    "23": {
+     "s": "present",
+     "in": "08:26",
+     "out": "17:58"
+    },
+    "24": {
+     "s": "present",
+     "in": "08:18",
+     "out": "17:59"
+    },
+    "25": {
+     "s": "present",
+     "in": "08:16"
+    }
+   }
+  },
+  "b3_2026-09": {
+   "staffId": "b3",
+   "month": "2026-09",
+   "days": {
+    "01": {
+     "s": "present",
+     "in": "08:14",
+     "out": "17:43"
+    },
+    "02": {
+     "s": "present",
+     "in": "08:24",
+     "out": "17:40"
+    },
+    "03": {
+     "s": "late",
+     "in": "08:43",
+     "out": "17:36"
+    },
+    "04": {
+     "s": "late",
+     "in": "08:44",
+     "out": "17:31"
+    },
+    "05": {
+     "s": "present",
+     "in": "08:14",
+     "out": "17:52"
+    },
+    "07": {
+     "s": "present",
+     "in": "08:21",
+     "out": "17:34"
+    },
+    "08": {
+     "s": "present",
+     "in": "08:14",
+     "out": "17:44"
+    },
+    "09": {
+     "s": "present",
+     "in": "08:13",
+     "out": "17:42"
+    },
+    "10": {
+     "s": "present",
+     "in": "08:15",
+     "out": "17:51"
+    },
+    "11": {
+     "s": "present",
+     "in": "08:15",
+     "out": "17:52"
+    },
+    "12": {
+     "s": "present",
+     "in": "08:26",
+     "out": "17:42"
+    },
+    "14": {
+     "s": "present",
+     "in": "08:16",
+     "out": "17:41"
+    },
+    "15": {
+     "s": "present",
+     "in": "08:21",
+     "out": "17:30"
+    },
+    "16": {
+     "s": "present",
+     "in": "08:24",
+     "out": "17:44"
+    },
+    "17": {
+     "s": "present",
+     "in": "08:22",
+     "out": "17:40"
+    },
+    "18": {
+     "s": "present",
+     "in": "08:19",
+     "out": "17:46"
+    },
+    "19": {
+     "s": "present",
+     "in": "08:13",
+     "out": "17:59"
+    },
+    "21": {
+     "s": "present",
+     "in": "08:13",
+     "out": "17:32"
+    },
+    "22": {
+     "s": "present",
+     "in": "08:11",
+     "out": "17:58"
+    },
+    "23": {
+     "s": "present",
+     "in": "08:18",
+     "out": "17:54"
+    },
+    "24": {
+     "s": "present",
+     "in": "08:23",
+     "out": "17:57"
+    }
+   }
+  }
+ },
+ "ws/nhakhoa/settings": {
+  "main": {
+   "workDays": 26,
+   "latePenalty": 50000,
+   "shiftStart": "08:30",
+   "name": "Nha khoa Nụ Cười Việt",
+   "shifts": [
+    {
+     "id": "S",
+     "name": "Ca sáng",
+     "start": "08:30",
+     "end": "14:30",
+     "color": "#3563B8"
+    },
+    {
+     "id": "C",
+     "name": "Ca chiều",
+     "start": "13:30",
+     "end": "20:30",
+     "color": "#A8690F"
+    },
+    {
+     "id": "F",
+     "name": "Cả ngày",
+     "start": "08:30",
+     "end": "17:30",
+     "color": "#1E7A68"
+    }
+   ],
+   "owner": "BS. Trần Minh Tuấn",
+   "phone": "0283812345",
+   "address": "45 Lê Lợi, Quận Hải Châu, Đà Nẵng",
+   "taxPct": 0,
+   "bank": "Techcombank 19033456789 – NHA KHOA NU CUOI VIET",
+   "invoiceFooter": "Chúc quý khách luôn có nụ cười khỏe đẹp!",
+   "accent": "ocean"
+  }
+ },
+ "ws/nhakhoa/staff": {
+  "b1": {
+   "phone": "0909222001",
+   "startDate": "2022-05-01",
+   "baseSalary": 15000000,
+   "active": true,
+   "name": "BS. Tuấn",
+   "role": "Tổng quát, phục hình",
+   "color": "#1E7A68"
+  },
+  "b2": {
+   "phone": "0909222002",
+   "startDate": "2023-02-01",
+   "baseSalary": 14000000,
+   "active": true,
+   "name": "BS. Vy",
+   "role": "Chỉnh nha",
+   "color": "#B0476A"
+  },
+  "b3": {
+   "phone": "0909222003",
+   "startDate": "2024-09-01",
+   "baseSalary": 13000000,
+   "active": true,
+   "name": "BS. Khoa",
+   "role": "Tiểu phẫu",
+   "color": "#3563B8"
+  }
+ },
+ "ws/spa/advances": {
+  "v1": {
+   "staffId": "st2",
+   "amount": 1000000,
+   "note": "Tạm ứng giữa tháng",
+   "date": "2026-09-15"
+  },
+  "v2": {
+   "staffId": "st4",
+   "amount": 500000,
+   "note": "Việc gia đình",
+   "date": "2026-09-20"
+  }
+ },
+ "ws/spa/attendance": {
+  "st1_2026-09": {
+   "staffId": "st1",
+   "month": "2026-09",
+   "days": {
+    "02": {
+     "s": "present",
+     "in": "08:14",
+     "out": "17:42"
+    },
+    "03": {
+     "s": "present",
+     "in": "08:12",
+     "out": "17:56"
+    },
+    "04": {
+     "s": "present",
+     "in": "08:21",
+     "out": "17:48"
+    },
+    "05": {
+     "s": "late",
+     "in": "08:48",
+     "out": "17:33"
+    },
+    "06": {
+     "s": "late",
+     "in": "08:46",
+     "out": "17:36"
+    },
+    "07": {
+     "s": "late",
+     "in": "08:41",
+     "out": "17:38"
+    },
+    "09": {
+     "s": "present",
+     "in": "08:28",
+     "out": "17:33"
+    },
+    "10": {
+     "s": "present",
+     "in": "08:28",
+     "out": "17:31"
+    },
+    "11": {
+     "s": "present",
+     "in": "08:22",
+     "out": "17:31"
+    },
+    "12": {
+     "s": "present",
+     "in": "08:11",
+     "out": "17:47"
+    },
+    "13": {
+     "s": "present",
+     "in": "08:19",
+     "out": "17:43"
+    },
+    "14": {
+     "s": "present",
+     "in": "08:13",
+     "out": "17:48"
+    },
+    "16": {
+     "s": "present",
+     "in": "08:15",
+     "out": "17:33"
+    },
+    "17": {
+     "s": "present",
+     "in": "08:16",
+     "out": "17:41"
+    },
+    "18": {
+     "s": "absent"
+    },
+    "19": {
+     "s": "present",
+     "in": "08:28",
+     "out": "17:31"
+    },
+    "20": {
+     "s": "present",
+     "in": "08:25",
+     "out": "17:51"
+    },
+    "21": {
+     "s": "present",
+     "in": "08:20",
+     "out": "17:44"
+    },
+    "23": {
+     "s": "present",
+     "in": "08:24",
+     "out": "17:41"
+    },
+    "24": {
+     "s": "present",
+     "in": "08:15",
+     "out": "17:52"
+    },
+    "25": {
+     "s": "present",
+     "in": "08:12"
+    }
+   }
+  },
+  "st2_2026-09": {
+   "staffId": "st2",
+   "month": "2026-09",
+   "days": {
+    "01": {
+     "s": "present",
+     "in": "08:26",
+     "out": "17:45"
+    },
+    "03": {
+     "s": "present",
+     "in": "08:24",
+     "out": "17:39"
+    },
+    "04": {
+     "s": "present",
+     "in": "08:12",
+     "out": "17:33"
+    },
+    "05": {
+     "s": "present",
+     "in": "08:15",
+     "out": "17:54"
+    },
+    "06": {
+     "s": "present",
+     "in": "08:25",
+     "out": "17:43"
+    },
+    "07": {
+     "s": "late",
+     "in": "08:41",
+     "out": "17:38"
+    },
+    "08": {
+     "s": "present",
+     "in": "08:20",
+     "out": "17:40"
+    },
+    "10": {
+     "s": "present",
+     "in": "08:29",
+     "out": "17:45"
+    },
+    "11": {
+     "s": "present",
+     "in": "08:24",
+     "out": "17:32"
+    },
+    "12": {
+     "s": "present",
+     "in": "08:18",
+     "out": "17:45"
+    },
+    "13": {
+     "s": "present",
+     "in": "08:12",
+     "out": "17:31"
+    },
+    "14": {
+     "s": "present",
+     "in": "08:19",
+     "out": "17:50"
+    },
+    "15": {
+     "s": "present",
+     "in": "08:24",
+     "out": "17:39"
+    },
+    "17": {
+     "s": "present",
+     "in": "08:21",
+     "out": "17:30"
+    },
+    "18": {
+     "s": "present",
+     "in": "08:21",
+     "out": "17:35"
+    },
+    "19": {
+     "s": "present",
+     "in": "08:25",
+     "out": "17:31"
+    },
+    "20": {
+     "s": "present",
+     "in": "08:19",
+     "out": "17:34"
+    },
+    "21": {
+     "s": "present",
+     "in": "08:22",
+     "out": "17:42"
+    },
+    "22": {
+     "s": "present",
+     "in": "08:25",
+     "out": "17:32"
+    },
+    "24": {
+     "s": "present",
+     "in": "08:22",
+     "out": "17:47"
+    },
+    "25": {
+     "s": "present",
+     "in": "08:14"
+    }
+   }
+  },
+  "st3_2026-09": {
+   "staffId": "st3",
+   "month": "2026-09",
+   "days": {
+    "01": {
+     "s": "present",
+     "in": "08:27",
+     "out": "17:38"
+    },
+    "02": {
+     "s": "present",
+     "in": "08:21",
+     "out": "17:51"
+    },
+    "04": {
+     "s": "present",
+     "in": "08:17",
+     "out": "17:34"
+    },
+    "05": {
+     "s": "absent"
+    },
+    "06": {
+     "s": "present",
+     "in": "08:17",
+     "out": "17:30"
+    },
+    "07": {
+     "s": "present",
+     "in": "08:28",
+     "out": "17:35"
+    },
+    "08": {
+     "s": "present",
+     "in": "08:10",
+     "out": "17:34"
+    },
+    "09": {
+     "s": "present",
+     "in": "08:21",
+     "out": "17:49"
+    },
+    "11": {
+     "s": "present",
+     "in": "08:14",
+     "out": "17:52"
+    },
+    "12": {
+     "s": "present",
+     "in": "08:29",
+     "out": "17:50"
+    },
+    "13": {
+     "s": "present",
+     "in": "08:11",
+     "out": "17:44"
+    },
+    "14": {
+     "s": "present",
+     "in": "08:27",
+     "out": "17:42"
+    },
+    "15": {
+     "s": "present",
+     "in": "08:22",
+     "out": "17:33"
+    },
+    "16": {
+     "s": "present",
+     "in": "08:22",
+     "out": "17:31"
+    },
+    "18": {
+     "s": "present",
+     "in": "08:16",
+     "out": "17:44"
+    },
+    "19": {
+     "s": "present",
+     "in": "08:20",
+     "out": "17:49"
+    },
+    "20": {
+     "s": "late",
+     "in": "08:40",
+     "out": "17:39"
+    },
+    "21": {
+     "s": "present",
+     "in": "08:13",
+     "out": "17:41"
+    },
+    "22": {
+     "s": "present",
+     "in": "08:12",
+     "out": "17:57"
+    },
+    "23": {
+     "s": "present",
+     "in": "08:22",
+     "out": "17:34"
+    },
+    "25": {
+     "s": "present",
+     "in": "08:21"
+    }
+   }
+  },
+  "st4_2026-09": {
+   "staffId": "st4",
+   "month": "2026-09",
+   "days": {
+    "01": {
+     "s": "present",
+     "in": "08:25",
+     "out": "17:33"
+    },
+    "02": {
+     "s": "present",
+     "in": "08:25",
+     "out": "17:44"
+    },
+    "03": {
+     "s": "present",
+     "in": "08:19",
+     "out": "17:32"
+    },
+    "04": {
+     "s": "present",
+     "in": "08:20",
+     "out": "17:53"
+    },
+    "05": {
+     "s": "present",
+     "in": "08:15",
+     "out": "17:46"
+    },
+    "06": {
+     "s": "late",
+     "in": "08:48",
+     "out": "17:35"
+    },
+    "07": {
+     "s": "leave"
+    },
+    "08": {
+     "s": "present",
+     "in": "08:27",
+     "out": "17:59"
+    },
+    "09": {
+     "s": "late",
+     "in": "08:48",
+     "out": "17:34"
+    },
+    "10": {
+     "s": "present",
+     "in": "08:12",
+     "out": "17:52"
+    },
+    "11": {
+     "s": "present",
+     "in": "08:26",
+     "out": "17:41"
+    },
+    "12": {
+     "s": "present",
+     "in": "08:21",
+     "out": "17:54"
+    },
+    "13": {
+     "s": "present",
+     "in": "08:27",
+     "out": "17:54"
+    },
+    "15": {
+     "s": "present",
+     "in": "08:17",
+     "out": "17:49"
+    },
+    "16": {
+     "s": "present",
+     "in": "08:16",
+     "out": "17:55"
+    },
+    "17": {
+     "s": "present",
+     "in": "08:22",
+     "out": "17:53"
+    },
+    "18": {
+     "s": "present",
+     "in": "08:16",
+     "out": "17:46"
+    },
+    "19": {
+     "s": "present",
+     "in": "08:10",
+     "out": "17:30"
+    },
+    "20": {
+     "s": "present",
+     "in": "08:25",
+     "out": "17:38"
+    },
+    "22": {
+     "s": "present",
+     "in": "08:29",
+     "out": "17:41"
+    },
+    "23": {
+     "s": "present",
+     "in": "08:21",
+     "out": "17:41"
+    },
+    "24": {
+     "s": "absent"
+    }
+   }
+  }
+ },
+ "ws/spa/settings": {
+  "main": {
+   "workDays": 26,
+   "latePenalty": 30000,
+   "shiftStart": "08:30",
+   "name": "Spa Hoa Mai",
+   "shifts": [
+    {
+     "id": "S",
+     "name": "Ca sáng",
+     "start": "08:30",
+     "end": "14:30",
+     "color": "#3563B8"
+    },
+    {
+     "id": "C",
+     "name": "Ca chiều",
+     "start": "13:30",
+     "end": "20:30",
+     "color": "#A8690F"
+    },
+    {
+     "id": "F",
+     "name": "Cả ngày",
+     "start": "08:30",
+     "end": "17:30",
+     "color": "#1E7A68"
+    }
+   ],
+   "owner": "Nguyễn Thu Hoa",
+   "phone": "0909123456",
+   "address": "128 Nguyễn Trãi, Phường Bến Thành, Quận 1, TP.HCM",
+   "taxPct": 0,
+   "bank": "Vietcombank 0071000123456 – NGUYEN THU HOA",
+   "invoiceFooter": "Cảm ơn chị đã tin chọn Spa Hoa Mai. Hẹn gặp lại!",
+   "accent": "rose"
+  }
+ },
+ "ws/spa/staff": {
+  "st1": {
+   "phone": "0908111001",
+   "startDate": "2024-03-01",
+   "baseSalary": 7000000,
+   "active": true,
+   "name": "Hoa",
+   "role": "Chăm sóc da",
+   "color": "#1E7A68"
+  },
+  "st2": {
+   "phone": "0908111002",
+   "startDate": "2024-06-15",
+   "baseSalary": 6500000,
+   "active": true,
+   "name": "Mai",
+   "role": "Body, massage",
+   "color": "#B0476A"
+  },
+  "st3": {
+   "phone": "0908111003",
+   "startDate": "2025-01-10",
+   "baseSalary": 6500000,
+   "active": true,
+   "name": "Linh",
+   "role": "Mi, mày",
+   "color": "#3563B8"
+  },
+  "st4": {
+   "phone": "0908111004",
+   "startDate": "2025-08-01",
+   "baseSalary": 5500000,
+   "active": true,
+   "name": "Thảo",
+   "role": "Gội, dưỡng sinh",
+   "color": "#A8690F"
+  }
+ },
+ "ws/nhakhoa/appointments": {
+  "e01": {
+   "customerId": "n01",
+   "serviceId": "d2",
+   "staffId": "b1",
+   "date": "2026-03-20",
+   "time": "09:00",
+   "status": "done",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-03-20",
+   "value": 300000,
+   "commission": 30000,
+   "doneAt": "2026-03-20"
+  },
+  "e02": {
+   "customerId": "n03",
+   "serviceId": "d1",
+   "staffId": "b1",
+   "date": "2026-03-28",
+   "time": "10:00",
+   "status": "done",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-03-28",
+   "value": 150000,
+   "commission": 0,
+   "doneAt": "2026-03-28"
+  },
+  "e03": {
+   "customerId": "n05",
+   "serviceId": "d3",
+   "staffId": "b1",
+   "date": "2026-09-15",
+   "time": "16:00",
+   "status": "done",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-15",
+   "value": 500000,
+   "commission": 50000,
+   "doneAt": "2026-09-15"
+  },
+  "e04": {
+   "customerId": "n02",
+   "serviceId": "d5",
+   "staffId": "b2",
+   "date": "2026-08-22",
+   "time": "17:30",
+   "status": "done",
+   "courseId": "m1",
+   "note": "",
+   "createdAt": "2026-08-22",
+   "value": 1458333,
+   "commission": 145833,
+   "doneAt": "2026-08-22"
+  },
+  "e05": {
+   "customerId": "n06",
+   "serviceId": "d5",
+   "staffId": "b2",
+   "date": "2026-08-26",
+   "time": "18:00",
+   "status": "done",
+   "courseId": "m2",
+   "note": "",
+   "createdAt": "2026-08-26",
+   "value": 1458333,
+   "commission": 145833,
+   "doneAt": "2026-08-26"
+  },
+  "e06": {
+   "customerId": "n07",
+   "serviceId": "d6",
+   "staffId": "b3",
+   "date": "2026-09-18",
+   "time": "14:00",
+   "status": "done",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-18",
+   "value": 1500000,
+   "commission": 150000,
+   "doneAt": "2026-09-18"
+  },
+  "e10": {
+   "customerId": "n04",
+   "serviceId": "d2",
+   "staffId": "b1",
+   "date": "2026-09-25",
+   "time": "09:00",
+   "status": "done",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-25",
+   "value": 300000,
+   "commission": 30000,
+   "doneAt": "2026-09-25"
+  },
+  "e11": {
+   "customerId": "n08",
+   "serviceId": "d1",
+   "staffId": "b1",
+   "date": "2026-09-25",
+   "time": "10:00",
+   "status": "arrived",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-25"
+  },
+  "e12": {
+   "customerId": "n05",
+   "serviceId": "d3",
+   "staffId": "b1",
+   "date": "2026-09-25",
+   "time": "14:00",
+   "status": "confirmed",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-25"
+  },
+  "e20": {
+   "customerId": "n06",
+   "serviceId": "d5",
+   "staffId": "b2",
+   "date": "2026-09-26",
+   "time": "09:00",
+   "status": "booked",
+   "courseId": "m2",
+   "note": "",
+   "createdAt": "2026-09-26"
+  },
+  "e21": {
+   "customerId": "n08",
+   "serviceId": "d3",
+   "staffId": "b1",
+   "date": "2026-09-26",
+   "time": "15:00",
+   "status": "booked",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-26"
+  },
+  "ha1_d3": {
+   "customerId": "n06",
+   "serviceId": "d3",
+   "staffId": "b1",
+   "date": "2026-09-13",
+   "time": "17:45",
+   "status": "done",
+   "value": 500000,
+   "commission": 50000,
+   "doneAt": "2026-09-13",
+   "createdAt": "2026-09-13",
+   "source": "pos",
+   "saleId": "hx1"
+  },
+  "ha2_d4": {
+   "customerId": "n05",
+   "serviceId": "d4",
+   "staffId": "b1",
+   "date": "2026-09-13",
+   "time": "09:15",
+   "status": "done",
+   "value": 2500000,
+   "commission": 200000,
+   "doneAt": "2026-09-13",
+   "createdAt": "2026-09-13",
+   "source": "pos",
+   "saleId": "hx2"
+  },
+  "ha3_d3": {
+   "customerId": "n02",
+   "serviceId": "d3",
+   "staffId": "b2",
+   "date": "2026-09-13",
+   "time": "18:30",
+   "status": "done",
+   "value": 500000,
+   "commission": 50000,
+   "doneAt": "2026-09-13",
+   "createdAt": "2026-09-13",
+   "source": "pos",
+   "saleId": "hx3"
+  },
+  "ha4_d2": {
+   "customerId": "n07",
+   "serviceId": "d2",
+   "staffId": "b3",
+   "date": "2026-09-15",
+   "time": "18:15",
+   "status": "done",
+   "value": 300000,
+   "commission": 30000,
+   "doneAt": "2026-09-15",
+   "createdAt": "2026-09-15",
+   "source": "pos",
+   "saleId": "hx4"
+  },
+  "ha4_d1": {
+   "customerId": "n07",
+   "serviceId": "d1",
+   "staffId": "b3",
+   "date": "2026-09-15",
+   "time": "18:15",
+   "status": "done",
+   "value": 150000,
+   "commission": 0,
+   "doneAt": "2026-09-15",
+   "createdAt": "2026-09-15",
+   "source": "pos",
+   "saleId": "hx4"
+  },
+  "ha5_d3": {
+   "customerId": "n03",
+   "serviceId": "d3",
+   "staffId": "b2",
+   "date": "2026-09-15",
+   "time": "19:45",
+   "status": "done",
+   "value": 500000,
+   "commission": 50000,
+   "doneAt": "2026-09-15",
+   "createdAt": "2026-09-15",
+   "source": "pos",
+   "saleId": "hx5"
+  },
+  "ha6_d2": {
+   "customerId": "n07",
+   "serviceId": "d2",
+   "staffId": "b2",
+   "date": "2026-09-15",
+   "time": "19:00",
+   "status": "done",
+   "value": 270000,
+   "commission": 27000,
+   "doneAt": "2026-09-15",
+   "createdAt": "2026-09-15",
+   "source": "pos",
+   "saleId": "hx6"
+  },
+  "ha6_d1": {
+   "customerId": "n07",
+   "serviceId": "d1",
+   "staffId": "b2",
+   "date": "2026-09-15",
+   "time": "19:00",
+   "status": "done",
+   "value": 135000,
+   "commission": 0,
+   "doneAt": "2026-09-15",
+   "createdAt": "2026-09-15",
+   "source": "pos",
+   "saleId": "hx6"
+  },
+  "ha7_d2": {
+   "customerId": "n02",
+   "serviceId": "d2",
+   "staffId": "b2",
+   "date": "2026-09-16",
+   "time": "14:45",
+   "status": "done",
+   "value": 300000,
+   "commission": 30000,
+   "doneAt": "2026-09-16",
+   "createdAt": "2026-09-16",
+   "source": "pos",
+   "saleId": "hx7"
+  },
+  "ha8_d4": {
+   "customerId": "n02",
+   "serviceId": "d4",
+   "staffId": "b3",
+   "date": "2026-09-16",
+   "time": "10:15",
+   "status": "done",
+   "value": 2250000,
+   "commission": 180000,
+   "doneAt": "2026-09-16",
+   "createdAt": "2026-09-16",
+   "source": "pos",
+   "saleId": "hx8"
+  },
+  "ha9_d1": {
+   "customerId": "n08",
+   "serviceId": "d1",
+   "staffId": "b3",
+   "date": "2026-09-17",
+   "time": "11:30",
+   "status": "done",
+   "value": 150000,
+   "commission": 0,
+   "doneAt": "2026-09-17",
+   "createdAt": "2026-09-17",
+   "source": "pos",
+   "saleId": "hx9"
+  },
+  "ha10_d3": {
+   "customerId": "n07",
+   "serviceId": "d3",
+   "staffId": "b3",
+   "date": "2026-09-17",
+   "time": "14:15",
+   "status": "done",
+   "value": 500000,
+   "commission": 50000,
+   "doneAt": "2026-09-17",
+   "createdAt": "2026-09-17",
+   "source": "pos",
+   "saleId": "hx10"
+  },
+  "ha11_d3": {
+   "customerId": "n08",
+   "serviceId": "d3",
+   "staffId": "b1",
+   "date": "2026-09-18",
+   "time": "19:15",
+   "status": "done",
+   "value": 500000,
+   "commission": 50000,
+   "doneAt": "2026-09-18",
+   "createdAt": "2026-09-18",
+   "source": "pos",
+   "saleId": "hx11"
+  },
+  "ha12_d3": {
+   "customerId": "n05",
+   "serviceId": "d3",
+   "staffId": "b2",
+   "date": "2026-09-19",
+   "time": "14:15",
+   "status": "done",
+   "value": 450000,
+   "commission": 45000,
+   "doneAt": "2026-09-19",
+   "createdAt": "2026-09-19",
+   "source": "pos",
+   "saleId": "hx12"
+  },
+  "ha13_d3": {
+   "customerId": "",
+   "serviceId": "d3",
+   "staffId": "b1",
+   "date": "2026-09-19",
+   "time": "14:45",
+   "status": "done",
+   "value": 500000,
+   "commission": 50000,
+   "doneAt": "2026-09-19",
+   "createdAt": "2026-09-19",
+   "source": "pos",
+   "saleId": "hx13"
+  },
+  "ha14_d4": {
+   "customerId": "n06",
+   "serviceId": "d4",
+   "staffId": "b1",
+   "date": "2026-09-19",
+   "time": "09:30",
+   "status": "done",
+   "value": 2250000,
+   "commission": 180000,
+   "doneAt": "2026-09-19",
+   "createdAt": "2026-09-19",
+   "source": "pos",
+   "saleId": "hx14"
+  },
+  "ha14_d2": {
+   "customerId": "n06",
+   "serviceId": "d2",
+   "staffId": "b1",
+   "date": "2026-09-19",
+   "time": "09:30",
+   "status": "done",
+   "value": 270000,
+   "commission": 27000,
+   "doneAt": "2026-09-19",
+   "createdAt": "2026-09-19",
+   "source": "pos",
+   "saleId": "hx14"
+  },
+  "ha15_d4": {
+   "customerId": "n03",
+   "serviceId": "d4",
+   "staffId": "b2",
+   "date": "2026-09-20",
+   "time": "19:00",
+   "status": "done",
+   "value": 2500000,
+   "commission": 200000,
+   "doneAt": "2026-09-20",
+   "createdAt": "2026-09-20",
+   "source": "pos",
+   "saleId": "hx15"
+  },
+  "ha16_d2": {
+   "customerId": "n05",
+   "serviceId": "d2",
+   "staffId": "b2",
+   "date": "2026-09-20",
+   "time": "10:15",
+   "status": "done",
+   "value": 300000,
+   "commission": 30000,
+   "doneAt": "2026-09-20",
+   "createdAt": "2026-09-20",
+   "source": "pos",
+   "saleId": "hx16"
+  },
+  "ha17_d2": {
+   "customerId": "n06",
+   "serviceId": "d2",
+   "staffId": "b1",
+   "date": "2026-09-23",
+   "time": "15:15",
+   "status": "done",
+   "value": 270000,
+   "commission": 27000,
+   "doneAt": "2026-09-23",
+   "createdAt": "2026-09-23",
+   "source": "pos",
+   "saleId": "hx17"
+  },
+  "ha18_d2": {
+   "customerId": "n05",
+   "serviceId": "d2",
+   "staffId": "b2",
+   "date": "2026-09-26",
+   "time": "19:30",
+   "status": "done",
+   "value": 300000,
+   "commission": 30000,
+   "doneAt": "2026-09-26",
+   "createdAt": "2026-09-26",
+   "source": "pos",
+   "saleId": "hx18"
+  },
+  "ha19_d4": {
+   "customerId": "n06",
+   "serviceId": "d4",
+   "staffId": "b2",
+   "date": "2026-09-26",
+   "time": "16:30",
+   "status": "done",
+   "value": 2250000,
+   "commission": 180000,
+   "doneAt": "2026-09-26",
+   "createdAt": "2026-09-26",
+   "source": "pos",
+   "saleId": "hx19"
+  }
+ },
+ "ws/nhakhoa/courses": {
+  "m1": {
+   "customerId": "n02",
+   "packageId": "q1",
+   "serviceId": "d5",
+   "name": "Niềng răng mắc cài",
+   "used": 10,
+   "total": 24,
+   "price": 35000000,
+   "startDate": "2025-11-20"
+  },
+  "m2": {
+   "customerId": "n06",
+   "packageId": "q1",
+   "serviceId": "d5",
+   "name": "Niềng răng mắc cài",
+   "used": 23,
+   "total": 24,
+   "price": 35000000,
+   "startDate": "2024-08-26"
+  }
+ },
+ "ws/nhakhoa/customers": {
+  "n01": {
+   "name": "Nguyễn Văn Hùng",
+   "phone": "0903111222",
+   "birthday": "1984-04-10",
+   "source": "Google Maps",
+   "tags": "",
+   "note": "",
+   "createdAt": "2026-03-20",
+   "xung": "anh"
+  },
+  "n02": {
+   "name": "Trần Thị Hồng",
+   "phone": "0913222333",
+   "birthday": "1996-06-06",
+   "source": "Facebook",
+   "tags": "",
+   "note": "Đang niềng răng",
+   "createdAt": "2025-11-20",
+   "xung": "chị"
+  },
+  "n03": {
+   "name": "Lê Quốc Bảo",
+   "phone": "0983444555",
+   "birthday": "1979-02-28",
+   "source": "Giới thiệu",
+   "tags": "",
+   "note": "Huyết áp cao",
+   "createdAt": "2026-03-28",
+   "xung": "anh"
+  },
+  "n04": {
+   "name": "Phạm Thu Trang",
+   "phone": "0934555666",
+   "birthday": "1998-09-27",
+   "source": "Facebook",
+   "tags": "",
+   "note": "",
+   "createdAt": "2026-09-25",
+   "xung": "chị"
+  },
+  "n05": {
+   "name": "Vũ Đức Minh",
+   "phone": "0977666777",
+   "birthday": "1992-11-30",
+   "source": "Zalo",
+   "tags": "",
+   "note": "",
+   "createdAt": "2026-09-15",
+   "xung": "anh"
+  },
+  "n06": {
+   "name": "Đinh Ngọc Mai",
+   "phone": "0946777888",
+   "birthday": "2003-05-05",
+   "source": "TikTok",
+   "tags": "",
+   "note": "Sắp tháo niềng",
+   "createdAt": "2024-08-26",
+   "xung": "chị"
+  },
+  "n07": {
+   "name": "Cao Thị Thu",
+   "phone": "0925888999",
+   "birthday": "1990-01-20",
+   "source": "Vãng lai",
+   "tags": "",
+   "note": "Dị ứng penicillin",
+   "createdAt": "2026-09-18",
+   "xung": "chị"
+  },
+  "n08": {
+   "name": "Lâm Gia Huy",
+   "phone": "0968999000",
+   "birthday": "2000-08-08",
+   "source": "Google Maps",
+   "tags": "",
+   "note": "",
+   "createdAt": "2026-09-25",
+   "xung": "anh"
+  }
+ },
+ "ws/nhakhoa/packages": {
+  "q1": {
+   "name": "Niềng răng mắc cài (24 lần tái khám)",
+   "serviceId": "d5",
+   "sessions": 24,
+   "price": 35000000
+  },
+  "q2": {
+   "name": "Cạo vôi 2 lần/năm",
+   "serviceId": "d2",
+   "sessions": 2,
+   "price": 500000
+  }
+ },
+ "ws/nhakhoa/payments": {
+  "y1": {
+   "customerId": "n01",
+   "saleId": "z1",
+   "amount": 300000,
+   "method": "cash",
+   "date": "2026-03-20",
+   "label": "Cạo vôi, đánh bóng",
+   "createdAt": 1
+  },
+  "y2": {
+   "customerId": "n03",
+   "saleId": "z2",
+   "amount": 150000,
+   "method": "cash",
+   "date": "2026-03-28",
+   "label": "Khám tổng quát",
+   "createdAt": 2
+  },
+  "y3": {
+   "customerId": "n05",
+   "saleId": "z3",
+   "amount": 500000,
+   "method": "transfer",
+   "date": "2026-09-15",
+   "label": "Trám răng thẩm mỹ",
+   "createdAt": 3
+  },
+  "y4": {
+   "customerId": "n07",
+   "saleId": "z4",
+   "amount": 1500000,
+   "method": "card",
+   "date": "2026-09-18",
+   "label": "Nhổ răng khôn",
+   "createdAt": 4
+  },
+  "y5": {
+   "customerId": "n04",
+   "saleId": "z5",
+   "amount": 300000,
+   "method": "transfer",
+   "date": "2026-09-25",
+   "label": "Cạo vôi, đánh bóng",
+   "createdAt": 5
+  },
+  "y6": {
+   "customerId": "n02",
+   "saleId": "z6",
+   "amount": 20000000,
+   "method": "transfer",
+   "date": "2025-11-20",
+   "label": "Niềng răng mắc cài",
+   "createdAt": 6
+  },
+  "y7": {
+   "customerId": "n06",
+   "saleId": "z7",
+   "amount": 35000000,
+   "method": "transfer",
+   "date": "2024-08-26",
+   "label": "Niềng răng mắc cài",
+   "createdAt": 7
+  },
+  "hy1": {
+   "customerId": "n06",
+   "saleId": "hx1",
+   "amount": 1000000,
+   "method": "card",
+   "date": "2026-09-13",
+   "label": "Trám răng thẩm mỹ, Trám răng thẩm mỹ",
+   "createdAt": 1789321500000
+  },
+  "hy2": {
+   "customerId": "n05",
+   "saleId": "hx2",
+   "amount": 2545000,
+   "method": "card",
+   "date": "2026-09-13",
+   "label": "Tẩy trắng răng, Bàn chải lông mềm",
+   "createdAt": 1789290900000
+  },
+  "hy3": {
+   "customerId": "n02",
+   "saleId": "hx3",
+   "amount": 324000,
+   "method": "transfer",
+   "date": "2026-09-13",
+   "label": "Trám răng thẩm mỹ, Sáp chỉnh nha",
+   "createdAt": 1789324200000
+  },
+  "hy4": {
+   "customerId": "n07",
+   "saleId": "hx4",
+   "amount": 490000,
+   "method": "cash",
+   "date": "2026-09-15",
+   "label": "Cạo vôi, đánh bóng, Khám tổng quát, Sáp chỉnh nha",
+   "createdAt": 1789496100000
+  },
+  "hy5": {
+   "customerId": "n03",
+   "saleId": "hx5",
+   "amount": 635000,
+   "method": "ewallet",
+   "date": "2026-09-15",
+   "label": "Trám răng thẩm mỹ, Nước súc miệng 500ml",
+   "createdAt": 1789501500000
+  },
+  "hy6": {
+   "customerId": "n07",
+   "saleId": "hx6",
+   "amount": 1026000,
+   "method": "ewallet",
+   "date": "2026-09-15",
+   "label": "Cạo vôi, đánh bóng, Khám tổng quát, Máng tẩy trắng tại nhà",
+   "createdAt": 1789498800000
+  },
+  "hy7": {
+   "customerId": "n02",
+   "saleId": "hx7",
+   "amount": 300000,
+   "method": "cash",
+   "date": "2026-09-16",
+   "label": "Cạo vôi, đánh bóng",
+   "createdAt": 1789569900000
+  },
+  "hy8": {
+   "customerId": "n02",
+   "saleId": "hx8",
+   "amount": 2385000,
+   "method": "card",
+   "date": "2026-09-16",
+   "label": "Tẩy trắng răng, Chỉ nha khoa 50m",
+   "createdAt": 1789553700000
+  },
+  "hy9": {
+   "customerId": "n08",
+   "saleId": "hx9",
+   "amount": 195000,
+   "method": "transfer",
+   "date": "2026-09-17",
+   "label": "Khám tổng quát, Bàn chải lông mềm",
+   "createdAt": 1789644600000
+  },
+  "hy10": {
+   "customerId": "n07",
+   "saleId": "hx10",
+   "amount": 1000000,
+   "method": "card",
+   "date": "2026-09-17",
+   "label": "Trám răng thẩm mỹ, Trám răng thẩm mỹ",
+   "createdAt": 1789654500000
+  },
+  "hy11": {
+   "customerId": "n08",
+   "saleId": "hx11",
+   "amount": 1690000,
+   "method": "ewallet",
+   "date": "2026-09-18",
+   "label": "Trám răng thẩm mỹ, Trám răng thẩm mỹ, Máng tẩy trắng tại nhà",
+   "createdAt": 1789758900000
+  },
+  "hy12": {
+   "customerId": "n05",
+   "saleId": "hx12",
+   "amount": 571500,
+   "method": "transfer",
+   "date": "2026-09-19",
+   "label": "Trám răng thẩm mỹ, Nước súc miệng 500ml",
+   "createdAt": 1789827300000
+  },
+  "hy13": {
+   "customerId": "",
+   "saleId": "hx13",
+   "amount": 500000,
+   "method": "ewallet",
+   "date": "2026-09-19",
+   "label": "Trám răng thẩm mỹ",
+   "createdAt": 1789829100000
+  },
+  "hy14": {
+   "customerId": "n06",
+   "saleId": "hx14",
+   "amount": 2556000,
+   "method": "transfer",
+   "date": "2026-09-19",
+   "label": "Tẩy trắng răng, Cạo vôi, đánh bóng, Sáp chỉnh nha",
+   "createdAt": 1789810200000
+  },
+  "hy15": {
+   "customerId": "n03",
+   "saleId": "hx15",
+   "amount": 3000000,
+   "method": "transfer",
+   "date": "2026-09-20",
+   "label": "Tẩy trắng răng, Tẩy trắng răng",
+   "createdAt": 1789930800000
+  },
+  "hy16": {
+   "customerId": "n05",
+   "saleId": "hx16",
+   "amount": 300000,
+   "method": "transfer",
+   "date": "2026-09-20",
+   "label": "Cạo vôi, đánh bóng",
+   "createdAt": 1789899300000
+  },
+  "hy17": {
+   "customerId": "n06",
+   "saleId": "hx17",
+   "amount": 270000,
+   "method": "ewallet",
+   "date": "2026-09-23",
+   "label": "Cạo vôi, đánh bóng",
+   "createdAt": 1790176500000
+  },
+  "hy18": {
+   "customerId": "n05",
+   "saleId": "hx18",
+   "amount": 300000,
+   "method": "card",
+   "date": "2026-09-26",
+   "label": "Cạo vôi, đánh bóng",
+   "createdAt": 1790451000000
+  },
+  "hy19": {
+   "customerId": "n06",
+   "saleId": "hx19",
+   "amount": 2317500,
+   "method": "cash",
+   "date": "2026-09-26",
+   "label": "Tẩy trắng răng, Chỉ nha khoa 50m",
+   "createdAt": 1790440200000
+  }
+ },
+ "ws/nhakhoa/sales": {
+  "z1": {
+   "customerId": "n01",
+   "date": "2026-03-20",
+   "label": "Cạo vôi, đánh bóng",
+   "total": 300000,
+   "paid": 300000,
+   "kind": "service",
+   "courseId": "",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "z2": {
+   "customerId": "n03",
+   "date": "2026-03-28",
+   "label": "Khám tổng quát",
+   "total": 150000,
+   "paid": 150000,
+   "kind": "service",
+   "courseId": "",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "z3": {
+   "customerId": "n05",
+   "date": "2026-09-15",
+   "label": "Trám răng thẩm mỹ",
+   "total": 500000,
+   "paid": 500000,
+   "kind": "service",
+   "courseId": "",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "z4": {
+   "customerId": "n07",
+   "date": "2026-09-18",
+   "label": "Nhổ răng khôn",
+   "total": 1500000,
+   "paid": 1500000,
+   "kind": "service",
+   "courseId": "",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "z5": {
+   "customerId": "n04",
+   "date": "2026-09-25",
+   "label": "Cạo vôi, đánh bóng",
+   "total": 300000,
+   "paid": 300000,
+   "kind": "service",
+   "courseId": "",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "z6": {
+   "customerId": "n02",
+   "date": "2025-11-20",
+   "label": "Niềng răng mắc cài",
+   "total": 35000000,
+   "paid": 20000000,
+   "kind": "course",
+   "courseId": "m1",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "z7": {
+   "customerId": "n06",
+   "date": "2024-08-26",
+   "label": "Niềng răng mắc cài",
+   "total": 35000000,
+   "paid": 35000000,
+   "kind": "course",
+   "courseId": "m2",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "hx1": {
+   "customerId": "n06",
+   "date": "2026-09-13",
+   "label": "Trám răng thẩm mỹ, Trám răng thẩm mỹ",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "d3",
+     "name": "Trám răng thẩm mỹ",
+     "qty": 1,
+     "price": 500000
+    },
+    {
+     "type": "svc",
+     "refId": "d3",
+     "name": "Trám răng thẩm mỹ",
+     "qty": 1,
+     "price": 500000
+    }
+   ],
+   "subtotal": 1000000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 1000000,
+   "paid": 1000000,
+   "method": "card",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "b1",
+   "createdAt": 1789321500000,
+   "invoiceNo": "HĐ260913-01",
+   "note": ""
+  },
+  "hx2": {
+   "customerId": "n05",
+   "date": "2026-09-13",
+   "label": "Tẩy trắng răng, Bàn chải lông mềm",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "d4",
+     "name": "Tẩy trắng răng",
+     "qty": 1,
+     "price": 2500000
+    },
+    {
+     "type": "prod",
+     "refId": "pn1",
+     "name": "Bàn chải lông mềm",
+     "qty": 1,
+     "price": 45000
+    }
+   ],
+   "subtotal": 2545000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 2545000,
+   "paid": 2545000,
+   "method": "card",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "b1",
+   "createdAt": 1789290900000,
+   "invoiceNo": "HĐ260913-02",
+   "note": ""
+  },
+  "hx3": {
+   "customerId": "n02",
+   "date": "2026-09-13",
+   "label": "Trám răng thẩm mỹ, Sáp chỉnh nha",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "d3",
+     "name": "Trám răng thẩm mỹ",
+     "qty": 1,
+     "price": 500000
+    },
+    {
+     "type": "prod",
+     "refId": "pn6",
+     "name": "Sáp chỉnh nha",
+     "qty": 1,
+     "price": 40000
+    }
+   ],
+   "subtotal": 540000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 540000,
+   "paid": 324000,
+   "method": "transfer",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "b2",
+   "createdAt": 1789324200000,
+   "invoiceNo": "HĐ260913-03",
+   "note": ""
+  },
+  "hx4": {
+   "customerId": "n07",
+   "date": "2026-09-15",
+   "label": "Cạo vôi, đánh bóng, Khám tổng quát, Sáp chỉnh nha",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "d2",
+     "name": "Cạo vôi, đánh bóng",
+     "qty": 1,
+     "price": 300000
+    },
+    {
+     "type": "svc",
+     "refId": "d1",
+     "name": "Khám tổng quát",
+     "qty": 1,
+     "price": 150000
+    },
+    {
+     "type": "prod",
+     "refId": "pn6",
+     "name": "Sáp chỉnh nha",
+     "qty": 1,
+     "price": 40000
+    }
+   ],
+   "subtotal": 490000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 490000,
+   "paid": 490000,
+   "method": "cash",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "b3",
+   "createdAt": 1789496100000,
+   "invoiceNo": "HĐ260915-01",
+   "note": ""
+  },
+  "hx5": {
+   "customerId": "n03",
+   "date": "2026-09-15",
+   "label": "Trám răng thẩm mỹ, Nước súc miệng 500ml",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "d3",
+     "name": "Trám răng thẩm mỹ",
+     "qty": 1,
+     "price": 500000
+    },
+    {
+     "type": "prod",
+     "refId": "pn4",
+     "name": "Nước súc miệng 500ml",
+     "qty": 1,
+     "price": 135000
+    }
+   ],
+   "subtotal": 635000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 635000,
+   "paid": 635000,
+   "method": "ewallet",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "b2",
+   "createdAt": 1789501500000,
+   "invoiceNo": "HĐ260915-02",
+   "note": ""
+  },
+  "hx6": {
+   "customerId": "n07",
+   "date": "2026-09-15",
+   "label": "Cạo vôi, đánh bóng, Khám tổng quát, Máng tẩy trắng tại nhà",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "d2",
+     "name": "Cạo vôi, đánh bóng",
+     "qty": 1,
+     "price": 300000
+    },
+    {
+     "type": "svc",
+     "refId": "d1",
+     "name": "Khám tổng quát",
+     "qty": 1,
+     "price": 150000
+    },
+    {
+     "type": "prod",
+     "refId": "pn5",
+     "name": "Máng tẩy trắng tại nhà",
+     "qty": 1,
+     "price": 690000
+    }
+   ],
+   "subtotal": 1140000,
+   "discPct": 10,
+   "discount": 114000,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 1026000,
+   "paid": 1026000,
+   "method": "ewallet",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "b2",
+   "createdAt": 1789498800000,
+   "invoiceNo": "HĐ260915-03",
+   "note": ""
+  },
+  "hx7": {
+   "customerId": "n02",
+   "date": "2026-09-16",
+   "label": "Cạo vôi, đánh bóng",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "d2",
+     "name": "Cạo vôi, đánh bóng",
+     "qty": 1,
+     "price": 300000
+    }
+   ],
+   "subtotal": 300000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 300000,
+   "paid": 300000,
+   "method": "cash",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "b2",
+   "createdAt": 1789569900000,
+   "invoiceNo": "HĐ260916-01",
+   "note": ""
+  },
+  "hx8": {
+   "customerId": "n02",
+   "date": "2026-09-16",
+   "label": "Tẩy trắng răng, Chỉ nha khoa 50m",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "d4",
+     "name": "Tẩy trắng răng",
+     "qty": 1,
+     "price": 2500000
+    },
+    {
+     "type": "prod",
+     "refId": "pn3",
+     "name": "Chỉ nha khoa 50m",
+     "qty": 2,
+     "price": 75000
+    }
+   ],
+   "subtotal": 2650000,
+   "discPct": 10,
+   "discount": 265000,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 2385000,
+   "paid": 2385000,
+   "method": "card",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "b3",
+   "createdAt": 1789553700000,
+   "invoiceNo": "HĐ260916-02",
+   "note": ""
+  },
+  "hx9": {
+   "customerId": "n08",
+   "date": "2026-09-17",
+   "label": "Khám tổng quát, Bàn chải lông mềm",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "d1",
+     "name": "Khám tổng quát",
+     "qty": 1,
+     "price": 150000
+    },
+    {
+     "type": "prod",
+     "refId": "pn1",
+     "name": "Bàn chải lông mềm",
+     "qty": 1,
+     "price": 45000
+    }
+   ],
+   "subtotal": 195000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 195000,
+   "paid": 195000,
+   "method": "transfer",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "b3",
+   "createdAt": 1789644600000,
+   "invoiceNo": "HĐ260917-01",
+   "note": ""
+  },
+  "hx10": {
+   "customerId": "n07",
+   "date": "2026-09-17",
+   "label": "Trám răng thẩm mỹ, Trám răng thẩm mỹ",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "d3",
+     "name": "Trám răng thẩm mỹ",
+     "qty": 1,
+     "price": 500000
+    },
+    {
+     "type": "svc",
+     "refId": "d3",
+     "name": "Trám răng thẩm mỹ",
+     "qty": 1,
+     "price": 500000
+    }
+   ],
+   "subtotal": 1000000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 1000000,
+   "paid": 1000000,
+   "method": "card",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "b3",
+   "createdAt": 1789654500000,
+   "invoiceNo": "HĐ260917-02",
+   "note": ""
+  },
+  "hx11": {
+   "customerId": "n08",
+   "date": "2026-09-18",
+   "label": "Trám răng thẩm mỹ, Trám răng thẩm mỹ, Máng tẩy trắng tại nhà",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "d3",
+     "name": "Trám răng thẩm mỹ",
+     "qty": 1,
+     "price": 500000
+    },
+    {
+     "type": "svc",
+     "refId": "d3",
+     "name": "Trám răng thẩm mỹ",
+     "qty": 1,
+     "price": 500000
+    },
+    {
+     "type": "prod",
+     "refId": "pn5",
+     "name": "Máng tẩy trắng tại nhà",
+     "qty": 1,
+     "price": 690000
+    }
+   ],
+   "subtotal": 1690000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 1690000,
+   "paid": 1690000,
+   "method": "ewallet",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "b1",
+   "createdAt": 1789758900000,
+   "invoiceNo": "HĐ260918-01",
+   "note": ""
+  },
+  "hx12": {
+   "customerId": "n05",
+   "date": "2026-09-19",
+   "label": "Trám răng thẩm mỹ, Nước súc miệng 500ml",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "d3",
+     "name": "Trám răng thẩm mỹ",
+     "qty": 1,
+     "price": 500000
+    },
+    {
+     "type": "prod",
+     "refId": "pn4",
+     "name": "Nước súc miệng 500ml",
+     "qty": 1,
+     "price": 135000
+    }
+   ],
+   "subtotal": 635000,
+   "discPct": 10,
+   "discount": 63500,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 571500,
+   "paid": 571500,
+   "method": "transfer",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "b2",
+   "createdAt": 1789827300000,
+   "invoiceNo": "HĐ260919-01",
+   "note": ""
+  },
+  "hx13": {
+   "customerId": "",
+   "date": "2026-09-19",
+   "label": "Trám răng thẩm mỹ",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "d3",
+     "name": "Trám răng thẩm mỹ",
+     "qty": 1,
+     "price": 500000
+    }
+   ],
+   "subtotal": 500000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 500000,
+   "paid": 500000,
+   "method": "ewallet",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "b1",
+   "createdAt": 1789829100000,
+   "invoiceNo": "HĐ260919-02",
+   "note": ""
+  },
+  "hx14": {
+   "customerId": "n06",
+   "date": "2026-09-19",
+   "label": "Tẩy trắng răng, Cạo vôi, đánh bóng, Sáp chỉnh nha",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "d4",
+     "name": "Tẩy trắng răng",
+     "qty": 1,
+     "price": 2500000
+    },
+    {
+     "type": "svc",
+     "refId": "d2",
+     "name": "Cạo vôi, đánh bóng",
+     "qty": 1,
+     "price": 300000
+    },
+    {
+     "type": "prod",
+     "refId": "pn6",
+     "name": "Sáp chỉnh nha",
+     "qty": 1,
+     "price": 40000
+    }
+   ],
+   "subtotal": 2840000,
+   "discPct": 10,
+   "discount": 284000,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 2556000,
+   "paid": 2556000,
+   "method": "transfer",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "b1",
+   "createdAt": 1789810200000,
+   "invoiceNo": "HĐ260919-03",
+   "note": ""
+  },
+  "hx15": {
+   "customerId": "n03",
+   "date": "2026-09-20",
+   "label": "Tẩy trắng răng, Tẩy trắng răng",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "d4",
+     "name": "Tẩy trắng răng",
+     "qty": 1,
+     "price": 2500000
+    },
+    {
+     "type": "svc",
+     "refId": "d4",
+     "name": "Tẩy trắng răng",
+     "qty": 1,
+     "price": 2500000
+    }
+   ],
+   "subtotal": 5000000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 5000000,
+   "paid": 3000000,
+   "method": "transfer",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "b2",
+   "createdAt": 1789930800000,
+   "invoiceNo": "HĐ260920-01",
+   "note": ""
+  },
+  "hx16": {
+   "customerId": "n05",
+   "date": "2026-09-20",
+   "label": "Cạo vôi, đánh bóng",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "d2",
+     "name": "Cạo vôi, đánh bóng",
+     "qty": 1,
+     "price": 300000
+    }
+   ],
+   "subtotal": 300000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 300000,
+   "paid": 300000,
+   "method": "transfer",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "b2",
+   "createdAt": 1789899300000,
+   "invoiceNo": "HĐ260920-02",
+   "note": ""
+  },
+  "hx17": {
+   "customerId": "n06",
+   "date": "2026-09-23",
+   "label": "Cạo vôi, đánh bóng",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "d2",
+     "name": "Cạo vôi, đánh bóng",
+     "qty": 1,
+     "price": 300000
+    }
+   ],
+   "subtotal": 300000,
+   "discPct": 10,
+   "discount": 30000,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 270000,
+   "paid": 270000,
+   "method": "ewallet",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "b1",
+   "createdAt": 1790176500000,
+   "invoiceNo": "HĐ260923-01",
+   "note": ""
+  },
+  "hx18": {
+   "customerId": "n05",
+   "date": "2026-09-26",
+   "label": "Cạo vôi, đánh bóng",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "d2",
+     "name": "Cạo vôi, đánh bóng",
+     "qty": 1,
+     "price": 300000
+    }
+   ],
+   "subtotal": 300000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 300000,
+   "paid": 300000,
+   "method": "card",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "b2",
+   "createdAt": 1790451000000,
+   "invoiceNo": "HĐ260926-01",
+   "note": ""
+  },
+  "hx19": {
+   "customerId": "n06",
+   "date": "2026-09-26",
+   "label": "Tẩy trắng răng, Chỉ nha khoa 50m",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "d4",
+     "name": "Tẩy trắng răng",
+     "qty": 1,
+     "price": 2500000
+    },
+    {
+     "type": "prod",
+     "refId": "pn3",
+     "name": "Chỉ nha khoa 50m",
+     "qty": 1,
+     "price": 75000
+    }
+   ],
+   "subtotal": 2575000,
+   "discPct": 10,
+   "discount": 257500,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 2317500,
+   "paid": 2317500,
+   "method": "cash",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "b2",
+   "createdAt": 1790440200000,
+   "invoiceNo": "HĐ260926-02",
+   "note": ""
+  }
+ },
+ "ws/nhakhoa/services": {
+  "d1": {
+   "name": "Khám tổng quát",
+   "price": 150000,
+   "duration": 30,
+   "commissionPct": 0,
+   "recallDays": 180,
+   "category": "Tổng quát",
+   "active": true
+  },
+  "d2": {
+   "name": "Cạo vôi, đánh bóng",
+   "price": 300000,
+   "duration": 30,
+   "commissionPct": 10,
+   "recallDays": 180,
+   "category": "Nha chu",
+   "active": true
+  },
+  "d3": {
+   "name": "Trám răng thẩm mỹ",
+   "price": 500000,
+   "duration": 45,
+   "commissionPct": 10,
+   "recallDays": 365,
+   "category": "Phục hình",
+   "active": true
+  },
+  "d4": {
+   "name": "Tẩy trắng răng",
+   "price": 2500000,
+   "duration": 60,
+   "commissionPct": 8,
+   "recallDays": 365,
+   "category": "Thẩm mỹ răng",
+   "active": true
+  },
+  "d5": {
+   "name": "Tái khám niềng răng",
+   "price": 200000,
+   "duration": 30,
+   "commissionPct": 10,
+   "recallDays": 30,
+   "category": "Chỉnh nha",
+   "active": true
+  },
+  "d6": {
+   "name": "Nhổ răng khôn",
+   "price": 1500000,
+   "duration": 60,
+   "commissionPct": 10,
+   "recallDays": 7,
+   "category": "Tiểu phẫu",
+   "active": true
+  }
+ },
+ "ws/spa/appointments": {
+  "a01": {
+   "customerId": "c02",
+   "serviceId": "s3",
+   "staffId": "st1",
+   "date": "2026-09-10",
+   "time": "10:00",
+   "status": "done",
+   "courseId": "k2",
+   "note": "",
+   "createdAt": "2026-09-10",
+   "value": 300000,
+   "commission": 24000,
+   "doneAt": "2026-09-10"
+  },
+  "a02": {
+   "customerId": "c05",
+   "serviceId": "s1",
+   "staffId": "st1",
+   "date": "2026-09-12",
+   "time": "15:00",
+   "status": "done",
+   "courseId": "k3",
+   "note": "",
+   "createdAt": "2026-09-12",
+   "value": 291667,
+   "commission": 29167,
+   "doneAt": "2026-09-12"
+  },
+  "a03": {
+   "customerId": "c10",
+   "serviceId": "s3",
+   "staffId": "st3",
+   "date": "2026-09-18",
+   "time": "11:00",
+   "status": "done",
+   "courseId": "k5",
+   "note": "",
+   "createdAt": "2026-09-18",
+   "value": 300000,
+   "commission": 24000,
+   "doneAt": "2026-09-18"
+  },
+  "a04": {
+   "customerId": "c04",
+   "serviceId": "s5",
+   "staffId": "st2",
+   "date": "2026-08-15",
+   "time": "16:00",
+   "status": "done",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-08-15",
+   "value": 450000,
+   "commission": 67500,
+   "doneAt": "2026-08-15"
+  },
+  "a05": {
+   "customerId": "c06",
+   "serviceId": "s1",
+   "staffId": "st1",
+   "date": "2026-08-20",
+   "time": "10:00",
+   "status": "done",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-08-20",
+   "value": 350000,
+   "commission": 35000,
+   "doneAt": "2026-08-20"
+  },
+  "a06": {
+   "customerId": "c08",
+   "serviceId": "s4",
+   "staffId": "st4",
+   "date": "2026-09-05",
+   "time": "18:00",
+   "status": "done",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-05",
+   "value": 150000,
+   "commission": 22500,
+   "doneAt": "2026-09-05"
+  },
+  "a07": {
+   "customerId": "c09",
+   "serviceId": "s8",
+   "staffId": "st3",
+   "date": "2026-09-01",
+   "time": "14:00",
+   "status": "done",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-01",
+   "value": 300000,
+   "commission": 36000,
+   "doneAt": "2026-09-01"
+  },
+  "a08": {
+   "customerId": "c11",
+   "serviceId": "s6",
+   "staffId": "st1",
+   "date": "2026-09-19",
+   "time": "09:30",
+   "status": "done",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-19",
+   "value": 700000,
+   "commission": 70000,
+   "doneAt": "2026-09-19"
+  },
+  "a09": {
+   "customerId": "c12",
+   "serviceId": "s5",
+   "staffId": "st2",
+   "date": "2026-09-20",
+   "time": "17:00",
+   "status": "done",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-20",
+   "value": 450000,
+   "commission": 67500,
+   "doneAt": "2026-09-20"
+  },
+  "a10": {
+   "customerId": "c14",
+   "serviceId": "s4",
+   "staffId": "st4",
+   "date": "2026-09-21",
+   "time": "10:00",
+   "status": "done",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-21",
+   "value": 150000,
+   "commission": 22500,
+   "doneAt": "2026-09-21"
+  },
+  "a11": {
+   "customerId": "c03",
+   "serviceId": "s1",
+   "staffId": "st1",
+   "date": "2026-09-22",
+   "time": "14:30",
+   "status": "done",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-22",
+   "value": 350000,
+   "commission": 35000,
+   "doneAt": "2026-09-22"
+  },
+  "a12": {
+   "customerId": "c16",
+   "serviceId": "s5",
+   "staffId": "st2",
+   "date": "2026-09-23",
+   "time": "19:00",
+   "status": "done",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-23",
+   "value": 450000,
+   "commission": 67500,
+   "doneAt": "2026-09-23"
+  },
+  "a13": {
+   "customerId": "c01",
+   "serviceId": "s2",
+   "staffId": "st1",
+   "date": "2026-09-23",
+   "time": "09:00",
+   "status": "done",
+   "courseId": "k1",
+   "note": "",
+   "createdAt": "2026-09-23",
+   "value": 450000,
+   "commission": 54000,
+   "doneAt": "2026-09-23"
+  },
+  "a14": {
+   "customerId": "c07",
+   "serviceId": "s2",
+   "staffId": "st1",
+   "date": "2026-09-24",
+   "time": "10:30",
+   "status": "done",
+   "courseId": "k4",
+   "note": "",
+   "createdAt": "2026-09-24",
+   "value": 450000,
+   "commission": 54000,
+   "doneAt": "2026-09-24"
+  },
+  "a15": {
+   "customerId": "c12",
+   "serviceId": "s8",
+   "staffId": "st3",
+   "date": "2026-09-24",
+   "time": "15:00",
+   "status": "noshow",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-24"
+  },
+  "a20": {
+   "customerId": "c13",
+   "serviceId": "s1",
+   "staffId": "st1",
+   "date": "2026-09-25",
+   "time": "09:00",
+   "status": "done",
+   "courseId": "k6",
+   "note": "",
+   "createdAt": "2026-09-25",
+   "value": 291667,
+   "commission": 29167,
+   "doneAt": "2026-09-25"
+  },
+  "a21": {
+   "customerId": "c15",
+   "serviceId": "s2",
+   "staffId": "st1",
+   "date": "2026-09-25",
+   "time": "10:30",
+   "status": "arrived",
+   "courseId": "k7",
+   "note": "",
+   "createdAt": "2026-09-25"
+  },
+  "a22": {
+   "customerId": "c03",
+   "serviceId": "s4",
+   "staffId": "st4",
+   "date": "2026-09-25",
+   "time": "11:00",
+   "status": "confirmed",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-25"
+  },
+  "a23": {
+   "customerId": "c14",
+   "serviceId": "s8",
+   "staffId": "st3",
+   "date": "2026-09-25",
+   "time": "14:00",
+   "status": "confirmed",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-25"
+  },
+  "a24": {
+   "customerId": "c11",
+   "serviceId": "s5",
+   "staffId": "st2",
+   "date": "2026-09-25",
+   "time": "15:30",
+   "status": "booked",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-25"
+  },
+  "a25": {
+   "customerId": "c16",
+   "serviceId": "s4",
+   "staffId": "st4",
+   "date": "2026-09-25",
+   "time": "17:00",
+   "status": "booked",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-25"
+  },
+  "a30": {
+   "customerId": "c01",
+   "serviceId": "s2",
+   "staffId": "st1",
+   "date": "2026-09-26",
+   "time": "09:30",
+   "status": "booked",
+   "courseId": "k1",
+   "note": "",
+   "createdAt": "2026-09-26"
+  },
+  "a31": {
+   "customerId": "c12",
+   "serviceId": "s1",
+   "staffId": "st1",
+   "date": "2026-09-26",
+   "time": "11:00",
+   "status": "booked",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-26"
+  },
+  "a32": {
+   "customerId": "c14",
+   "serviceId": "s5",
+   "staffId": "st2",
+   "date": "2026-09-26",
+   "time": "14:00",
+   "status": "confirmed",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-26"
+  },
+  "a33": {
+   "customerId": "c03",
+   "serviceId": "s8",
+   "staffId": "st3",
+   "date": "2026-09-26",
+   "time": "15:00",
+   "status": "booked",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-26"
+  },
+  "a34": {
+   "customerId": "c09",
+   "serviceId": "s1",
+   "staffId": "st1",
+   "date": "2026-09-26",
+   "time": "16:30",
+   "status": "booked",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-26"
+  },
+  "a40": {
+   "customerId": "c07",
+   "serviceId": "s2",
+   "staffId": "st1",
+   "date": "2026-09-27",
+   "time": "10:00",
+   "status": "booked",
+   "courseId": "k4",
+   "note": "",
+   "createdAt": "2026-09-27"
+  },
+  "a41": {
+   "customerId": "c13",
+   "serviceId": "s6",
+   "staffId": "st1",
+   "date": "2026-09-27",
+   "time": "14:00",
+   "status": "booked",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-27"
+  },
+  "a42": {
+   "customerId": "c11",
+   "serviceId": "s4",
+   "staffId": "st4",
+   "date": "2026-09-27",
+   "time": "09:00",
+   "status": "booked",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-27"
+  },
+  "a43": {
+   "customerId": "c16",
+   "serviceId": "s5",
+   "staffId": "st2",
+   "date": "2026-09-28",
+   "time": "18:00",
+   "status": "booked",
+   "courseId": "",
+   "note": "",
+   "createdAt": "2026-09-28"
+  },
+  "ga1_s7": {
+   "customerId": "c11",
+   "serviceId": "s7",
+   "staffId": "st1",
+   "date": "2026-09-13",
+   "time": "16:15",
+   "status": "done",
+   "value": 2500000,
+   "commission": 125000,
+   "doneAt": "2026-09-13",
+   "createdAt": "2026-09-13",
+   "source": "pos",
+   "saleId": "gx1"
+  },
+  "ga2_s2": {
+   "customerId": "c03",
+   "serviceId": "s2",
+   "staffId": "st1",
+   "date": "2026-09-14",
+   "time": "15:00",
+   "status": "done",
+   "value": 550000,
+   "commission": 66000,
+   "doneAt": "2026-09-14",
+   "createdAt": "2026-09-14",
+   "source": "pos",
+   "saleId": "gx2"
+  },
+  "ga3_s8": {
+   "customerId": "c03",
+   "serviceId": "s8",
+   "staffId": "st3",
+   "date": "2026-09-15",
+   "time": "10:45",
+   "status": "done",
+   "value": 300000,
+   "commission": 36000,
+   "doneAt": "2026-09-15",
+   "createdAt": "2026-09-15",
+   "source": "pos",
+   "saleId": "gx3"
+  },
+  "ga4_s8": {
+   "customerId": "c16",
+   "serviceId": "s8",
+   "staffId": "st1",
+   "date": "2026-09-15",
+   "time": "17:00",
+   "status": "done",
+   "value": 300000,
+   "commission": 36000,
+   "doneAt": "2026-09-15",
+   "createdAt": "2026-09-15",
+   "source": "pos",
+   "saleId": "gx4"
+  },
+  "ga5_s2": {
+   "customerId": "c08",
+   "serviceId": "s2",
+   "staffId": "st2",
+   "date": "2026-09-15",
+   "time": "10:45",
+   "status": "done",
+   "value": 550000,
+   "commission": 66000,
+   "doneAt": "2026-09-15",
+   "createdAt": "2026-09-15",
+   "source": "pos",
+   "saleId": "gx5"
+  },
+  "ga6_s5": {
+   "customerId": "c09",
+   "serviceId": "s5",
+   "staffId": "st4",
+   "date": "2026-09-16",
+   "time": "09:00",
+   "status": "done",
+   "value": 450000,
+   "commission": 67500,
+   "doneAt": "2026-09-16",
+   "createdAt": "2026-09-16",
+   "source": "pos",
+   "saleId": "gx6"
+  },
+  "ga6_s8": {
+   "customerId": "c09",
+   "serviceId": "s8",
+   "staffId": "st4",
+   "date": "2026-09-16",
+   "time": "09:00",
+   "status": "done",
+   "value": 300000,
+   "commission": 36000,
+   "doneAt": "2026-09-16",
+   "createdAt": "2026-09-16",
+   "source": "pos",
+   "saleId": "gx6"
+  },
+  "ga7_s8": {
+   "customerId": "c05",
+   "serviceId": "s8",
+   "staffId": "st4",
+   "date": "2026-09-16",
+   "time": "15:00",
+   "status": "done",
+   "value": 300000,
+   "commission": 36000,
+   "doneAt": "2026-09-16",
+   "createdAt": "2026-09-16",
+   "source": "pos",
+   "saleId": "gx7"
+  },
+  "ga7_s6": {
+   "customerId": "c05",
+   "serviceId": "s6",
+   "staffId": "st4",
+   "date": "2026-09-16",
+   "time": "15:00",
+   "status": "done",
+   "value": 700000,
+   "commission": 70000,
+   "doneAt": "2026-09-16",
+   "createdAt": "2026-09-16",
+   "source": "pos",
+   "saleId": "gx7"
+  },
+  "ga8_s2": {
+   "customerId": "c10",
+   "serviceId": "s2",
+   "staffId": "st3",
+   "date": "2026-09-16",
+   "time": "10:30",
+   "status": "done",
+   "value": 550000,
+   "commission": 66000,
+   "doneAt": "2026-09-16",
+   "createdAt": "2026-09-16",
+   "source": "pos",
+   "saleId": "gx8"
+  },
+  "ga9_s4": {
+   "customerId": "c16",
+   "serviceId": "s4",
+   "staffId": "st3",
+   "date": "2026-09-16",
+   "time": "09:45",
+   "status": "done",
+   "value": 150000,
+   "commission": 22500,
+   "doneAt": "2026-09-16",
+   "createdAt": "2026-09-16",
+   "source": "pos",
+   "saleId": "gx9"
+  },
+  "ga10_s1": {
+   "customerId": "c07",
+   "serviceId": "s1",
+   "staffId": "st2",
+   "date": "2026-09-17",
+   "time": "19:45",
+   "status": "done",
+   "value": 350000,
+   "commission": 35000,
+   "doneAt": "2026-09-17",
+   "createdAt": "2026-09-17",
+   "source": "pos",
+   "saleId": "gx10"
+  },
+  "ga11_s3": {
+   "customerId": "c08",
+   "serviceId": "s3",
+   "staffId": "st4",
+   "date": "2026-09-18",
+   "time": "15:15",
+   "status": "done",
+   "value": 400000,
+   "commission": 32000,
+   "doneAt": "2026-09-18",
+   "createdAt": "2026-09-18",
+   "source": "pos",
+   "saleId": "gx11"
+  },
+  "ga11_s5": {
+   "customerId": "c08",
+   "serviceId": "s5",
+   "staffId": "st4",
+   "date": "2026-09-18",
+   "time": "15:15",
+   "status": "done",
+   "value": 450000,
+   "commission": 67500,
+   "doneAt": "2026-09-18",
+   "createdAt": "2026-09-18",
+   "source": "pos",
+   "saleId": "gx11"
+  },
+  "ga12_s1": {
+   "customerId": "",
+   "serviceId": "s1",
+   "staffId": "st2",
+   "date": "2026-09-18",
+   "time": "19:30",
+   "status": "done",
+   "value": 350000,
+   "commission": 35000,
+   "doneAt": "2026-09-18",
+   "createdAt": "2026-09-18",
+   "source": "pos",
+   "saleId": "gx12"
+  },
+  "ga13_s5": {
+   "customerId": "c01",
+   "serviceId": "s5",
+   "staffId": "st4",
+   "date": "2026-09-19",
+   "time": "18:15",
+   "status": "done",
+   "value": 450000,
+   "commission": 67500,
+   "doneAt": "2026-09-19",
+   "createdAt": "2026-09-19",
+   "source": "pos",
+   "saleId": "gx13"
+  },
+  "ga14_s6": {
+   "customerId": "",
+   "serviceId": "s6",
+   "staffId": "st2",
+   "date": "2026-09-20",
+   "time": "12:15",
+   "status": "done",
+   "value": 700000,
+   "commission": 70000,
+   "doneAt": "2026-09-20",
+   "createdAt": "2026-09-20",
+   "source": "pos",
+   "saleId": "gx14"
+  },
+  "ga15_s4": {
+   "customerId": "c02",
+   "serviceId": "s4",
+   "staffId": "st1",
+   "date": "2026-09-20",
+   "time": "12:15",
+   "status": "done",
+   "value": 150000,
+   "commission": 22500,
+   "doneAt": "2026-09-20",
+   "createdAt": "2026-09-20",
+   "source": "pos",
+   "saleId": "gx15"
+  },
+  "ga16_s7": {
+   "customerId": "c06",
+   "serviceId": "s7",
+   "staffId": "st4",
+   "date": "2026-09-21",
+   "time": "11:30",
+   "status": "done",
+   "value": 2500000,
+   "commission": 125000,
+   "doneAt": "2026-09-21",
+   "createdAt": "2026-09-21",
+   "source": "pos",
+   "saleId": "gx16"
+  },
+  "ga17_s5": {
+   "customerId": "c15",
+   "serviceId": "s5",
+   "staffId": "st4",
+   "date": "2026-09-21",
+   "time": "17:30",
+   "status": "done",
+   "value": 450000,
+   "commission": 67500,
+   "doneAt": "2026-09-21",
+   "createdAt": "2026-09-21",
+   "source": "pos",
+   "saleId": "gx17"
+  },
+  "ga18_s2": {
+   "customerId": "c07",
+   "serviceId": "s2",
+   "staffId": "st2",
+   "date": "2026-09-22",
+   "time": "09:30",
+   "status": "done",
+   "value": 550000,
+   "commission": 66000,
+   "doneAt": "2026-09-22",
+   "createdAt": "2026-09-22",
+   "source": "pos",
+   "saleId": "gx18"
+  },
+  "ga19_s5": {
+   "customerId": "c12",
+   "serviceId": "s5",
+   "staffId": "st2",
+   "date": "2026-09-23",
+   "time": "13:15",
+   "status": "done",
+   "value": 450000,
+   "commission": 67500,
+   "doneAt": "2026-09-23",
+   "createdAt": "2026-09-23",
+   "source": "pos",
+   "saleId": "gx19"
+  },
+  "ga20_s7": {
+   "customerId": "c04",
+   "serviceId": "s7",
+   "staffId": "st3",
+   "date": "2026-09-23",
+   "time": "17:30",
+   "status": "done",
+   "value": 2500000,
+   "commission": 125000,
+   "doneAt": "2026-09-23",
+   "createdAt": "2026-09-23",
+   "source": "pos",
+   "saleId": "gx20"
+  },
+  "ga21_s3": {
+   "customerId": "c03",
+   "serviceId": "s3",
+   "staffId": "st3",
+   "date": "2026-09-24",
+   "time": "09:00",
+   "status": "done",
+   "value": 400000,
+   "commission": 32000,
+   "doneAt": "2026-09-24",
+   "createdAt": "2026-09-24",
+   "source": "pos",
+   "saleId": "gx21"
+  },
+  "ga22_s2": {
+   "customerId": "c08",
+   "serviceId": "s2",
+   "staffId": "st1",
+   "date": "2026-09-24",
+   "time": "18:00",
+   "status": "done",
+   "value": 550000,
+   "commission": 66000,
+   "doneAt": "2026-09-24",
+   "createdAt": "2026-09-24",
+   "source": "pos",
+   "saleId": "gx22"
+  },
+  "ga23_s4": {
+   "customerId": "c13",
+   "serviceId": "s4",
+   "staffId": "st3",
+   "date": "2026-09-24",
+   "time": "15:30",
+   "status": "done",
+   "value": 150000,
+   "commission": 22500,
+   "doneAt": "2026-09-24",
+   "createdAt": "2026-09-24",
+   "source": "pos",
+   "saleId": "gx23"
+  },
+  "ga23_s8": {
+   "customerId": "c13",
+   "serviceId": "s8",
+   "staffId": "st3",
+   "date": "2026-09-24",
+   "time": "15:30",
+   "status": "done",
+   "value": 300000,
+   "commission": 36000,
+   "doneAt": "2026-09-24",
+   "createdAt": "2026-09-24",
+   "source": "pos",
+   "saleId": "gx23"
+  },
+  "ga24_s5": {
+   "customerId": "c02",
+   "serviceId": "s5",
+   "staffId": "st4",
+   "date": "2026-09-25",
+   "time": "14:00",
+   "status": "done",
+   "value": 450000,
+   "commission": 67500,
+   "doneAt": "2026-09-25",
+   "createdAt": "2026-09-25",
+   "source": "pos",
+   "saleId": "gx24"
+  },
+  "ga25_s1": {
+   "customerId": "c11",
+   "serviceId": "s1",
+   "staffId": "st2",
+   "date": "2026-09-25",
+   "time": "09:45",
+   "status": "done",
+   "value": 315000,
+   "commission": 31500,
+   "doneAt": "2026-09-25",
+   "createdAt": "2026-09-25",
+   "source": "pos",
+   "saleId": "gx25"
+  },
+  "ga25_s2": {
+   "customerId": "c11",
+   "serviceId": "s2",
+   "staffId": "st2",
+   "date": "2026-09-25",
+   "time": "09:45",
+   "status": "done",
+   "value": 495000,
+   "commission": 59400,
+   "doneAt": "2026-09-25",
+   "createdAt": "2026-09-25",
+   "source": "pos",
+   "saleId": "gx25"
+  },
+  "ga26_s7": {
+   "customerId": "c05",
+   "serviceId": "s7",
+   "staffId": "st3",
+   "date": "2026-09-25",
+   "time": "19:45",
+   "status": "done",
+   "value": 2500000,
+   "commission": 125000,
+   "doneAt": "2026-09-25",
+   "createdAt": "2026-09-25",
+   "source": "pos",
+   "saleId": "gx26"
+  },
+  "ga27_s1": {
+   "customerId": "c09",
+   "serviceId": "s1",
+   "staffId": "st2",
+   "date": "2026-09-26",
+   "time": "10:15",
+   "status": "done",
+   "value": 350000,
+   "commission": 35000,
+   "doneAt": "2026-09-26",
+   "createdAt": "2026-09-26",
+   "source": "pos",
+   "saleId": "gx27"
+  },
+  "ga28_s6": {
+   "customerId": "c02",
+   "serviceId": "s6",
+   "staffId": "st3",
+   "date": "2026-09-26",
+   "time": "19:15",
+   "status": "done",
+   "value": 700000,
+   "commission": 70000,
+   "doneAt": "2026-09-26",
+   "createdAt": "2026-09-26",
+   "source": "pos",
+   "saleId": "gx28"
+  }
+ },
+ "ws/spa/courses": {
+  "k1": {
+   "customerId": "c01",
+   "packageId": "p1",
+   "serviceId": "s2",
+   "name": "Trị mụn 10 buổi",
+   "used": 8,
+   "total": 10,
+   "price": 4500000,
+   "startDate": "2026-07-20"
+  },
+  "k2": {
+   "customerId": "c02",
+   "packageId": "p2",
+   "serviceId": "s3",
+   "name": "Triệt lông nách 8 buổi",
+   "used": 3,
+   "total": 8,
+   "price": 2400000,
+   "startDate": "2026-08-10"
+  },
+  "k3": {
+   "customerId": "c05",
+   "packageId": "p3",
+   "serviceId": "s1",
+   "name": "Chăm sóc da 12 buổi",
+   "used": 5,
+   "total": 12,
+   "price": 3500000,
+   "startDate": "2026-08-01"
+  },
+  "k4": {
+   "customerId": "c07",
+   "packageId": "p1",
+   "serviceId": "s2",
+   "name": "Trị mụn 10 buổi",
+   "used": 2,
+   "total": 10,
+   "price": 4500000,
+   "startDate": "2026-09-10"
+  },
+  "k5": {
+   "customerId": "c10",
+   "packageId": "p2",
+   "serviceId": "s3",
+   "name": "Triệt lông nách 8 buổi",
+   "used": 7,
+   "total": 8,
+   "price": 2400000,
+   "startDate": "2026-07-05"
+  },
+  "k6": {
+   "customerId": "c13",
+   "packageId": "p3",
+   "serviceId": "s1",
+   "name": "Chăm sóc da 12 buổi",
+   "used": 11,
+   "total": 12,
+   "price": 3500000,
+   "startDate": "2026-06-20"
+  },
+  "k7": {
+   "customerId": "c15",
+   "packageId": "p1",
+   "serviceId": "s2",
+   "name": "Trị mụn 10 buổi",
+   "used": 0,
+   "total": 10,
+   "price": 4500000,
+   "startDate": "2026-09-25"
+  }
+ },
+ "ws/spa/customers": {
+  "c01": {
+   "name": "Nguyễn Thị Lan",
+   "phone": "0901234567",
+   "birthday": "1992-09-28",
+   "source": "Facebook",
+   "tags": "VIP",
+   "note": "Da dầu, mụn ẩn vùng cằm",
+   "createdAt": "2026-07-18",
+   "xung": "chị"
+  },
+  "c02": {
+   "name": "Trần Minh Anh",
+   "phone": "0912345678",
+   "birthday": "1995-03-12",
+   "source": "Zalo",
+   "tags": "",
+   "note": "",
+   "createdAt": "2026-08-10",
+   "xung": "chị"
+  },
+  "c03": {
+   "name": "Lê Thu Hà",
+   "phone": "0987654321",
+   "birthday": "1990-10-01",
+   "source": "Giới thiệu",
+   "tags": "",
+   "note": "Thích phòng yên tĩnh",
+   "createdAt": "2026-06-02",
+   "xung": "chị"
+  },
+  "c04": {
+   "name": "Phạm Ngọc Trâm",
+   "phone": "0934567890",
+   "birthday": "1988-05-20",
+   "source": "Google Maps",
+   "tags": "",
+   "note": "",
+   "createdAt": "2026-08-15",
+   "xung": "chị"
+  },
+  "c05": {
+   "name": "Hoàng Bảo Ngọc",
+   "phone": "0976543210",
+   "birthday": "1997-12-02",
+   "source": "Facebook",
+   "tags": "",
+   "note": "Da nhạy cảm, tránh AHA",
+   "createdAt": "2026-08-01",
+   "xung": "chị"
+  },
+  "c06": {
+   "name": "Võ Thị Kim Chi",
+   "phone": "0945678901",
+   "birthday": "1985-01-15",
+   "source": "Vãng lai",
+   "tags": "",
+   "note": "",
+   "createdAt": "2026-08-20",
+   "xung": "chị"
+  },
+  "c07": {
+   "name": "Đặng Phương Thảo",
+   "phone": "0923456789",
+   "birthday": "1999-07-07",
+   "source": "TikTok",
+   "tags": "",
+   "note": "",
+   "createdAt": "2026-09-10",
+   "xung": "chị"
+  },
+  "c08": {
+   "name": "Bùi Thanh Tâm",
+   "phone": "0967890123",
+   "birthday": "1993-11-11",
+   "source": "Zalo",
+   "tags": "",
+   "note": "",
+   "createdAt": "2026-07-01",
+   "xung": "chị"
+  },
+  "c09": {
+   "name": "Đỗ Hải Yến",
+   "phone": "0958765432",
+   "birthday": "1996-04-22",
+   "source": "Facebook",
+   "tags": "Hay đi cùng bạn",
+   "note": "",
+   "createdAt": "2026-08-02",
+   "xung": "chị"
+  },
+  "c10": {
+   "name": "Ngô Mỹ Linh",
+   "phone": "0909876543",
+   "birthday": "1991-02-14",
+   "source": "Giới thiệu",
+   "tags": "",
+   "note": "",
+   "createdAt": "2026-07-05",
+   "xung": "chị"
+  },
+  "c11": {
+   "name": "Dương Quỳnh Như",
+   "phone": "0938765123",
+   "birthday": "1994-08-30",
+   "source": "Google Maps",
+   "tags": "VIP",
+   "note": "",
+   "createdAt": "2026-05-12",
+   "xung": "chị"
+  },
+  "c12": {
+   "name": "Lý Hoàng Oanh",
+   "phone": "0916789345",
+   "birthday": "1989-06-18",
+   "source": "Facebook",
+   "tags": "",
+   "note": "",
+   "createdAt": "2026-09-01",
+   "xung": "chị"
+  },
+  "c13": {
+   "name": "Trịnh Gia Hân",
+   "phone": "0981234765",
+   "birthday": "2000-10-09",
+   "source": "Zalo",
+   "tags": "",
+   "note": "",
+   "createdAt": "2026-06-20",
+   "xung": "chị"
+  },
+  "c14": {
+   "name": "Mai Thùy Dung",
+   "phone": "0907654890",
+   "birthday": "1987-03-03",
+   "source": "Vãng lai",
+   "tags": "",
+   "note": "",
+   "createdAt": "2026-09-21",
+   "xung": "chị"
+  },
+  "c15": {
+   "name": "Phan Anh Thư",
+   "phone": "0935678234",
+   "birthday": "2001-09-19",
+   "source": "Facebook",
+   "tags": "Khách mới",
+   "note": "Mụn viêm, da mỏng",
+   "createdAt": "2026-09-25",
+   "xung": "chị"
+  },
+  "c16": {
+   "name": "Hồ Minh Quân",
+   "phone": "0918234567",
+   "birthday": "1990-12-25",
+   "source": "Giới thiệu",
+   "tags": "",
+   "note": "Thích massage lực mạnh",
+   "createdAt": "2026-08-23",
+   "xung": "anh"
+  }
+ },
+ "ws/spa/packages": {
+  "p1": {
+   "name": "Trị mụn 10 buổi",
+   "serviceId": "s2",
+   "sessions": 10,
+   "price": 4500000
+  },
+  "p2": {
+   "name": "Triệt lông nách 8 buổi",
+   "serviceId": "s3",
+   "sessions": 8,
+   "price": 2400000
+  },
+  "p3": {
+   "name": "Chăm sóc da 12 buổi",
+   "serviceId": "s1",
+   "sessions": 12,
+   "price": 3500000
+  }
+ },
+ "ws/spa/payments": {
+  "y1": {
+   "customerId": "c01",
+   "saleId": "x1",
+   "amount": 4500000,
+   "method": "transfer",
+   "date": "2026-07-20",
+   "label": "Trị mụn 10 buổi",
+   "createdAt": 1
+  },
+  "y10": {
+   "customerId": "c08",
+   "saleId": "x10",
+   "amount": 150000,
+   "method": "cash",
+   "date": "2026-09-05",
+   "label": "Gội đầu dưỡng sinh",
+   "createdAt": 10
+  },
+  "y11": {
+   "customerId": "c09",
+   "saleId": "x11",
+   "amount": 300000,
+   "method": "transfer",
+   "date": "2026-09-01",
+   "label": "Nối mi",
+   "createdAt": 11
+  },
+  "y12": {
+   "customerId": "c11",
+   "saleId": "x12",
+   "amount": 700000,
+   "method": "card",
+   "date": "2026-09-19",
+   "label": "Peel da sinh học",
+   "createdAt": 12
+  },
+  "y13": {
+   "customerId": "c12",
+   "saleId": "x13",
+   "amount": 450000,
+   "method": "transfer",
+   "date": "2026-09-20",
+   "label": "Massage body đá nóng",
+   "createdAt": 13
+  },
+  "y14": {
+   "customerId": "c14",
+   "saleId": "x14",
+   "amount": 150000,
+   "method": "cash",
+   "date": "2026-09-21",
+   "label": "Gội đầu dưỡng sinh",
+   "createdAt": 14
+  },
+  "y15": {
+   "customerId": "c03",
+   "saleId": "x15",
+   "amount": 350000,
+   "method": "transfer",
+   "date": "2026-09-22",
+   "label": "Chăm sóc da cơ bản",
+   "createdAt": 15
+  },
+  "y16": {
+   "customerId": "c16",
+   "saleId": "x16",
+   "amount": 250000,
+   "method": "cash",
+   "date": "2026-09-23",
+   "label": "Massage body đá nóng",
+   "createdAt": 16
+  },
+  "y17": {
+   "customerId": "c02",
+   "saleId": "x2",
+   "amount": 300000,
+   "method": "cash",
+   "date": "2026-09-24",
+   "label": "Thu nợ: Triệt lông nách 8 buổi",
+   "createdAt": 17
+  },
+  "y2": {
+   "customerId": "c02",
+   "saleId": "x2",
+   "amount": 1500000,
+   "method": "cash",
+   "date": "2026-08-10",
+   "label": "Triệt lông nách 8 buổi",
+   "createdAt": 2
+  },
+  "y3": {
+   "customerId": "c05",
+   "saleId": "x3",
+   "amount": 3500000,
+   "method": "card",
+   "date": "2026-08-01",
+   "label": "Chăm sóc da 12 buổi",
+   "createdAt": 3
+  },
+  "y4": {
+   "customerId": "c07",
+   "saleId": "x4",
+   "amount": 2000000,
+   "method": "transfer",
+   "date": "2026-09-10",
+   "label": "Trị mụn 10 buổi",
+   "createdAt": 4
+  },
+  "y5": {
+   "customerId": "c10",
+   "saleId": "x5",
+   "amount": 2400000,
+   "method": "cash",
+   "date": "2026-07-05",
+   "label": "Triệt lông nách 8 buổi",
+   "createdAt": 5
+  },
+  "y6": {
+   "customerId": "c13",
+   "saleId": "x6",
+   "amount": 3500000,
+   "method": "transfer",
+   "date": "2026-06-20",
+   "label": "Chăm sóc da 12 buổi",
+   "createdAt": 6
+  },
+  "y7": {
+   "customerId": "c15",
+   "saleId": "x7",
+   "amount": 3000000,
+   "method": "transfer",
+   "date": "2026-09-25",
+   "label": "Trị mụn 10 buổi",
+   "createdAt": 7
+  },
+  "y8": {
+   "customerId": "c04",
+   "saleId": "x8",
+   "amount": 450000,
+   "method": "cash",
+   "date": "2026-08-15",
+   "label": "Massage body đá nóng",
+   "createdAt": 8
+  },
+  "y9": {
+   "customerId": "c06",
+   "saleId": "x9",
+   "amount": 350000,
+   "method": "cash",
+   "date": "2026-08-20",
+   "label": "Chăm sóc da cơ bản",
+   "createdAt": 9
+  },
+  "gy1": {
+   "customerId": "c11",
+   "saleId": "gx1",
+   "amount": 2550000,
+   "method": "ewallet",
+   "date": "2026-09-13",
+   "label": "Phun mày tán bột",
+   "createdAt": 1789316100000
+  },
+  "gy2": {
+   "customerId": "c03",
+   "saleId": "gx2",
+   "amount": 1060000,
+   "method": "transfer",
+   "date": "2026-09-14",
+   "label": "Trị mụn chuyên sâu, Dầu gội thảo mộc 500ml",
+   "createdAt": 1789398000000
+  },
+  "gy3": {
+   "customerId": "c03",
+   "saleId": "gx3",
+   "amount": 510000,
+   "method": "card",
+   "date": "2026-09-15",
+   "label": "Nối mi, Sữa rửa mặt dịu nhẹ",
+   "createdAt": 1789469100000
+  },
+  "gy4": {
+   "customerId": "c16",
+   "saleId": "gx4",
+   "amount": 680000,
+   "method": "card",
+   "date": "2026-09-15",
+   "label": "Nối mi, Dưỡng mi Mi Xinh",
+   "createdAt": 1789491600000
+  },
+  "gy5": {
+   "customerId": "c08",
+   "saleId": "gx5",
+   "amount": 550000,
+   "method": "transfer",
+   "date": "2026-09-15",
+   "label": "Trị mụn chuyên sâu",
+   "createdAt": 1789469100000
+  },
+  "gy6": {
+   "customerId": "c09",
+   "saleId": "gx6",
+   "amount": 750000,
+   "method": "transfer",
+   "date": "2026-09-16",
+   "label": "Massage body đá nóng, Nối mi",
+   "createdAt": 1789549200000
+  },
+  "gy7": {
+   "customerId": "c05",
+   "saleId": "gx7",
+   "amount": 1050000,
+   "method": "card",
+   "date": "2026-09-16",
+   "label": "Nối mi, Peel da sinh học",
+   "createdAt": 1789570800000
+  },
+  "gy8": {
+   "customerId": "c10",
+   "saleId": "gx8",
+   "amount": 830000,
+   "method": "card",
+   "date": "2026-09-16",
+   "label": "Trị mụn chuyên sâu, Dưỡng mi Mi Xinh",
+   "createdAt": 1789554600000
+  },
+  "gy9": {
+   "customerId": "c16",
+   "saleId": "gx9",
+   "amount": 200000,
+   "method": "cash",
+   "date": "2026-09-16",
+   "label": "Gội đầu dưỡng sinh",
+   "createdAt": 1789551900000
+  },
+  "gy10": {
+   "customerId": "c07",
+   "saleId": "gx10",
+   "amount": 350000,
+   "method": "transfer",
+   "date": "2026-09-17",
+   "label": "Chăm sóc da cơ bản",
+   "createdAt": 1789674300000
+  },
+  "gy11": {
+   "customerId": "c08",
+   "saleId": "gx11",
+   "amount": 1240000,
+   "method": "card",
+   "date": "2026-09-18",
+   "label": "Triệt lông nách, Massage body đá nóng, Mặt nạ collagen (hộp 10)",
+   "createdAt": 1789744500000
+  },
+  "gy12": {
+   "customerId": "",
+   "saleId": "gx12",
+   "amount": 350000,
+   "method": "transfer",
+   "date": "2026-09-18",
+   "label": "Chăm sóc da cơ bản",
+   "createdAt": 1789759800000
+  },
+  "gy13": {
+   "customerId": "c01",
+   "saleId": "gx13",
+   "amount": 500000,
+   "method": "ewallet",
+   "date": "2026-09-19",
+   "label": "Massage body đá nóng",
+   "createdAt": 1789841700000
+  },
+  "gy14": {
+   "customerId": "",
+   "saleId": "gx14",
+   "amount": 700000,
+   "method": "cash",
+   "date": "2026-09-20",
+   "label": "Peel da sinh học",
+   "createdAt": 1789906500000
+  },
+  "gy15": {
+   "customerId": "c02",
+   "saleId": "gx15",
+   "amount": 150000,
+   "method": "ewallet",
+   "date": "2026-09-20",
+   "label": "Gội đầu dưỡng sinh",
+   "createdAt": 1789906500000
+  },
+  "gy16": {
+   "customerId": "c06",
+   "saleId": "gx16",
+   "amount": 2550000,
+   "method": "transfer",
+   "date": "2026-09-21",
+   "label": "Phun mày tán bột",
+   "createdAt": 1789990200000
+  },
+  "gy17": {
+   "customerId": "c15",
+   "saleId": "gx17",
+   "amount": 500000,
+   "method": "ewallet",
+   "date": "2026-09-21",
+   "label": "Massage body đá nóng",
+   "createdAt": 1790011800000
+  },
+  "gy18": {
+   "customerId": "c07",
+   "saleId": "gx18",
+   "amount": 600000,
+   "method": "transfer",
+   "date": "2026-09-22",
+   "label": "Trị mụn chuyên sâu",
+   "createdAt": 1790069400000
+  },
+  "gy19": {
+   "customerId": "c12",
+   "saleId": "gx19",
+   "amount": 450000,
+   "method": "ewallet",
+   "date": "2026-09-23",
+   "label": "Massage body đá nóng",
+   "createdAt": 1790169300000
+  },
+  "gy20": {
+   "customerId": "c04",
+   "saleId": "gx20",
+   "amount": 2920000,
+   "method": "cash",
+   "date": "2026-09-23",
+   "label": "Phun mày tán bột, Serum Vitamin C 30ml",
+   "createdAt": 1790184600000
+  },
+  "gy21": {
+   "customerId": "c03",
+   "saleId": "gx21",
+   "amount": 650000,
+   "method": "cash",
+   "date": "2026-09-24",
+   "label": "Triệt lông nách, Toner hoa hồng 200ml",
+   "createdAt": 1790240400000
+  },
+  "gy22": {
+   "customerId": "c08",
+   "saleId": "gx22",
+   "amount": 1110000,
+   "method": "card",
+   "date": "2026-09-24",
+   "label": "Trị mụn chuyên sâu, Dưỡng mi Mi Xinh",
+   "createdAt": 1790272800000
+  },
+  "gy23": {
+   "customerId": "c13",
+   "saleId": "gx23",
+   "amount": 1050000,
+   "method": "transfer",
+   "date": "2026-09-24",
+   "label": "Gội đầu dưỡng sinh, Nối mi, Toner hoa hồng 200ml",
+   "createdAt": 1790263800000
+  },
+  "gy24": {
+   "customerId": "c02",
+   "saleId": "gx24",
+   "amount": 450000,
+   "method": "card",
+   "date": "2026-09-25",
+   "label": "Massage body đá nóng",
+   "createdAt": 1790344800000
+  },
+  "gy25": {
+   "customerId": "c11",
+   "saleId": "gx25",
+   "amount": 1135000,
+   "method": "transfer",
+   "date": "2026-09-25",
+   "label": "Chăm sóc da cơ bản, Trị mụn chuyên sâu, Toner hoa hồng 200ml",
+   "createdAt": 1790329500000
+  },
+  "gy26": {
+   "customerId": "c05",
+   "saleId": "gx26",
+   "amount": 2740000,
+   "method": "cash",
+   "date": "2026-09-25",
+   "label": "Phun mày tán bột, Muối tắm thảo dược",
+   "createdAt": 1790365500000
+  },
+  "gy27": {
+   "customerId": "c09",
+   "saleId": "gx27",
+   "amount": 630000,
+   "method": "ewallet",
+   "date": "2026-09-26",
+   "label": "Chăm sóc da cơ bản, Dưỡng mi Mi Xinh",
+   "createdAt": 1790417700000
+  },
+  "gy28": {
+   "customerId": "c02",
+   "saleId": "gx28",
+   "amount": 954000,
+   "method": "transfer",
+   "date": "2026-09-26",
+   "label": "Peel da sinh học, Serum Vitamin C 30ml",
+   "createdAt": 1790450100000
+  }
+ },
+ "ws/spa/sales": {
+  "x1": {
+   "customerId": "c01",
+   "date": "2026-07-20",
+   "label": "Trị mụn 10 buổi",
+   "total": 4500000,
+   "paid": 4500000,
+   "kind": "course",
+   "courseId": "k1",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "x10": {
+   "customerId": "c08",
+   "date": "2026-09-05",
+   "label": "Gội đầu dưỡng sinh",
+   "total": 150000,
+   "paid": 150000,
+   "kind": "service",
+   "courseId": "",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "x11": {
+   "customerId": "c09",
+   "date": "2026-09-01",
+   "label": "Nối mi",
+   "total": 300000,
+   "paid": 300000,
+   "kind": "service",
+   "courseId": "",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "x12": {
+   "customerId": "c11",
+   "date": "2026-09-19",
+   "label": "Peel da sinh học",
+   "total": 700000,
+   "paid": 700000,
+   "kind": "service",
+   "courseId": "",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "x13": {
+   "customerId": "c12",
+   "date": "2026-09-20",
+   "label": "Massage body đá nóng",
+   "total": 450000,
+   "paid": 450000,
+   "kind": "service",
+   "courseId": "",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "x14": {
+   "customerId": "c14",
+   "date": "2026-09-21",
+   "label": "Gội đầu dưỡng sinh",
+   "total": 150000,
+   "paid": 150000,
+   "kind": "service",
+   "courseId": "",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "x15": {
+   "customerId": "c03",
+   "date": "2026-09-22",
+   "label": "Chăm sóc da cơ bản",
+   "total": 350000,
+   "paid": 350000,
+   "kind": "service",
+   "courseId": "",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "x16": {
+   "customerId": "c16",
+   "date": "2026-09-23",
+   "label": "Massage body đá nóng",
+   "total": 450000,
+   "paid": 250000,
+   "kind": "service",
+   "courseId": "",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "x2": {
+   "customerId": "c02",
+   "date": "2026-08-10",
+   "label": "Triệt lông nách 8 buổi",
+   "total": 2400000,
+   "paid": 1800000,
+   "kind": "course",
+   "courseId": "k2",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "x3": {
+   "customerId": "c05",
+   "date": "2026-08-01",
+   "label": "Chăm sóc da 12 buổi",
+   "total": 3500000,
+   "paid": 3500000,
+   "kind": "course",
+   "courseId": "k3",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "x4": {
+   "customerId": "c07",
+   "date": "2026-09-10",
+   "label": "Trị mụn 10 buổi",
+   "total": 4500000,
+   "paid": 2000000,
+   "kind": "course",
+   "courseId": "k4",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "x5": {
+   "customerId": "c10",
+   "date": "2026-07-05",
+   "label": "Triệt lông nách 8 buổi",
+   "total": 2400000,
+   "paid": 2400000,
+   "kind": "course",
+   "courseId": "k5",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "x6": {
+   "customerId": "c13",
+   "date": "2026-06-20",
+   "label": "Chăm sóc da 12 buổi",
+   "total": 3500000,
+   "paid": 3500000,
+   "kind": "course",
+   "courseId": "k6",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "x7": {
+   "customerId": "c15",
+   "date": "2026-09-25",
+   "label": "Trị mụn 10 buổi",
+   "total": 4500000,
+   "paid": 3000000,
+   "kind": "course",
+   "courseId": "k7",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "x8": {
+   "customerId": "c04",
+   "date": "2026-08-15",
+   "label": "Massage body đá nóng",
+   "total": 450000,
+   "paid": 450000,
+   "kind": "service",
+   "courseId": "",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "x9": {
+   "customerId": "c06",
+   "date": "2026-08-20",
+   "label": "Chăm sóc da cơ bản",
+   "total": 350000,
+   "paid": 350000,
+   "kind": "service",
+   "courseId": "",
+   "staffId": "",
+   "createdAt": 0
+  },
+  "gx1": {
+   "customerId": "c11",
+   "date": "2026-09-13",
+   "label": "Phun mày tán bột",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s7",
+     "name": "Phun mày tán bột",
+     "qty": 1,
+     "price": 2500000
+    }
+   ],
+   "subtotal": 2500000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 50000,
+   "total": 2550000,
+   "paid": 2550000,
+   "method": "ewallet",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st1",
+   "createdAt": 1789316100000,
+   "invoiceNo": "HĐ260913-01",
+   "note": ""
+  },
+  "gx2": {
+   "customerId": "c03",
+   "date": "2026-09-14",
+   "label": "Trị mụn chuyên sâu, Dầu gội thảo mộc 500ml",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s2",
+     "name": "Trị mụn chuyên sâu",
+     "qty": 1,
+     "price": 550000
+    },
+    {
+     "type": "prod",
+     "refId": "pr8",
+     "name": "Dầu gội thảo mộc 500ml",
+     "qty": 2,
+     "price": 230000
+    }
+   ],
+   "subtotal": 1010000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 50000,
+   "total": 1060000,
+   "paid": 1060000,
+   "method": "transfer",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st1",
+   "createdAt": 1789398000000,
+   "invoiceNo": "HĐ260914-01",
+   "note": ""
+  },
+  "gx3": {
+   "customerId": "c03",
+   "date": "2026-09-15",
+   "label": "Nối mi, Sữa rửa mặt dịu nhẹ",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s8",
+     "name": "Nối mi",
+     "qty": 1,
+     "price": 300000
+    },
+    {
+     "type": "prod",
+     "refId": "pr5",
+     "name": "Sữa rửa mặt dịu nhẹ",
+     "qty": 1,
+     "price": 210000
+    }
+   ],
+   "subtotal": 510000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 510000,
+   "paid": 510000,
+   "method": "card",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st3",
+   "createdAt": 1789469100000,
+   "invoiceNo": "HĐ260915-01",
+   "note": ""
+  },
+  "gx4": {
+   "customerId": "c16",
+   "date": "2026-09-15",
+   "label": "Nối mi, Dưỡng mi Mi Xinh",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s8",
+     "name": "Nối mi",
+     "qty": 1,
+     "price": 300000
+    },
+    {
+     "type": "prod",
+     "refId": "pr9",
+     "name": "Dưỡng mi Mi Xinh",
+     "qty": 1,
+     "price": 280000
+    }
+   ],
+   "subtotal": 580000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 100000,
+   "total": 680000,
+   "paid": 680000,
+   "method": "card",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st1",
+   "createdAt": 1789491600000,
+   "invoiceNo": "HĐ260915-02",
+   "note": ""
+  },
+  "gx5": {
+   "customerId": "c08",
+   "date": "2026-09-15",
+   "label": "Trị mụn chuyên sâu",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s2",
+     "name": "Trị mụn chuyên sâu",
+     "qty": 1,
+     "price": 550000
+    }
+   ],
+   "subtotal": 550000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 550000,
+   "paid": 550000,
+   "method": "transfer",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st2",
+   "createdAt": 1789469100000,
+   "invoiceNo": "HĐ260915-03",
+   "note": ""
+  },
+  "gx6": {
+   "customerId": "c09",
+   "date": "2026-09-16",
+   "label": "Massage body đá nóng, Nối mi",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s5",
+     "name": "Massage body đá nóng",
+     "qty": 1,
+     "price": 450000
+    },
+    {
+     "type": "svc",
+     "refId": "s8",
+     "name": "Nối mi",
+     "qty": 1,
+     "price": 300000
+    }
+   ],
+   "subtotal": 750000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 750000,
+   "paid": 750000,
+   "method": "transfer",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st4",
+   "createdAt": 1789549200000,
+   "invoiceNo": "HĐ260916-01",
+   "note": ""
+  },
+  "gx7": {
+   "customerId": "c05",
+   "date": "2026-09-16",
+   "label": "Nối mi, Peel da sinh học",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s8",
+     "name": "Nối mi",
+     "qty": 1,
+     "price": 300000
+    },
+    {
+     "type": "svc",
+     "refId": "s6",
+     "name": "Peel da sinh học",
+     "qty": 1,
+     "price": 700000
+    }
+   ],
+   "subtotal": 1000000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 50000,
+   "total": 1050000,
+   "paid": 1050000,
+   "method": "card",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st4",
+   "createdAt": 1789570800000,
+   "invoiceNo": "HĐ260916-02",
+   "note": ""
+  },
+  "gx8": {
+   "customerId": "c10",
+   "date": "2026-09-16",
+   "label": "Trị mụn chuyên sâu, Dưỡng mi Mi Xinh",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s2",
+     "name": "Trị mụn chuyên sâu",
+     "qty": 1,
+     "price": 550000
+    },
+    {
+     "type": "prod",
+     "refId": "pr9",
+     "name": "Dưỡng mi Mi Xinh",
+     "qty": 1,
+     "price": 280000
+    }
+   ],
+   "subtotal": 830000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 830000,
+   "paid": 830000,
+   "method": "card",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st3",
+   "createdAt": 1789554600000,
+   "invoiceNo": "HĐ260916-03",
+   "note": ""
+  },
+  "gx9": {
+   "customerId": "c16",
+   "date": "2026-09-16",
+   "label": "Gội đầu dưỡng sinh",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s4",
+     "name": "Gội đầu dưỡng sinh",
+     "qty": 1,
+     "price": 150000
+    }
+   ],
+   "subtotal": 150000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 50000,
+   "total": 200000,
+   "paid": 200000,
+   "method": "cash",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st3",
+   "createdAt": 1789551900000,
+   "invoiceNo": "HĐ260916-04",
+   "note": ""
+  },
+  "gx10": {
+   "customerId": "c07",
+   "date": "2026-09-17",
+   "label": "Chăm sóc da cơ bản",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s1",
+     "name": "Chăm sóc da cơ bản",
+     "qty": 1,
+     "price": 350000
+    }
+   ],
+   "subtotal": 350000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 350000,
+   "paid": 350000,
+   "method": "transfer",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st2",
+   "createdAt": 1789674300000,
+   "invoiceNo": "HĐ260917-01",
+   "note": ""
+  },
+  "gx11": {
+   "customerId": "c08",
+   "date": "2026-09-18",
+   "label": "Triệt lông nách, Massage body đá nóng, Mặt nạ collagen (hộp 10)",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s3",
+     "name": "Triệt lông nách",
+     "qty": 1,
+     "price": 400000
+    },
+    {
+     "type": "svc",
+     "refId": "s5",
+     "name": "Massage body đá nóng",
+     "qty": 1,
+     "price": 450000
+    },
+    {
+     "type": "prod",
+     "refId": "pr3",
+     "name": "Mặt nạ collagen (hộp 10)",
+     "qty": 1,
+     "price": 290000
+    }
+   ],
+   "subtotal": 1140000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 100000,
+   "total": 1240000,
+   "paid": 1240000,
+   "method": "card",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st4",
+   "createdAt": 1789744500000,
+   "invoiceNo": "HĐ260918-01",
+   "note": ""
+  },
+  "gx12": {
+   "customerId": "",
+   "date": "2026-09-18",
+   "label": "Chăm sóc da cơ bản",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s1",
+     "name": "Chăm sóc da cơ bản",
+     "qty": 1,
+     "price": 350000
+    }
+   ],
+   "subtotal": 350000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 350000,
+   "paid": 350000,
+   "method": "transfer",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st2",
+   "createdAt": 1789759800000,
+   "invoiceNo": "HĐ260918-02",
+   "note": ""
+  },
+  "gx13": {
+   "customerId": "c01",
+   "date": "2026-09-19",
+   "label": "Massage body đá nóng",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s5",
+     "name": "Massage body đá nóng",
+     "qty": 1,
+     "price": 450000
+    }
+   ],
+   "subtotal": 450000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 50000,
+   "total": 500000,
+   "paid": 500000,
+   "method": "ewallet",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st4",
+   "createdAt": 1789841700000,
+   "invoiceNo": "HĐ260919-01",
+   "note": ""
+  },
+  "gx14": {
+   "customerId": "",
+   "date": "2026-09-20",
+   "label": "Peel da sinh học",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s6",
+     "name": "Peel da sinh học",
+     "qty": 1,
+     "price": 700000
+    }
+   ],
+   "subtotal": 700000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 700000,
+   "paid": 700000,
+   "method": "cash",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st2",
+   "createdAt": 1789906500000,
+   "invoiceNo": "HĐ260920-01",
+   "note": ""
+  },
+  "gx15": {
+   "customerId": "c02",
+   "date": "2026-09-20",
+   "label": "Gội đầu dưỡng sinh",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s4",
+     "name": "Gội đầu dưỡng sinh",
+     "qty": 1,
+     "price": 150000
+    }
+   ],
+   "subtotal": 150000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 150000,
+   "paid": 150000,
+   "method": "ewallet",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st1",
+   "createdAt": 1789906500000,
+   "invoiceNo": "HĐ260920-02",
+   "note": ""
+  },
+  "gx16": {
+   "customerId": "c06",
+   "date": "2026-09-21",
+   "label": "Phun mày tán bột",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s7",
+     "name": "Phun mày tán bột",
+     "qty": 1,
+     "price": 2500000
+    }
+   ],
+   "subtotal": 2500000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 50000,
+   "total": 2550000,
+   "paid": 2550000,
+   "method": "transfer",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st4",
+   "createdAt": 1789990200000,
+   "invoiceNo": "HĐ260921-01",
+   "note": ""
+  },
+  "gx17": {
+   "customerId": "c15",
+   "date": "2026-09-21",
+   "label": "Massage body đá nóng",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s5",
+     "name": "Massage body đá nóng",
+     "qty": 1,
+     "price": 450000
+    }
+   ],
+   "subtotal": 450000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 50000,
+   "total": 500000,
+   "paid": 500000,
+   "method": "ewallet",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st4",
+   "createdAt": 1790011800000,
+   "invoiceNo": "HĐ260921-02",
+   "note": ""
+  },
+  "gx18": {
+   "customerId": "c07",
+   "date": "2026-09-22",
+   "label": "Trị mụn chuyên sâu",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s2",
+     "name": "Trị mụn chuyên sâu",
+     "qty": 1,
+     "price": 550000
+    }
+   ],
+   "subtotal": 550000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 50000,
+   "total": 600000,
+   "paid": 600000,
+   "method": "transfer",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st2",
+   "createdAt": 1790069400000,
+   "invoiceNo": "HĐ260922-01",
+   "note": ""
+  },
+  "gx19": {
+   "customerId": "c12",
+   "date": "2026-09-23",
+   "label": "Massage body đá nóng",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s5",
+     "name": "Massage body đá nóng",
+     "qty": 1,
+     "price": 450000
+    }
+   ],
+   "subtotal": 450000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 450000,
+   "paid": 450000,
+   "method": "ewallet",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st2",
+   "createdAt": 1790169300000,
+   "invoiceNo": "HĐ260923-01",
+   "note": ""
+  },
+  "gx20": {
+   "customerId": "c04",
+   "date": "2026-09-23",
+   "label": "Phun mày tán bột, Serum Vitamin C 30ml",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s7",
+     "name": "Phun mày tán bột",
+     "qty": 1,
+     "price": 2500000
+    },
+    {
+     "type": "prod",
+     "refId": "pr1",
+     "name": "Serum Vitamin C 30ml",
+     "qty": 1,
+     "price": 420000
+    }
+   ],
+   "subtotal": 2920000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 2920000,
+   "paid": 2920000,
+   "method": "cash",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st3",
+   "createdAt": 1790184600000,
+   "invoiceNo": "HĐ260923-02",
+   "note": ""
+  },
+  "gx21": {
+   "customerId": "c03",
+   "date": "2026-09-24",
+   "label": "Triệt lông nách, Toner hoa hồng 200ml",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s3",
+     "name": "Triệt lông nách",
+     "qty": 1,
+     "price": 400000
+    },
+    {
+     "type": "prod",
+     "refId": "pr2",
+     "name": "Toner hoa hồng 200ml",
+     "qty": 1,
+     "price": 250000
+    }
+   ],
+   "subtotal": 650000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 650000,
+   "paid": 650000,
+   "method": "cash",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st3",
+   "createdAt": 1790240400000,
+   "invoiceNo": "HĐ260924-01",
+   "note": ""
+  },
+  "gx22": {
+   "customerId": "c08",
+   "date": "2026-09-24",
+   "label": "Trị mụn chuyên sâu, Dưỡng mi Mi Xinh",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s2",
+     "name": "Trị mụn chuyên sâu",
+     "qty": 1,
+     "price": 550000
+    },
+    {
+     "type": "prod",
+     "refId": "pr9",
+     "name": "Dưỡng mi Mi Xinh",
+     "qty": 2,
+     "price": 280000
+    }
+   ],
+   "subtotal": 1110000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 1110000,
+   "paid": 1110000,
+   "method": "card",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st1",
+   "createdAt": 1790272800000,
+   "invoiceNo": "HĐ260924-02",
+   "note": ""
+  },
+  "gx23": {
+   "customerId": "c13",
+   "date": "2026-09-24",
+   "label": "Gội đầu dưỡng sinh, Nối mi, Toner hoa hồng 200ml",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s4",
+     "name": "Gội đầu dưỡng sinh",
+     "qty": 1,
+     "price": 150000
+    },
+    {
+     "type": "svc",
+     "refId": "s8",
+     "name": "Nối mi",
+     "qty": 1,
+     "price": 300000
+    },
+    {
+     "type": "prod",
+     "refId": "pr2",
+     "name": "Toner hoa hồng 200ml",
+     "qty": 2,
+     "price": 250000
+    }
+   ],
+   "subtotal": 950000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 100000,
+   "total": 1050000,
+   "paid": 1050000,
+   "method": "transfer",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st3",
+   "createdAt": 1790263800000,
+   "invoiceNo": "HĐ260924-03",
+   "note": ""
+  },
+  "gx24": {
+   "customerId": "c02",
+   "date": "2026-09-25",
+   "label": "Massage body đá nóng",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s5",
+     "name": "Massage body đá nóng",
+     "qty": 1,
+     "price": 450000
+    }
+   ],
+   "subtotal": 450000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 450000,
+   "paid": 450000,
+   "method": "card",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st4",
+   "createdAt": 1790344800000,
+   "invoiceNo": "HĐ260925-01",
+   "note": ""
+  },
+  "gx25": {
+   "customerId": "c11",
+   "date": "2026-09-25",
+   "label": "Chăm sóc da cơ bản, Trị mụn chuyên sâu, Toner hoa hồng 200ml",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s1",
+     "name": "Chăm sóc da cơ bản",
+     "qty": 1,
+     "price": 350000
+    },
+    {
+     "type": "svc",
+     "refId": "s2",
+     "name": "Trị mụn chuyên sâu",
+     "qty": 1,
+     "price": 550000
+    },
+    {
+     "type": "prod",
+     "refId": "pr2",
+     "name": "Toner hoa hồng 200ml",
+     "qty": 1,
+     "price": 250000
+    }
+   ],
+   "subtotal": 1150000,
+   "discPct": 10,
+   "discount": 115000,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 100000,
+   "total": 1135000,
+   "paid": 1135000,
+   "method": "transfer",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st2",
+   "createdAt": 1790329500000,
+   "invoiceNo": "HĐ260925-02",
+   "note": ""
+  },
+  "gx26": {
+   "customerId": "c05",
+   "date": "2026-09-25",
+   "label": "Phun mày tán bột, Muối tắm thảo dược",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s7",
+     "name": "Phun mày tán bột",
+     "qty": 1,
+     "price": 2500000
+    },
+    {
+     "type": "prod",
+     "refId": "pr7",
+     "name": "Muối tắm thảo dược",
+     "qty": 2,
+     "price": 120000
+    }
+   ],
+   "subtotal": 2740000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 2740000,
+   "paid": 2740000,
+   "method": "cash",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st3",
+   "createdAt": 1790365500000,
+   "invoiceNo": "HĐ260925-03",
+   "note": ""
+  },
+  "gx27": {
+   "customerId": "c09",
+   "date": "2026-09-26",
+   "label": "Chăm sóc da cơ bản, Dưỡng mi Mi Xinh",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s1",
+     "name": "Chăm sóc da cơ bản",
+     "qty": 1,
+     "price": 350000
+    },
+    {
+     "type": "prod",
+     "refId": "pr9",
+     "name": "Dưỡng mi Mi Xinh",
+     "qty": 1,
+     "price": 280000
+    }
+   ],
+   "subtotal": 630000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 0,
+   "total": 630000,
+   "paid": 630000,
+   "method": "ewallet",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st2",
+   "createdAt": 1790417700000,
+   "invoiceNo": "HĐ260926-01",
+   "note": ""
+  },
+  "gx28": {
+   "customerId": "c02",
+   "date": "2026-09-26",
+   "label": "Peel da sinh học, Serum Vitamin C 30ml",
+   "items": [
+    {
+     "type": "svc",
+     "refId": "s6",
+     "name": "Peel da sinh học",
+     "qty": 1,
+     "price": 700000
+    },
+    {
+     "type": "prod",
+     "refId": "pr1",
+     "name": "Serum Vitamin C 30ml",
+     "qty": 2,
+     "price": 420000
+    }
+   ],
+   "subtotal": 1540000,
+   "discPct": 0,
+   "discount": 0,
+   "promoCode": "",
+   "taxPct": 0,
+   "tax": 0,
+   "tip": 50000,
+   "total": 1590000,
+   "paid": 954000,
+   "method": "transfer",
+   "kind": "pos",
+   "courseId": "",
+   "appointmentId": "",
+   "staffId": "st3",
+   "createdAt": 1790450100000,
+   "invoiceNo": "HĐ260926-02",
+   "note": ""
+  }
+ },
+ "ws/spa/services": {
+  "s1": {
+   "name": "Chăm sóc da cơ bản",
+   "price": 350000,
+   "duration": 60,
+   "commissionPct": 10,
+   "recallDays": 30,
+   "category": "Chăm sóc da",
+   "active": true
+  },
+  "s2": {
+   "name": "Trị mụn chuyên sâu",
+   "price": 550000,
+   "duration": 75,
+   "commissionPct": 12,
+   "recallDays": 21,
+   "category": "Chăm sóc da",
+   "active": true
+  },
+  "s3": {
+   "name": "Triệt lông nách",
+   "price": 400000,
+   "duration": 30,
+   "commissionPct": 8,
+   "recallDays": 30,
+   "category": "Triệt lông",
+   "active": true
+  },
+  "s4": {
+   "name": "Gội đầu dưỡng sinh",
+   "price": 150000,
+   "duration": 45,
+   "commissionPct": 15,
+   "recallDays": 14,
+   "category": "Gội & dưỡng sinh",
+   "active": true
+  },
+  "s5": {
+   "name": "Massage body đá nóng",
+   "price": 450000,
+   "duration": 90,
+   "commissionPct": 15,
+   "recallDays": 30,
+   "category": "Body & massage",
+   "active": true
+  },
+  "s6": {
+   "name": "Peel da sinh học",
+   "price": 700000,
+   "duration": 60,
+   "commissionPct": 10,
+   "recallDays": 45,
+   "category": "Chăm sóc da",
+   "active": true
+  },
+  "s7": {
+   "name": "Phun mày tán bột",
+   "price": 2500000,
+   "duration": 120,
+   "commissionPct": 5,
+   "recallDays": 180,
+   "category": "Mi & mày",
+   "active": true
+  },
+  "s8": {
+   "name": "Nối mi",
+   "price": 300000,
+   "duration": 60,
+   "commissionPct": 12,
+   "recallDays": 21,
+   "category": "Mi & mày",
+   "active": true
+  }
+ },
+ "ws/spa/roster": {
+  "st1_2026-09": {
+   "staffId": "st1",
+   "month": "2026-09",
+   "days": {
+    "01": "off",
+    "02": "F",
+    "03": "F",
+    "04": "F",
+    "05": "F",
+    "06": "F",
+    "07": "F",
+    "08": "off",
+    "09": "F",
+    "10": "F",
+    "11": "F",
+    "12": "F",
+    "13": "F",
+    "14": "F",
+    "15": "off",
+    "16": "F",
+    "17": "F",
+    "18": "F",
+    "19": "F",
+    "20": "F",
+    "21": "F",
+    "22": "off",
+    "23": "F",
+    "24": "F",
+    "25": "F",
+    "26": "F",
+    "27": "F",
+    "28": "F",
+    "29": "off",
+    "30": "F"
+   }
+  },
+  "st1_2026-10": {
+   "staffId": "st1",
+   "month": "2026-10",
+   "days": {
+    "01": "F",
+    "02": "F",
+    "03": "F",
+    "04": "F",
+    "05": "F",
+    "06": "off",
+    "07": "F",
+    "08": "F",
+    "09": "F",
+    "10": "F",
+    "11": "F"
+   }
+  },
+  "st2_2026-09": {
+   "staffId": "st2",
+   "month": "2026-09",
+   "days": {
+    "01": "F",
+    "02": "off",
+    "03": "F",
+    "04": "F",
+    "05": "F",
+    "06": "F",
+    "07": "F",
+    "08": "F",
+    "09": "off",
+    "10": "F",
+    "11": "F",
+    "12": "F",
+    "13": "F",
+    "14": "F",
+    "15": "F",
+    "16": "off",
+    "17": "F",
+    "18": "F",
+    "19": "F",
+    "20": "F",
+    "21": "F",
+    "22": "F",
+    "23": "off",
+    "24": "F",
+    "25": "F",
+    "26": "F",
+    "27": "F",
+    "28": "C",
+    "29": "F",
+    "30": "off"
+   }
+  },
+  "st2_2026-10": {
+   "staffId": "st2",
+   "month": "2026-10",
+   "days": {
+    "01": "F",
+    "02": "F",
+    "03": "F",
+    "04": "F",
+    "05": "F",
+    "06": "F",
+    "07": "off",
+    "08": "F",
+    "09": "F",
+    "10": "F",
+    "11": "F"
+   }
+  },
+  "st3_2026-09": {
+   "staffId": "st3",
+   "month": "2026-09",
+   "days": {
+    "01": "F",
+    "02": "F",
+    "03": "off",
+    "04": "F",
+    "05": "F",
+    "06": "F",
+    "07": "F",
+    "08": "F",
+    "09": "F",
+    "10": "off",
+    "11": "F",
+    "12": "F",
+    "13": "F",
+    "14": "F",
+    "15": "F",
+    "16": "F",
+    "17": "off",
+    "18": "F",
+    "19": "F",
+    "20": "F",
+    "21": "F",
+    "22": "F",
+    "23": "F",
+    "24": "off",
+    "25": "F",
+    "26": "F",
+    "27": "F",
+    "28": "S",
+    "29": "S",
+    "30": "S"
+   }
+  },
+  "st3_2026-10": {
+   "staffId": "st3",
+   "month": "2026-10",
+   "days": {
+    "01": "off",
+    "02": "S",
+    "03": "F",
+    "04": "F",
+    "05": "S",
+    "06": "S",
+    "07": "S",
+    "08": "off",
+    "09": "S",
+    "10": "F",
+    "11": "F"
+   }
+  },
+  "st4_2026-09": {
+   "staffId": "st4",
+   "month": "2026-09",
+   "days": {
+    "01": "F",
+    "02": "F",
+    "03": "F",
+    "04": "F",
+    "05": "F",
+    "06": "F",
+    "07": "off",
+    "08": "F",
+    "09": "F",
+    "10": "F",
+    "11": "F",
+    "12": "F",
+    "13": "F",
+    "14": "off",
+    "15": "F",
+    "16": "F",
+    "17": "F",
+    "18": "F",
+    "19": "F",
+    "20": "F",
+    "21": "off",
+    "22": "F",
+    "23": "F",
+    "24": "F",
+    "25": "off",
+    "26": "F",
+    "27": "F",
+    "28": "off",
+    "29": "F",
+    "30": "F"
+   }
+  },
+  "st4_2026-10": {
+   "staffId": "st4",
+   "month": "2026-10",
+   "days": {
+    "01": "F",
+    "02": "F",
+    "03": "C",
+    "04": "C",
+    "05": "off",
+    "06": "F",
+    "07": "F",
+    "08": "F",
+    "09": "F",
+    "10": "C",
+    "11": "C"
+   }
+  }
+ },
+ "ws/nhakhoa/roster": {
+  "b1_2026-09": {
+   "staffId": "b1",
+   "month": "2026-09",
+   "days": {
+    "01": "F",
+    "02": "F",
+    "03": "F",
+    "04": "F",
+    "05": "F",
+    "06": "off",
+    "07": "F",
+    "08": "F",
+    "09": "F",
+    "10": "F",
+    "11": "F",
+    "12": "F",
+    "13": "off",
+    "14": "F",
+    "15": "F",
+    "16": "F",
+    "17": "F",
+    "18": "F",
+    "19": "F",
+    "20": "off",
+    "21": "F",
+    "22": "F",
+    "23": "F",
+    "24": "F",
+    "25": "F",
+    "26": "F",
+    "27": "off",
+    "28": "F",
+    "29": "F",
+    "30": "F"
+   }
+  },
+  "b1_2026-10": {
+   "staffId": "b1",
+   "month": "2026-10",
+   "days": {
+    "01": "F",
+    "02": "F",
+    "03": "F",
+    "04": "off",
+    "05": "F",
+    "06": "F",
+    "07": "F",
+    "08": "F",
+    "09": "F",
+    "10": "F",
+    "11": "off"
+   }
+  },
+  "b2_2026-09": {
+   "staffId": "b2",
+   "month": "2026-09",
+   "days": {
+    "01": "F",
+    "02": "F",
+    "03": "F",
+    "04": "F",
+    "05": "F",
+    "06": "off",
+    "07": "F",
+    "08": "F",
+    "09": "F",
+    "10": "F",
+    "11": "F",
+    "12": "F",
+    "13": "off",
+    "14": "F",
+    "15": "F",
+    "16": "F",
+    "17": "F",
+    "18": "F",
+    "19": "F",
+    "20": "off",
+    "21": "F",
+    "22": "F",
+    "23": "F",
+    "24": "F",
+    "25": "F",
+    "26": "F",
+    "27": "off",
+    "28": "F",
+    "29": "F",
+    "30": "F"
+   }
+  },
+  "b2_2026-10": {
+   "staffId": "b2",
+   "month": "2026-10",
+   "days": {
+    "01": "F",
+    "02": "F",
+    "03": "F",
+    "04": "off",
+    "05": "F",
+    "06": "F",
+    "07": "F",
+    "08": "F",
+    "09": "F",
+    "10": "F",
+    "11": "off"
+   }
+  },
+  "b3_2026-09": {
+   "staffId": "b3",
+   "month": "2026-09",
+   "days": {
+    "01": "F",
+    "02": "F",
+    "03": "F",
+    "04": "F",
+    "05": "F",
+    "06": "off",
+    "07": "F",
+    "08": "F",
+    "09": "F",
+    "10": "F",
+    "11": "F",
+    "12": "F",
+    "13": "off",
+    "14": "F",
+    "15": "F",
+    "16": "F",
+    "17": "F",
+    "18": "F",
+    "19": "F",
+    "20": "off",
+    "21": "F",
+    "22": "F",
+    "23": "F",
+    "24": "F",
+    "25": "off",
+    "26": "F",
+    "27": "off",
+    "28": "F",
+    "29": "F",
+    "30": "F"
+   }
+  },
+  "b3_2026-10": {
+   "staffId": "b3",
+   "month": "2026-10",
+   "days": {
+    "01": "F",
+    "02": "F",
+    "03": "F",
+    "04": "off",
+    "05": "F",
+    "06": "F",
+    "07": "F",
+    "08": "F",
+    "09": "F",
+    "10": "F",
+    "11": "off"
+   }
+  }
+ },
+ "ws/spa/suppliers": {
+  "sp1": {
+   "name": "Công ty Mỹ phẩm Hàn Việt",
+   "contact": "Chị Ngọc",
+   "phone": "0912345678",
+   "email": "sales@hanviet.vn",
+   "address": "Quận 3, TP.HCM",
+   "items": "Serum, toner, mặt nạ Hàn Quốc",
+   "terms": "Công nợ 15 ngày"
+  },
+  "sp2": {
+   "name": "Vật tư Spa Sài Gòn",
+   "contact": "Anh Phúc",
+   "phone": "0987654321",
+   "email": "phuc@vattuspa.vn",
+   "address": "Quận Tân Bình, TP.HCM",
+   "items": "Khăn, găng tay, keo nối mi, vật tư tiêu hao",
+   "terms": "Thanh toán khi nhận"
+  },
+  "sp3": {
+   "name": "Tinh dầu Thiên Mộc",
+   "contact": "Chị Hằng",
+   "phone": "0934111222",
+   "email": "",
+   "address": "Đà Lạt",
+   "items": "Tinh dầu, muối tắm, đá nóng",
+   "terms": "Chuyển khoản trước"
+  }
+ },
+ "ws/spa/products": {
+  "pr1": {
+   "name": "Serum Vitamin C 30ml",
+   "category": "Chăm sóc da",
+   "cost": 180000,
+   "price": 420000,
+   "stock": 14,
+   "minStock": 5,
+   "supplierId": "sp1",
+   "unit": "chai",
+   "sku": "8935001000001",
+   "active": true
+  },
+  "pr2": {
+   "name": "Toner hoa hồng 200ml",
+   "category": "Chăm sóc da",
+   "cost": 95000,
+   "price": 250000,
+   "stock": 18,
+   "minStock": 6,
+   "supplierId": "sp1",
+   "unit": "chai",
+   "sku": "8935001000002",
+   "active": true
+  },
+  "pr3": {
+   "name": "Mặt nạ collagen (hộp 10)",
+   "category": "Chăm sóc da",
+   "cost": 120000,
+   "price": 290000,
+   "stock": 4,
+   "minStock": 5,
+   "supplierId": "sp1",
+   "unit": "hộp",
+   "sku": "8935001000003",
+   "active": true
+  },
+  "pr4": {
+   "name": "Kem chống nắng SPF50",
+   "category": "Chăm sóc da",
+   "cost": 150000,
+   "price": 360000,
+   "stock": 11,
+   "minStock": 5,
+   "supplierId": "sp1",
+   "unit": "tuýp",
+   "sku": "8935001000004",
+   "active": true
+  },
+  "pr5": {
+   "name": "Sữa rửa mặt dịu nhẹ",
+   "category": "Chăm sóc da",
+   "cost": 85000,
+   "price": 210000,
+   "stock": 13,
+   "minStock": 5,
+   "supplierId": "sp1",
+   "unit": "chai",
+   "sku": "8935001000005",
+   "active": true
+  },
+  "pr6": {
+   "name": "Tinh dầu oải hương 50ml",
+   "category": "Body",
+   "cost": 70000,
+   "price": 180000,
+   "stock": 21,
+   "minStock": 5,
+   "supplierId": "sp3",
+   "unit": "chai",
+   "sku": "8935001000006",
+   "active": true
+  },
+  "pr7": {
+   "name": "Muối tắm thảo dược",
+   "category": "Body",
+   "cost": 45000,
+   "price": 120000,
+   "stock": 10,
+   "minStock": 4,
+   "supplierId": "sp3",
+   "unit": "hũ",
+   "sku": "8935001000007",
+   "active": true
+  },
+  "pr8": {
+   "name": "Dầu gội thảo mộc 500ml",
+   "category": "Chăm sóc tóc",
+   "cost": 90000,
+   "price": 230000,
+   "stock": 9,
+   "minStock": 4,
+   "supplierId": "sp3",
+   "unit": "chai",
+   "sku": "8935001000008",
+   "active": true
+  },
+  "pr9": {
+   "name": "Dưỡng mi Mi Xinh",
+   "category": "Mi",
+   "cost": 110000,
+   "price": 280000,
+   "stock": 2,
+   "minStock": 3,
+   "supplierId": "sp2",
+   "unit": "tuýp",
+   "sku": "8935001000009",
+   "active": true
+  },
+  "pr10": {
+   "name": "Keo nối mi chuyên dụng",
+   "category": "Vật tư",
+   "cost": 160000,
+   "price": 0,
+   "stock": 6,
+   "minStock": 2,
+   "supplierId": "sp2",
+   "unit": "lọ",
+   "sku": "8935001000010",
+   "active": false
+  }
+ },
+ "ws/nhakhoa/suppliers": {
+  "np1": {
+   "name": "Nha khoa Minh Phát (vật tư)",
+   "contact": "Anh Minh",
+   "phone": "0905111222",
+   "email": "minhphat@dental.vn",
+   "address": "Đà Nẵng",
+   "items": "Composite, mũi khoan, găng tay",
+   "terms": "Công nợ 30 ngày"
+  },
+  "np2": {
+   "name": "Oral Care Việt Nam",
+   "contact": "Chị Lan",
+   "phone": "0906333444",
+   "email": "lan@oralcare.vn",
+   "address": "Hà Nội",
+   "items": "Bàn chải, kem đánh răng, chỉ nha khoa",
+   "terms": "Chuyển khoản trước"
+  }
+ },
+ "ws/nhakhoa/products": {
+  "pn1": {
+   "name": "Bàn chải lông mềm",
+   "category": "Chăm sóc răng",
+   "cost": 18000,
+   "price": 45000,
+   "stock": 40,
+   "minStock": 10,
+   "supplierId": "np2",
+   "unit": "cái",
+   "sku": "8935002000001",
+   "active": true
+  },
+  "pn2": {
+   "name": "Kem đánh răng Sensitive",
+   "category": "Chăm sóc răng",
+   "cost": 55000,
+   "price": 120000,
+   "stock": 16,
+   "minStock": 8,
+   "supplierId": "np2",
+   "unit": "tuýp",
+   "sku": "8935002000002",
+   "active": true
+  },
+  "pn3": {
+   "name": "Chỉ nha khoa 50m",
+   "category": "Chăm sóc răng",
+   "cost": 30000,
+   "price": 75000,
+   "stock": 6,
+   "minStock": 8,
+   "supplierId": "np2",
+   "unit": "hộp",
+   "sku": "8935002000003",
+   "active": true
+  },
+  "pn4": {
+   "name": "Nước súc miệng 500ml",
+   "category": "Chăm sóc răng",
+   "cost": 60000,
+   "price": 135000,
+   "stock": 12,
+   "minStock": 5,
+   "supplierId": "np2",
+   "unit": "chai",
+   "sku": "8935002000004",
+   "active": true
+  },
+  "pn5": {
+   "name": "Máng tẩy trắng tại nhà",
+   "category": "Thẩm mỹ răng",
+   "cost": 250000,
+   "price": 690000,
+   "stock": 5,
+   "minStock": 2,
+   "supplierId": "np1",
+   "unit": "bộ",
+   "sku": "8935002000005",
+   "active": true
+  },
+  "pn6": {
+   "name": "Sáp chỉnh nha",
+   "category": "Chỉnh nha",
+   "cost": 15000,
+   "price": 40000,
+   "stock": 25,
+   "minStock": 10,
+   "supplierId": "np1",
+   "unit": "hộp",
+   "sku": "8935002000006",
+   "active": true
+  }
+ },
+ "ws/spa/purchases": {
+  "po1": {
+   "code": "PN-0001",
+   "date": "2026-09-05",
+   "supplierId": "sp1",
+   "status": "received",
+   "receivedAt": "2026-09-07",
+   "lines": [
+    {
+     "productId": "pr1",
+     "qty": 10,
+     "cost": 180000
+    },
+    {
+     "productId": "pr2",
+     "qty": 12,
+     "cost": 95000
+    }
+   ],
+   "total": 2940000,
+   "expenseId": "e5"
+  },
+  "po2": {
+   "code": "PN-0002",
+   "date": "2026-09-24",
+   "supplierId": "sp2",
+   "status": "ordered",
+   "lines": [
+    {
+     "productId": "pr9",
+     "qty": 6,
+     "cost": 110000
+    },
+    {
+     "productId": "pr10",
+     "qty": 4,
+     "cost": 160000
+    }
+   ],
+   "total": 1300000,
+   "note": "Giao trước thứ 7"
+  }
+ },
+ "ws/nhakhoa/purchases": {
+  "npo1": {
+   "code": "PN-0001",
+   "date": "2026-09-10",
+   "supplierId": "np2",
+   "status": "received",
+   "receivedAt": "2026-09-12",
+   "lines": [
+    {
+     "productId": "pn1",
+     "qty": 30,
+     "cost": 18000
+    },
+    {
+     "productId": "pn2",
+     "qty": 10,
+     "cost": 55000
+    }
+   ],
+   "total": 1090000,
+   "expenseId": "ne3"
+  }
+ },
+ "ws/spa/expenses": {
+  "e1": {
+   "date": "2026-09-01",
+   "category": "Tiền mặt bằng",
+   "title": "Tiền thuê mặt bằng tháng 9",
+   "amount": 18000000,
+   "method": "transfer",
+   "payee": "Chủ nhà"
+  },
+  "e2": {
+   "date": "2026-09-03",
+   "category": "Điện nước, internet",
+   "title": "Tiền điện tháng 8",
+   "amount": 3450000,
+   "method": "transfer",
+   "payee": "EVN HCMC"
+  },
+  "e3": {
+   "date": "2026-09-03",
+   "category": "Điện nước, internet",
+   "title": "Nước và internet tháng 8",
+   "amount": 980000,
+   "method": "transfer",
+   "payee": "Sawaco, FPT"
+  },
+  "e4": {
+   "date": "2026-09-06",
+   "category": "Marketing",
+   "title": "Quảng cáo Facebook tuần 1-2",
+   "amount": 2500000,
+   "method": "card",
+   "payee": "Meta"
+  },
+  "e5": {
+   "date": "2026-09-07",
+   "category": "Nhập hàng",
+   "title": "Nhập hàng PN-0001 – Công ty Mỹ phẩm Hàn Việt",
+   "amount": 2940000,
+   "method": "transfer",
+   "payee": "Công ty Mỹ phẩm Hàn Việt"
+  },
+  "e6": {
+   "date": "2026-09-12",
+   "category": "Vật tư tiêu hao",
+   "title": "Khăn, găng tay, bông tẩy trang",
+   "amount": 1250000,
+   "method": "cash",
+   "payee": "Vật tư Spa Sài Gòn"
+  },
+  "e7": {
+   "date": "2026-09-18",
+   "category": "Sửa chữa, thiết bị",
+   "title": "Bảo trì máy triệt lông",
+   "amount": 1800000,
+   "method": "cash",
+   "payee": "Kỹ thuật Minh"
+  },
+  "e8": {
+   "date": "2026-09-20",
+   "category": "Marketing",
+   "title": "Quảng cáo Facebook tuần 3-4",
+   "amount": 2500000,
+   "method": "card",
+   "payee": "Meta"
+  },
+  "e9": {
+   "date": "2026-08-01",
+   "category": "Tiền mặt bằng",
+   "title": "Tiền thuê mặt bằng tháng 8",
+   "amount": 18000000,
+   "method": "transfer",
+   "payee": "Chủ nhà"
+  },
+  "e10": {
+   "date": "2026-08-05",
+   "category": "Lương thưởng",
+   "title": "Thưởng doanh số tháng 7",
+   "amount": 4000000,
+   "method": "transfer",
+   "payee": "Nhân viên"
+  },
+  "e11": {
+   "date": "2026-08-15",
+   "category": "Marketing",
+   "title": "In tờ rơi khai trương dịch vụ mới",
+   "amount": 1200000,
+   "method": "cash",
+   "payee": "In Kỹ Thuật Số"
+  }
+ },
+ "ws/nhakhoa/expenses": {
+  "ne1": {
+   "date": "2026-09-01",
+   "category": "Tiền mặt bằng",
+   "title": "Thuê mặt bằng tháng 9",
+   "amount": 25000000,
+   "method": "transfer",
+   "payee": "Chủ nhà"
+  },
+  "ne2": {
+   "date": "2026-09-04",
+   "category": "Điện nước, internet",
+   "title": "Điện nước tháng 8",
+   "amount": 4200000,
+   "method": "transfer",
+   "payee": "EVN Đà Nẵng"
+  },
+  "ne3": {
+   "date": "2026-09-12",
+   "category": "Nhập hàng",
+   "title": "Nhập hàng PN-0001 – Oral Care",
+   "amount": 1090000,
+   "method": "transfer",
+   "payee": "Oral Care Việt Nam"
+  },
+  "ne4": {
+   "date": "2026-09-15",
+   "category": "Vật tư tiêu hao",
+   "title": "Composite, mũi khoan",
+   "amount": 6500000,
+   "method": "transfer",
+   "payee": "Nha khoa Minh Phát"
+  },
+  "ne5": {
+   "date": "2026-09-20",
+   "category": "Marketing",
+   "title": "Quảng cáo Google Maps",
+   "amount": 1500000,
+   "method": "card",
+   "payee": "Google"
+  }
+ },
+ "ws/spa/waitlist": {
+  "w1": {
+   "name": "Phạm Thu Trang",
+   "phone": "0977123456",
+   "serviceId": "s5",
+   "staffId": "st2",
+   "date": "2026-09-27",
+   "slot": "Sau 17h",
+   "note": "Muốn đúng chị Mai làm",
+   "status": "waiting",
+   "createdAt": "2026-09-25"
+  },
+  "w2": {
+   "name": "Lý Hoàng Oanh",
+   "phone": "0912001002",
+   "serviceId": "s8",
+   "staffId": "",
+   "date": "2026-09-28",
+   "slot": "Sáng",
+   "note": "Khách cũ, báo khi có chỗ",
+   "status": "waiting",
+   "createdAt": "2026-09-26"
+  },
+  "w3": {
+   "name": "Đặng Mỹ Linh",
+   "phone": "0939555666",
+   "serviceId": "s6",
+   "staffId": "st1",
+   "date": "2026-09-22",
+   "slot": "Chiều",
+   "note": "",
+   "status": "booked",
+   "createdAt": "2026-09-19"
+  }
+ },
+ "ws/nhakhoa/waitlist": {
+  "nw1": {
+   "name": "Trương Văn Hải",
+   "phone": "0905777888",
+   "serviceId": "d6",
+   "staffId": "b3",
+   "date": "2026-09-29",
+   "slot": "Sáng thứ 2",
+   "note": "Đau răng khôn, cần sớm",
+   "status": "waiting",
+   "createdAt": "2026-09-25"
+  }
+ },
+ "ws/spa/notes": {
+  "n1": {
+   "customerId": "c01",
+   "kind": "Sức khỏe, dị ứng",
+   "text": "Da dầu, nhạy cảm với AHA nồng độ cao. Không dùng peel mạnh.",
+   "author": "Hoa",
+   "date": "2026-09-02",
+   "pinned": true
+  },
+  "n2": {
+   "customerId": "c02",
+   "kind": "Sở thích",
+   "text": "Thích phòng yên tĩnh, nhạc nhẹ. Uống trà gừng không đường.",
+   "author": "Mai",
+   "date": "2026-09-10",
+   "pinned": false
+  },
+  "n3": {
+   "customerId": "c03",
+   "kind": "Khiếu nại",
+   "text": "Lần trước chờ 20 phút, đã xin lỗi và tặng voucher 10%.",
+   "author": "Quản lý",
+   "date": "2026-09-15",
+   "pinned": false
+  },
+  "n4": {
+   "customerId": "c04",
+   "kind": "Kết quả điều trị",
+   "text": "Mụn giảm rõ sau 4 buổi, tiếp tục liệu trình, chụp ảnh so sánh ở buổi 6.",
+   "author": "Hoa",
+   "date": "2026-09-20",
+   "pinned": false
+  },
+  "n5": {
+   "customerId": "c05",
+   "kind": "Sức khỏe, dị ứng",
+   "text": "Đang mang thai tháng thứ 4: không dùng tinh dầu mạnh, không massage bụng.",
+   "author": "Mai",
+   "date": "2026-09-21",
+   "pinned": true
+  }
+ },
+ "ws/nhakhoa/notes": {
+  "nn1": {
+   "customerId": "n01",
+   "kind": "Sức khỏe, dị ứng",
+   "text": "Dị ứng penicillin. Huyết áp cao, đo trước khi tiểu phẫu.",
+   "author": "BS. Tuấn",
+   "date": "2026-09-01",
+   "pinned": true
+  },
+  "nn2": {
+   "customerId": "n02",
+   "kind": "Sở thích",
+   "text": "Sợ tiêm, cần gây tê bề mặt trước.",
+   "author": "BS. Vy",
+   "date": "2026-09-12",
+   "pinned": false
+  }
+ },
+ "ws/spa/promos": {
+  "pm1": {
+   "code": "THANG10",
+   "name": "Ưu đãi tháng 10",
+   "type": "pct",
+   "value": 10,
+   "minSpend": 500000,
+   "start": "2026-09-25",
+   "end": "2026-10-31",
+   "active": true,
+   "used": 2,
+   "desc": "Giảm 10% cho hóa đơn từ 500k"
+  },
+  "pm2": {
+   "code": "SINHNHAT",
+   "name": "Quà sinh nhật",
+   "type": "pct",
+   "value": 20,
+   "minSpend": 0,
+   "start": "2026-01-01",
+   "end": "2026-12-31",
+   "active": true,
+   "used": 5,
+   "desc": "Giảm 20% trong tháng sinh nhật"
+  },
+  "pm3": {
+   "code": "BANMOI100",
+   "name": "Khách mới giảm 100k",
+   "type": "amount",
+   "value": 100000,
+   "minSpend": 300000,
+   "start": "2026-09-01",
+   "end": "2026-09-30",
+   "active": true,
+   "used": 3
+  },
+  "pm4": {
+   "code": "HE2026",
+   "name": "Hè rực rỡ",
+   "type": "pct",
+   "value": 15,
+   "minSpend": 0,
+   "start": "2026-06-01",
+   "end": "2026-08-31",
+   "active": true,
+   "used": 12
+  }
+ },
+ "ws/nhakhoa/promos": {
+  "npm1": {
+   "code": "CUOIXINH",
+   "name": "Tẩy trắng giảm 300k",
+   "type": "amount",
+   "value": 300000,
+   "minSpend": 1500000,
+   "start": "2026-09-01",
+   "end": "2026-10-31",
+   "active": true,
+   "used": 1
+  }
+ }
+}
