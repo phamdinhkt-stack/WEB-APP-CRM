@@ -230,11 +230,41 @@ const PRODUCTS = [
     uses: ['Quấn tóc 10–15 phút sau khi gội', 'Giặt riêng ở nhiệt độ dưới 40°C'] }
 ];
 
+// ---------- HỌC VIỆN NÀNG BA – KHÓA ĐÀO TẠO (trang #dao-tao) ----------
+// fee: để 'Liên hệ' hoặc ghi học phí thật (VD '8.500.000đ'). modules: nội dung học; outcomes: học xong làm được gì.
+const COURSES = [
+  { id: 'massage-bau', name: 'Massage bầu & chăm sóc sau sinh', img: IMG('1531983412531-1f49a365ffed'), duration: '1 tháng', sessions: '24 buổi', level: 'Cơ bản → Nâng cao', fee: 'Liên hệ',
+    short: 'Kỹ thuật massage an toàn cho mẹ bầu từ tuần 14 và phục hồi mẹ sau sinh theo quy chuẩn y khoa.',
+    forWho: 'Người mới vào nghề, kỹ thuật viên spa muốn mở rộng dịch vụ mẹ & bé.',
+    modules: ['Sinh lý thai kỳ, các huyệt và vùng chống chỉ định', 'Tư thế nằm nghiêng, dùng gối bầu đúng cách', 'Massage lưng – vai – gáy, giảm phù chân, chuột rút', 'Chăm sóc mẹ sau sinh thường & sinh mổ: bụng, eo, lưng', 'Xông, chườm thảo dược và tư vấn phục hồi', 'Giao tiếp, xử lý tình huống với khách mẹ bầu'],
+    outcomes: ['Tự tin thực hiện trọn liệu trình massage bầu 60–90 phút', 'Nhận biết dấu hiệu cần dừng và chuyển bác sĩ', 'Làm việc tại spa hoặc phục vụ tại nhà'] },
+  { id: 'tia-sua', name: 'Thông tắc tia sữa', img: IMG('1559599101-f09722fb4948'), duration: '2 tuần', sessions: '10 buổi', level: 'Chuyên sâu', fee: 'Liên hệ',
+    short: 'Kỹ thuật thông tắc, kích sữa và tư vấn nuôi con bằng sữa mẹ do nữ hộ sinh hướng dẫn.',
+    forWho: 'Nữ hộ sinh, điều dưỡng, kỹ thuật viên chăm sóc mẹ sau sinh.',
+    modules: ['Giải phẫu tuyến vú và cơ chế tiết sữa', 'Nhận biết tắc tia sữa, viêm tuyến vú cần chuyển viện', 'Kỹ thuật massage thông tắc, chườm ấm – lạnh', 'Kích sữa, gọi sữa về sau sinh', 'Hướng dẫn mẹ tư thế cho bú và vắt sữa'],
+    outcomes: ['Xử lý ca tắc sữa thường gặp tại nhà', 'Tư vấn mẹ duy trì nguồn sữa', 'Nhận ca dịch vụ tại nhà cùng hệ thống Nàng Ba'] },
+  { id: 'tam-be', name: 'Tắm & massage bé chuẩn quốc tế', img: IMG('1555252333-9f8e92e65df9'), duration: '2 tuần', sessions: '10 buổi', level: 'Cơ bản', fee: 'Liên hệ',
+    short: 'Tắm, massage, vệ sinh rốn và chăm sóc bé sơ sinh 0–12 tháng đúng kỹ thuật, an toàn.',
+    forWho: 'Người mới vào nghề, bảo mẫu, mẹ bỉm muốn tự chăm con chuyên nghiệp.',
+    modules: ['Đặc điểm da và cơ thể trẻ sơ sinh', 'Quy trình tắm bé an toàn, nhiệt độ nước, phòng tắm', 'Massage bé theo từng tháng tuổi', 'Vệ sinh rốn, mắt, mũi, chăm sóc hăm – rôm sảy', 'Dấu hiệu bất thường cần đưa bé đi khám'],
+    outcomes: ['Tắm và massage bé thành thạo, nhẹ nhàng', 'Tư vấn mẹ chăm sóc bé hằng ngày', 'Làm dịch vụ tắm bé tại spa hoặc tại nhà'] },
+  { id: 'cham-soc-da', name: 'Chăm sóc da chuyên sâu', img: IMG('1570172619644-dfd03ed5d881'), duration: '1 tháng', sessions: '20 buổi', level: 'Cơ bản → Nâng cao', fee: 'Liên hệ',
+    short: 'Soi da, phân loại da, quy trình facial và chăm sóc da nhạy cảm, da sau sinh.',
+    forWho: 'Kỹ thuật viên spa, người muốn mở phòng chăm sóc da nhỏ.',
+    modules: ['Cấu trúc da, phân loại da, soi da', 'Quy trình facial cơ bản và chuyên sâu', 'Chăm sóc da mụn, nám, da sau sinh', 'Mỹ phẩm: thành phần, chống chỉ định cho mẹ bầu', 'Vệ sinh, vô khuẩn dụng cụ và phòng làm việc'],
+    outcomes: ['Tư vấn và lên liệu trình theo từng loại da', 'Thực hiện facial 60–90 phút chuẩn quy trình', 'Đủ kỹ năng làm việc tại spa, thẩm mỹ viện'] },
+  { id: 'quan-ly-spa', name: 'Quản lý & vận hành spa', img: IMG('1544161515-4ab6ce6db874'), duration: '2 tháng', sessions: '16 buổi', level: 'Dành cho chủ spa', fee: 'Liên hệ',
+    short: 'Vận hành spa bằng phần mềm VUA APP: lịch hẹn, khách hàng, thu ngân, kho, lương và nhiều chi nhánh.',
+    forWho: 'Chủ spa, quản lý chi nhánh, người chuẩn bị mở spa.',
+    modules: ['Xây dựng bảng giá, gói liệu trình, chính sách khuyến mãi', 'Quản lý lịch hẹn, khách hàng, chăm sóc khách quay lại', 'Thu ngân, công nợ, chi phí và báo cáo lợi nhuận', 'Tuyển dụng, xếp ca, chấm công, tính lương – hoa hồng', 'Bán hàng online: website, thanh toán QR, Zalo, Telegram', 'Quản lý nhiều chi nhánh'],
+    outcomes: ['Tự vận hành spa trên phần mềm từ ngày đầu', 'Đọc báo cáo, kiểm soát doanh thu – chi phí', 'Được hỗ trợ khi mở spa hoặc nhượng quyền Nàng Ba'] }
+];
+
 // ---------- TRANG NỘI DUNG (mở dạng popup) ----------
 const PAGES = {
   about: { title: 'Câu chuyện Nàng Ba', html: `<p><strong>SPA Nàng Ba</strong> được thành lập bởi những người phụ nữ từng trải qua hành trình mang thai và nuôi con nhỏ, thấu hiểu những mệt mỏi, lo âu mà người mẹ phải đối mặt.</p><p>Chúng tôi mong muốn xây dựng một “ngôi nhà thứ hai”, nơi mọi người phụ nữ đều được chăm sóc bằng sự chuyên nghiệp của y khoa và sự ấm áp của người thân.</p><h4>Tầm nhìn</h4><p>Trở thành hệ thống chăm sóc mẹ & bé được tin yêu hàng đầu Việt Nam.</p><h4>Sứ mệnh</h4><p>Mang dịch vụ chăm sóc an toàn, tận tâm và giá hợp lý đến mọi gia đình Việt.</p><h4>Giá trị cốt lõi</h4><ul><li>Tận tâm</li><li>Chuyên nghiệp</li><li>Minh bạch</li><li>Sẻ chia</li></ul>` },
   awards: { title: 'Bằng cấp và giải thưởng', html: `<p>Khu vực trưng bày chứng nhận, giấy phép hoạt động và các giải thưởng của SPA Nàng Ba.</p><ul><li>Giấy phép kinh doanh dịch vụ spa – [cập nhật]</li><li>Chứng chỉ đào tạo kỹ thuật viên – [cập nhật]</li><li>Chứng nhận sản phẩm đạt chuẩn – [cập nhật]</li><li>Giải thưởng / danh hiệu – [cập nhật]</li></ul>` },
-  training: { title: 'Đào tạo nghề', html: `<p>Học viện Nàng Ba đào tạo nghề chăm sóc mẹ & bé, spa trị liệu với lộ trình từ cơ bản đến nâng cao.</p><h4>Các khóa học</h4><ul><li>Massage bầu & sau sinh – 1 tháng</li><li>Thông tắc tia sữa – 2 tuần</li><li>Tắm & massage bé – 2 tuần</li><li>Chăm sóc da chuyên sâu – 1 tháng</li><li>Quản lý spa – 2 tháng</li></ul><p>Học viên được cấp chứng chỉ và giới thiệu việc làm sau khi tốt nghiệp.</p><button class="btn btn-primary" data-open="partnerModal">Đăng ký tư vấn khóa học</button>` },
+  training: { title: 'Đào tạo nghề', html: `<p>Học viện Nàng Ba đào tạo nghề chăm sóc mẹ & bé, spa trị liệu với lộ trình từ cơ bản đến nâng cao.</p><h4>Các khóa học</h4><ul><li>Massage bầu & sau sinh – 1 tháng</li><li>Thông tắc tia sữa – 2 tuần</li><li>Tắm & massage bé – 2 tuần</li><li>Chăm sóc da chuyên sâu – 1 tháng</li><li>Quản lý spa – 2 tháng</li></ul><p>Học viên được cấp chứng chỉ và giới thiệu việc làm sau khi tốt nghiệp.</p><a class="btn btn-primary" href="#dao-tao">Xem chi tiết các khóa học</a>` },
   promo: { title: 'Ưu đãi', html: `<ul><li><b>Giảm 20%</b> cho khách hàng lần đầu trải nghiệm</li><li><b>Tặng 1 buổi</b> gội đầu dưỡng sinh khi mua gói 10 buổi</li><li><b>Giảm 10%</b> gói sau sinh khi đăng ký trước ngày dự sinh 30 ngày</li><li>Sinh nhật khách hàng: <b>tặng voucher 200.000đ</b></li></ul><button class="btn btn-primary" data-open="bookingModal">Đặt lịch nhận ưu đãi</button>` },
   jobs: { title: 'Tuyển dụng', html: `<p>Nàng Ba luôn chào đón những người yêu nghề, tận tâm.</p><ul><li>Kỹ thuật viên spa (được đào tạo miễn phí)</li><li>Nữ hộ sinh chăm sóc mẹ & bé tại nhà</li><li>Lễ tân – Chăm sóc khách hàng</li><li>Quản lý chi nhánh</li></ul><p>Gửi CV về: <a href="mailto:tuyendung@spanangba.vn">tuyendung@spanangba.vn</a></p>` },
   'policy-buy': { title: 'Hướng dẫn mua hàng', html: `<ol><li>Chọn sản phẩm và bấm “Thêm vào giỏ”.</li><li>Mở giỏ hàng, kiểm tra và bấm “Thanh toán”.</li><li>Điền thông tin nhận hàng.</li><li>Nàng Ba gọi xác nhận và giao hàng.</li></ol>` },

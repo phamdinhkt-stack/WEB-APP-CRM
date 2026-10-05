@@ -304,11 +304,11 @@ $('#payBody').addEventListener('click', e => {
 });
 
 // ---------- Khách để lại số điện thoại (chat / hợp tác) → Lễ tân + Telegram ----------
-function sendLead(phone, name, topic, note) {
+function sendLead(phone, name, topic, note, branch) {
   const p = phoneOk(phone); if (!p) return;
   const code = 'CHAT' + Date.now().toString(36).toUpperCase();
-  inboxPush({ id: 'lead_' + code, kind: 'lead', code, xung: '', name, phone: p, topic, notes: (topic ? topic + '. ' : '') + note, items: [], products: [], total: 0, createdAt: new Date().toISOString() });
-  fetch('api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ lead: { phone: p, name, topic, note: String(note).slice(0, 1500) } }) }).catch(() => {});
+  inboxPush({ id: 'lead_' + code, kind: 'lead', code, xung: '', name, phone: p, topic, branch: branch || '', notes: (topic ? topic + '. ' : '') + note, items: [], products: [], total: 0, createdAt: new Date().toISOString() });
+  fetch('api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ lead: { phone: p, name, topic, branch: branch || '', note: String(note).slice(0, 1500) } }) }).catch(() => {});
 }
 
 // Mở thẳng link …/#dat-lich: script.js chạy route() trước khi file này nạp xong

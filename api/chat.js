@@ -59,10 +59,10 @@ module.exports = async (req, res) => {
     if (b.lead) {
       const phone = String(b.lead.phone || '').replace(/\D/g, ''); if (phone.length < 9 || phone.length > 11) return send(res, 400, { error: 'SĐT không hợp lệ' });
       const now = Date.now(); const code = 'CHAT' + now.toString(36).toUpperCase();
-      const lead = { id: 'lead_' + code, kind: 'lead', code, xung: String(b.lead.xung || '').slice(0, 10), name: String(b.lead.name || 'Khách chat').slice(0, 80), phone, notes: String(b.lead.note || '').slice(0, 1500), topic: String(b.lead.topic || '').slice(0, 200), date: '', time: '', items: [], products: [], total: 0, createdAt: now, updatedAt: now };
+      const lead = { id: 'lead_' + code, kind: 'lead', code, xung: String(b.lead.xung || '').slice(0, 10), name: String(b.lead.name || 'Khách chat').slice(0, 80), phone, notes: String(b.lead.note || '').slice(0, 1500), topic: String(b.lead.topic || '').slice(0, 200), branch: String(b.lead.branch || '').slice(0, 80), date: '', time: '', items: [], products: [], total: 0, createdAt: now, updatedAt: now };
       if (kvReady()) { await kv('SET', 'order:' + code, JSON.stringify(lead)); await kv('ZADD', 'orders_upd', now, code); }
       const pf = phone.replace(/(\d{4})(\d{3})(\d+)/, '$1 $2 $3');
-      const msg = `🔔 KHÁCH MỚI TỪ CHAT WEBSITE\n👤 ${lead.xung ? lead.xung + ' ' : ''}${lead.name}\n📞 ${pf}\n🕒 ${vnTime()}\n${lead.topic ? '🎯 Quan tâm: ' + lead.topic + '\n' : ''}💬 Vấn đề khách nhắn:\n${lead.notes || '(chưa ghi)'}\n\n👉 Gọi/Zalo lại cho khách sớm nhé!`;
+      const msg = `🔔 KHÁCH MỚI TỪ CHAT WEBSITE\n👤 ${lead.xung ? lead.xung + ' ' : ''}${lead.name}\n📞 ${pf}\n🕒 ${vnTime()}\n${lead.topic ? '🎯 Quan tâm: ' + lead.topic + '\n' : ''}${lead.branch ? '📍 ' + lead.branch + '\n' : ''}💬 Vấn đề khách nhắn:\n${lead.notes || '(chưa ghi)'}\n\n👉 Gọi/Zalo lại cho khách sớm nhé!`;
       const zr = await zaloAdmin(msg, { ten_khach: lead.name.slice(0, 30), sdt_khach: phone, noi_dung: (lead.topic || lead.notes).slice(0, 90), thoi_gian: vnTime() });
       telegram(['letan'], esc(msg)).catch(() => {});
       return send(res, 200, { ok: true, zalo: zr.some(x => x.ok) });

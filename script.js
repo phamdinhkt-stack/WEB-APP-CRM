@@ -380,12 +380,14 @@ $('#productContent').addEventListener('click', e => {
 // ---------- Điều hướng: trang chủ <-> trang sản phẩm ----------
 function route() {
   const h = location.hash.slice(1);
-  const onShop = h === 'san-pham' || h.startsWith('san-pham-'), onBook = h === 'dat-lich';
-  $('#top').hidden = onShop || onBook;
+  const onShop = h === 'san-pham' || h.startsWith('san-pham-'), onBook = h === 'dat-lich', onTrain = h === 'dao-tao';
+  $('#top').hidden = onShop || onBook || onTrain;
+  $('#trainPage').hidden = !onTrain;
   $('#shopPage').hidden = !onShop;
   $('#bookPage').hidden = !onBook;
   document.body.classList.toggle('on-book', onBook); // ẩn nút nổi "Đặt lịch" khi đang ở trang đặt lịch
   if (onBook) { if (typeof renderBooking === 'function') renderBooking(); scrollTo({ top: 0 }); return; } // vua-connect.js nạp sau sẽ tự vẽ
+  if (onTrain) { if (typeof renderTraining === 'function') renderTraining(); $$('.menu > li > a').forEach(a => a.classList.toggle('active', a.dataset.nav === 'train')); scrollTo({ top: 0 }); return; } // training.js
   $$('.menu > li > a').forEach(a => a.classList.remove('active'));
   if (onShop) {
     const cat = h.slice('san-pham-'.length);
