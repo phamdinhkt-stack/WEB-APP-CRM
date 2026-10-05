@@ -874,7 +874,7 @@
    "workDays": 26,
    "latePenalty": 30000,
    "shiftStart": "08:30",
-   "name": "Spa Hoa Mai",
+   "name": "SPA Nàng Ba",
    "shifts": [
     {
      "id": "S",
@@ -898,13 +898,13 @@
      "color": "#1E7A68"
     }
    ],
-   "owner": "Nguyễn Thu Hoa",
-   "phone": "0909123456",
-   "address": "128 Nguyễn Trãi, Phường Bến Thành, Quận 1, TP.HCM",
+   "owner": "Trương Thị Phương",
+   "phone": "0785568539",
+   "address": "(cập nhật địa chỉ trong Cài đặt)",
    "taxPct": 0,
-   "bank": "Vietcombank 0071000123456 – NGUYEN THU HOA",
-   "invoiceFooter": "Cảm ơn chị đã tin chọn Spa Hoa Mai. Hẹn gặp lại!",
-   "accent": "rose"
+   "bank": "ACB 229338189 – TRUONG THI PHUONG",
+   "invoiceFooter": "Cảm ơn chị đã tin chọn SPA Nàng Ba. Hẹn gặp lại!",
+   "accent": "emerald"
   }
  },
  "ws/spa/staff": {
@@ -3444,71 +3444,71 @@
   "k1": {
    "customerId": "c01",
    "packageId": "p1",
-   "serviceId": "s2",
-   "name": "Trị mụn 10 buổi",
+   "serviceId": "s8",
+   "name": "Chăm sóc mẹ bầu toàn diện tại Spa – Gói 10 buổi",
    "used": 8,
    "total": 10,
-   "price": 4500000,
+   "price": 4990000,
    "startDate": "2026-07-20"
   },
   "k2": {
    "customerId": "c02",
    "packageId": "p2",
    "serviceId": "s3",
-   "name": "Triệt lông nách 8 buổi",
+   "name": "Triệt lông – Nách – trọn gói",
    "used": 3,
-   "total": 8,
-   "price": 2400000,
+   "total": 10,
+   "price": 1490000,
    "startDate": "2026-08-10"
   },
   "k3": {
    "customerId": "c05",
    "packageId": "p3",
-   "serviceId": "s1",
-   "name": "Chăm sóc da 12 buổi",
+   "serviceId": "nb0701",
+   "name": "Liệu trình săn chắc – Gói 10 buổi",
    "used": 5,
-   "total": 12,
-   "price": 3500000,
+   "total": 10,
+   "price": 4990000,
    "startDate": "2026-08-01"
   },
   "k4": {
    "customerId": "c07",
    "packageId": "p1",
-   "serviceId": "s2",
-   "name": "Trị mụn 10 buổi",
+   "serviceId": "s8",
+   "name": "Chăm sóc mẹ bầu toàn diện tại Spa – Gói 10 buổi",
    "used": 2,
    "total": 10,
-   "price": 4500000,
+   "price": 4990000,
    "startDate": "2026-09-10"
   },
   "k5": {
    "customerId": "c10",
    "packageId": "p2",
    "serviceId": "s3",
-   "name": "Triệt lông nách 8 buổi",
+   "name": "Triệt lông – Nách – trọn gói",
    "used": 7,
-   "total": 8,
-   "price": 2400000,
+   "total": 10,
+   "price": 1490000,
    "startDate": "2026-07-05"
   },
   "k6": {
    "customerId": "c13",
    "packageId": "p3",
-   "serviceId": "s1",
-   "name": "Chăm sóc da 12 buổi",
-   "used": 11,
-   "total": 12,
-   "price": 3500000,
+   "serviceId": "nb0701",
+   "name": "Liệu trình săn chắc – Gói 10 buổi",
+   "used": 10,
+   "total": 10,
+   "price": 4990000,
    "startDate": "2026-06-20"
   },
   "k7": {
    "customerId": "c15",
    "packageId": "p1",
-   "serviceId": "s2",
-   "name": "Trị mụn 10 buổi",
+   "serviceId": "s8",
+   "name": "Chăm sóc mẹ bầu toàn diện tại Spa – Gói 10 buổi",
    "used": 0,
    "total": 10,
-   "price": 4500000,
+   "price": 4990000,
    "startDate": "2026-09-25"
   }
  },
@@ -3676,22 +3676,70 @@
  },
  "ws/spa/packages": {
   "p1": {
-   "name": "Trị mụn 10 buổi",
-   "serviceId": "s2",
+   "name": "Chăm sóc mẹ bầu toàn diện tại Spa – Gói 10 buổi",
+   "serviceId": "s8",
    "sessions": 10,
-   "price": 4500000
+   "price": 4990000
   },
-  "p2": {
-   "name": "Triệt lông nách 8 buổi",
-   "serviceId": "s3",
-   "sessions": 8,
-   "price": 2400000
+  "pk0402": {
+   "name": "Tắm & massage bé chuẩn quốc tế – Gói 10 buổi",
+   "serviceId": "nb0401",
+   "sessions": 10,
+   "price": 1990000
+  },
+  "pk0602": {
+   "name": "Tẩy ủ da sáng mịn – Gói 5 buổi",
+   "serviceId": "s6",
+   "sessions": 5,
+   "price": 1290000
   },
   "p3": {
-   "name": "Chăm sóc da 12 buổi",
-   "serviceId": "s1",
-   "sessions": 12,
-   "price": 3500000
+   "name": "Liệu trình săn chắc – Gói 10 buổi",
+   "serviceId": "nb0701",
+   "sessions": 10,
+   "price": 4990000
+  },
+  "p2": {
+   "name": "Triệt lông – Nách – trọn gói",
+   "serviceId": "s3",
+   "sessions": 10,
+   "price": 1490000
+  },
+  "pk0902": {
+   "name": "Chăm sóc mẹ bầu toàn diện tại nhà – Gói 10 buổi",
+   "serviceId": "nb0901",
+   "sessions": 10,
+   "price": 4990000
+  },
+  "pk1002": {
+   "name": "Chăm sóc mẹ sau sinh tại nhà – Gói 7 buổi",
+   "serviceId": "nb1001",
+   "sessions": 7,
+   "price": 4290000
+  },
+  "pk1003": {
+   "name": "Chăm sóc mẹ sau sinh tại nhà – Gói 15 buổi",
+   "serviceId": "nb1001",
+   "sessions": 15,
+   "price": 8490000
+  },
+  "pk1004": {
+   "name": "Chăm sóc mẹ sau sinh tại nhà – Gói 30 buổi",
+   "serviceId": "nb1001",
+   "sessions": 30,
+   "price": 15990000
+  },
+  "pk1102": {
+   "name": "Thông tắc tia sữa tại nhà – Gọi sữa về (3 buổi)",
+   "serviceId": "nb1101",
+   "sessions": 3,
+   "price": 1290000
+  },
+  "pk1202": {
+   "name": "Nâng cơ – Chống lão hóa – Gói 5 buổi",
+   "serviceId": "s7",
+   "sessions": 5,
+   "price": 6500000
   }
  },
  "ws/spa/payments": {
@@ -5274,76 +5322,157 @@
   }
  },
  "ws/spa/services": {
+  "s8": {
+   "name": "Chăm sóc mẹ bầu toàn diện tại Spa – Massage bầu 60 phút",
+   "price": 450000,
+   "duration": 60,
+   "commissionPct": 10,
+   "recallDays": 7,
+   "category": "Mẹ bầu & sau sinh",
+   "active": true
+  },
+  "nb0102": {
+   "name": "Chăm sóc mẹ bầu toàn diện tại Spa – Massage bầu + gội đầu 90 phút",
+   "price": 590000,
+   "duration": 90,
+   "commissionPct": 10,
+   "recallDays": 7,
+   "category": "Mẹ bầu & sau sinh",
+   "active": true
+  },
+  "s4": {
+   "name": "Gội đầu dưỡng sinh & chăm sóc da mặt – Gội đầu dưỡng sinh 45 phút",
+   "price": 199000,
+   "duration": 45,
+   "commissionPct": 10,
+   "recallDays": 30,
+   "category": "Thư giãn",
+   "active": true
+  },
+  "nb0202": {
+   "name": "Gội đầu dưỡng sinh & chăm sóc da mặt – Gội đầu + chăm sóc da 75 phút",
+   "price": 349000,
+   "duration": 75,
+   "commissionPct": 10,
+   "recallDays": 30,
+   "category": "Thư giãn",
+   "active": true
+  },
+  "nb0301": {
+   "name": "Massage body chuyên sâu – Massage 60 phút",
+   "price": 390000,
+   "duration": 60,
+   "commissionPct": 10,
+   "recallDays": 30,
+   "category": "Thư giãn",
+   "active": true
+  },
+  "s5": {
+   "name": "Massage body chuyên sâu – Massage đá nóng 90 phút",
+   "price": 550000,
+   "duration": 90,
+   "commissionPct": 10,
+   "recallDays": 30,
+   "category": "Thư giãn",
+   "active": true
+  },
+  "nb0401": {
+   "name": "Tắm & massage bé chuẩn quốc tế – Tắm + massage bé 1 buổi",
+   "price": 250000,
+   "duration": 60,
+   "commissionPct": 10,
+   "recallDays": 7,
+   "category": "Mẹ & bé",
+   "active": true
+  },
   "s1": {
-   "name": "Chăm sóc da cơ bản",
+   "name": "Facial Nàng Ba – Facial cơ bản 60 phút",
    "price": 350000,
    "duration": 60,
    "commissionPct": 10,
    "recallDays": 30,
-   "category": "Chăm sóc da",
+   "category": "Làm đẹp",
    "active": true
   },
   "s2": {
-   "name": "Trị mụn chuyên sâu",
-   "price": 550000,
-   "duration": 75,
-   "commissionPct": 12,
-   "recallDays": 21,
-   "category": "Chăm sóc da",
-   "active": true
-  },
-  "s3": {
-   "name": "Triệt lông nách",
-   "price": 400000,
-   "duration": 30,
-   "commissionPct": 8,
-   "recallDays": 30,
-   "category": "Triệt lông",
-   "active": true
-  },
-  "s4": {
-   "name": "Gội đầu dưỡng sinh",
-   "price": 150000,
-   "duration": 45,
-   "commissionPct": 15,
-   "recallDays": 14,
-   "category": "Gội & dưỡng sinh",
-   "active": true
-  },
-  "s5": {
-   "name": "Massage body đá nóng",
-   "price": 450000,
+   "name": "Facial Nàng Ba – Facial chuyên sâu 90 phút",
+   "price": 590000,
    "duration": 90,
-   "commissionPct": 15,
+   "commissionPct": 10,
    "recallDays": 30,
-   "category": "Body & massage",
+   "category": "Làm đẹp",
    "active": true
   },
   "s6": {
-   "name": "Peel da sinh học",
-   "price": 700000,
+   "name": "Tẩy ủ da sáng mịn – Tẩy + ủ toàn thân 75 phút",
+   "price": 290000,
+   "duration": 75,
+   "commissionPct": 10,
+   "recallDays": 30,
+   "category": "Làm đẹp",
+   "active": true
+  },
+  "nb0701": {
+   "name": "Liệu trình săn chắc – 1 buổi 90 phút",
+   "price": 590000,
+   "duration": 90,
+   "commissionPct": 10,
+   "recallDays": 30,
+   "category": "Làm đẹp",
+   "active": true
+  },
+  "s3": {
+   "name": "Triệt lông – Nách – 1 lần",
+   "price": 199000,
    "duration": 60,
    "commissionPct": 10,
-   "recallDays": 45,
-   "category": "Chăm sóc da",
+   "recallDays": 30,
+   "category": "Làm đẹp",
+   "active": true
+  },
+  "nb0803": {
+   "name": "Triệt lông – Chân/tay – 1 lần",
+   "price": 499000,
+   "duration": 60,
+   "commissionPct": 10,
+   "recallDays": 30,
+   "category": "Làm đẹp",
+   "active": true
+  },
+  "nb0901": {
+   "name": "Chăm sóc mẹ bầu toàn diện tại nhà – 1 buổi 75 phút",
+   "price": 550000,
+   "duration": 75,
+   "commissionPct": 10,
+   "recallDays": 7,
+   "category": "Mẹ bầu & sau sinh",
+   "active": true
+  },
+  "nb1001": {
+   "name": "Chăm sóc mẹ sau sinh tại nhà – 1 buổi (mẹ + bé)",
+   "price": 650000,
+   "duration": 60,
+   "commissionPct": 10,
+   "recallDays": 7,
+   "category": "Mẹ bầu & sau sinh",
+   "active": true
+  },
+  "nb1101": {
+   "name": "Thông tắc tia sữa tại nhà – Thông tắc 1 lần",
+   "price": 500000,
+   "duration": 60,
+   "commissionPct": 10,
+   "recallDays": 7,
+   "category": "Mẹ bầu & sau sinh",
    "active": true
   },
   "s7": {
-   "name": "Phun mày tán bột",
-   "price": 2500000,
-   "duration": 120,
-   "commissionPct": 5,
-   "recallDays": 180,
-   "category": "Mi & mày",
-   "active": true
-  },
-  "s8": {
-   "name": "Nối mi",
-   "price": 300000,
+   "name": "Nâng cơ – Chống lão hóa – 1 buổi",
+   "price": 1500000,
    "duration": 60,
-   "commissionPct": 12,
-   "recallDays": 21,
-   "category": "Mi & mày",
+   "commissionPct": 10,
+   "recallDays": 30,
+   "category": "Làm đẹp",
    "active": true
   }
  },
@@ -5753,110 +5882,110 @@
  },
  "ws/spa/products": {
   "pr1": {
-   "name": "Serum Vitamin C 30ml",
-   "category": "Chăm sóc da",
-   "cost": 180000,
-   "price": 599000,
+   "name": "Tinh dầu massage thảo mộc 50ml",
+   "category": "Nàng Ba Herbal",
+   "cost": 112000,
+   "price": 280000,
    "stock": 14,
    "minStock": 5,
    "supplierId": "sp1",
-   "unit": "chai",
+   "unit": "sp",
    "sku": "8935001000001",
    "active": true
   },
   "pr2": {
-   "name": "Toner hoa hồng 200ml",
-   "category": "Chăm sóc da",
-   "cost": 95000,
-   "price": 449000,
+   "name": "Serum dưỡng sáng da 30ml",
+   "category": "Nàng Ba Care",
+   "cost": 180000,
+   "price": 450000,
    "stock": 18,
    "minStock": 6,
    "supplierId": "sp1",
-   "unit": "chai",
+   "unit": "sp",
    "sku": "8935001000002",
    "active": true
   },
   "pr3": {
-   "name": "Mặt nạ collagen 10 miếng",
-   "category": "Chăm sóc da",
-   "cost": 120000,
-   "price": 699000,
+   "name": "Kem chống rạn da mẹ bầu 100g",
+   "category": "Nàng Ba Mom",
+   "cost": 128000,
+   "price": 320000,
    "stock": 4,
    "minStock": 5,
    "supplierId": "sp1",
-   "unit": "hộp",
+   "unit": "sp",
    "sku": "8935001000003",
    "active": true
   },
   "pr4": {
-   "name": "Kem chống nắng SPF50",
-   "category": "Chăm sóc da",
-   "cost": 150000,
-   "price": 649000,
+   "name": "Kem dưỡng ẩm ban đêm 50g",
+   "category": "Nàng Ba Care",
+   "cost": 156000,
+   "price": 390000,
    "stock": 11,
    "minStock": 5,
    "supplierId": "sp1",
-   "unit": "tuýp",
+   "unit": "sp",
    "sku": "8935001000004",
    "active": true
   },
   "pr5": {
-   "name": "Sữa rửa mặt dịu nhẹ",
-   "category": "Chăm sóc da",
-   "cost": 85000,
-   "price": 549000,
+   "name": "Bộ tinh dầu xông thảo dược",
+   "category": "Nàng Ba Herbal",
+   "cost": 140000,
+   "price": 350000,
    "stock": 13,
    "minStock": 5,
    "supplierId": "sp1",
-   "unit": "chai",
+   "unit": "bộ",
    "sku": "8935001000005",
    "active": true
   },
   "pr6": {
-   "name": "Tinh dầu oải hương 50ml",
-   "category": "Body",
-   "cost": 70000,
-   "price": 999000,
+   "name": "Bộ serum & cây lăn đá mặt",
+   "category": "Nàng Ba Care",
+   "cost": 208000,
+   "price": 520000,
    "stock": 21,
    "minStock": 5,
    "supplierId": "sp3",
-   "unit": "chai",
+   "unit": "bộ",
    "sku": "8935001000006",
    "active": true
   },
   "pr7": {
-   "name": "Muối tắm thảo dược",
-   "category": "Body",
-   "cost": 45000,
-   "price": 399000,
+   "name": "Tinh chất dưỡng da cho mẹ bầu",
+   "category": "Nàng Ba Mom",
+   "cost": 152000,
+   "price": 380000,
    "stock": 10,
    "minStock": 4,
    "supplierId": "sp3",
-   "unit": "hũ",
+   "unit": "sp",
    "sku": "8935001000007",
    "active": true
   },
   "pr8": {
-   "name": "Dầu gội thảo mộc 500ml",
-   "category": "Chăm sóc tóc",
-   "cost": 90000,
-   "price": 699000,
+   "name": "Xà phòng thảo dược thủ công (4 bánh)",
+   "category": "Nàng Ba Herbal",
+   "cost": 72000,
+   "price": 180000,
    "stock": 9,
    "minStock": 4,
    "supplierId": "sp3",
-   "unit": "chai",
+   "unit": "sp",
    "sku": "8935001000008",
    "active": true
   },
   "pr9": {
-   "name": "Dưỡng mi Mi Xinh",
-   "category": "Mi",
-   "cost": 110000,
-   "price": 499000,
+   "name": "Sữa tắm thảo dược cho bé 250ml",
+   "category": "Nàng Ba Baby",
+   "cost": 66000,
+   "price": 165000,
    "stock": 2,
    "minStock": 3,
    "supplierId": "sp2",
-   "unit": "tuýp",
+   "unit": "sp",
    "sku": "8935001000009",
    "active": true
   },
@@ -5871,6 +6000,78 @@
    "unit": "lọ",
    "sku": "8935001000010",
    "active": false
+  },
+  "nb10": {
+   "stock": 10,
+   "minStock": 3,
+   "supplierId": "sp3",
+   "sku": "8935002000010",
+   "active": true,
+   "name": "Dầu dưỡng da cho bé 100ml",
+   "category": "Nàng Ba Baby",
+   "price": 185000,
+   "cost": 74000,
+   "unit": "sp"
+  },
+  "nb11": {
+   "stock": 10,
+   "minStock": 3,
+   "supplierId": "sp3",
+   "sku": "8935002000011",
+   "active": true,
+   "name": "Bộ chăm sóc da cơ bản 5 món",
+   "category": "Nàng Ba Care",
+   "price": 890000,
+   "cost": 356000,
+   "unit": "bộ"
+  },
+  "nb12": {
+   "stock": 10,
+   "minStock": 3,
+   "supplierId": "sp3",
+   "sku": "8935002000012",
+   "active": true,
+   "name": "Sáp dưỡng môi thiên nhiên",
+   "category": "Nàng Ba Mom",
+   "price": 95000,
+   "cost": 38000,
+   "unit": "sp"
+  },
+  "nb13": {
+   "stock": 10,
+   "minStock": 3,
+   "supplierId": "sp3",
+   "sku": "8935002000013",
+   "active": true,
+   "name": "Mặt nạ bơ dưỡng ẩm (hộp 10 miếng)",
+   "category": "Nàng Ba Care",
+   "price": 220000,
+   "cost": 88000,
+   "unit": "sp"
+  },
+  "nb14": {
+   "stock": 10,
+   "minStock": 3,
+   "supplierId": "sp3",
+   "sku": "8935002000014",
+   "active": true,
+   "name": "Bộ đá nóng massage tại nhà",
+   "category": "Sản phẩm khác",
+   "price": 450000,
+   "cost": 180000,
+   "unit": "bộ"
+  },
+  "nb15": {
+   "stock": 10,
+   "minStock": 3,
+   "supplierId": "sp3",
+   "sku": "8935002000015",
+   "active": true,
+   "name": "Khăn ủ tóc sợi tre",
+   "category": "Sản phẩm khác",
+   "price": 120000,
+   "cost": 48000,
+   "unit": "sp"
   }
  },
  "ws/nhakhoa/suppliers": {

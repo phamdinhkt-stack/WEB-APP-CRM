@@ -7,8 +7,8 @@ const { zaloAdmin } = require('./_zalo');
 function mailHtml(o) {
   const row = (a, b) => `<tr><td style="padding:6px 0;color:#7d6a60">${a}</td><td style="padding:6px 0;text-align:right">${b}</td></tr>`;
   return `<div style="font-family:Arial,sans-serif;max-width:560px;margin:auto;color:#3a2a22">
-  <h2 style="color:#c9405a;margin:0 0 4px">CHÚC MỪNG BẠN ĐÃ ĐẶT LỊCH THÀNH CÔNG</h2>
-  <p>Spa HOA MAI đã nhận thanh toán <b>${vnd(o.pay.paidAmount)}</b> cho lịch hẹn <b>${o.code}</b>. Cảm ơn ${esc(o.xung || 'bạn')} ${esc(o.name)}!</p>
+  <h2 style="color:#2f7d4f;margin:0 0 4px">CHÚC MỪNG BẠN ĐÃ ĐẶT LỊCH THÀNH CÔNG</h2>
+  <p>SPA Nàng Ba đã nhận thanh toán <b>${vnd(o.pay.paidAmount)}</b> cho lịch hẹn <b>${o.code}</b>. Cảm ơn ${esc(o.xung || 'bạn')} ${esc(o.name)}!</p>
   <table style="width:100%;border-collapse:collapse;font-size:14px">
    ${row('Thời gian', `${o.time} – ${o.date.split('-').reverse().join('/')}`)}${row('Nhân viên', esc(o.staffName || 'Spa sắp xếp'))}
    ${o.items.map(i => row(esc(i.name) + ` <small>(${esc(i.duration)} · ${esc(i.pack)})</small>`, vnd(i.price))).join('')}
@@ -16,7 +16,7 @@ function mailHtml(o) {
    ${row('Tổng đơn', vnd(o.total))}${o.pay.discount ? row('Ưu đãi thanh toán trước', '−' + vnd(o.pay.discount)) : ''}${row('<b>Đã thanh toán</b>', `<b style="color:#3f6b4a">${vnd(o.pay.paidAmount)}</b>`)}
   </table>
   <p style="margin-top:16px">Vui lòng đến đúng giờ và đọc mã <b>${o.code}</b> khi check-in. Cần hỗ trợ: 0785 568 539 (điện thoại/Zalo).</p>
-  <p style="color:#7d6a60;font-size:12px">Spa HOA MAI · Bãi Thơm, Đặc Khu Phú Quốc, An Giang</p></div>`;
+  <p style="color:#7d6a60;font-size:12px">SPA Nàng Ba · Beauty, Mom &amp; Baby Care</p></div>`;
 }
 
 module.exports = async (req, res) => {
@@ -50,7 +50,7 @@ module.exports = async (req, res) => {
     o.updatedAt = Date.now();
     await setJSON('order:' + code, o); await kv('ZADD', 'orders_upd', o.updatedAt, code);
     if (o.pay.status === 'paid' && !wasPaid) {
-      const mail = await email(o.email, `Spa HOA MAI – Xác nhận thanh toán lịch hẹn ${code}`, mailHtml(o));
+      const mail = await email(o.email, `SPA Nàng Ba – Xác nhận thanh toán lịch hẹn ${code}`, mailHtml(o));
       o.pay.emailSent = !!mail.sent; await setJSON('order:' + code, o);
       await zaloAdmin(`✅ ĐÃ THANH TOÁN ${code} qua SePay\n👤 ${o.xung} ${o.name} · ${o.phone}\nNhận: ${vnd(o.pay.received)}${o.pay.discount ? ' (ưu đãi −' + vnd(o.pay.discount) + ')' : ''}\nLịch: ${o.time} ${o.date.split('-').reverse().join('/')}`, null).catch(() => {});
       await telegram(['thungan', 'ketoan', 'letan'], `✅ <b>Đã thanh toán ${code}</b> qua SePay\n${esc(o.xung)} ${esc(o.name)} · ${o.phone}\nNhận: <b>${vnd(o.pay.received)}</b>${o.pay.discount ? ` (ưu đãi −${vnd(o.pay.discount)})` : ''} · ${esc(b.gateway || '')} ${esc(b.referenceCode || '')}\nLịch: ${o.time} ${o.date.split('-').reverse().join('/')}${o.staffName ? ' · ' + esc(o.staffName) : ''}\n${o.email ? (mail.sent ? '📧 Đã gửi email xác nhận cho khách' : '📧 Chưa gửi được email') : 'Khách không để lại email – nhắn Zalo xác nhận'}`);

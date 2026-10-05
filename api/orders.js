@@ -45,8 +45,9 @@ module.exports = async (req, res) => {
       if (!/^HM\d{6}[A-Z0-9]{4}$/.test(code)) return send(res, 400, { error: 'Mã đơn không hợp lệ' });
       if (!str(b.name, 80) || phone.length < 9 || phone.length > 11) return send(res, 400, { error: 'Thiếu họ tên hoặc số điện thoại' });
       if (!/^\d{4}-\d{2}-\d{2}$/.test(b.date || '') || !/^\d{2}:\d{2}$/.test(b.time || '')) return send(res, 400, { error: 'Thời gian không hợp lệ' });
-      const items = pricedItems(b.items, await flashPrices(req)); if (!items.length) return send(res, 400, { error: 'Chưa có dịch vụ hợp lệ' });
+      const items = pricedItems(b.items, await flashPrices(req));
       const products = pricedProducts(b.products);
+      if (!items.length && !products.length) return send(res, 400, { error: 'Chưa có dịch vụ hoặc sản phẩm hợp lệ' });
       const total = items.reduce((a, i) => a + i.price, 0) + products.reduce((a, p) => a + p.price * p.qty, 0);
       const payAmount = Math.round(total * (100 - PAYNOW_PCT) / 100 / 1000) * 1000;
       const now = Date.now();

@@ -22,7 +22,7 @@ module.exports = async (req, res) => {
       if (m && code && safeEq(m[1], code)) {
         const list = JSON.parse((await kv('GET', 'zalo:admins')) || '[]'); if (!list.includes(uid)) list.push(uid);
         await kv('SET', 'zalo:admins', JSON.stringify(list));
-        const t = await accessToken(); if (t) await sendCS(t, uid, '✅ Đã đăng ký nhận thông báo khách mới của Spa HOA MAI. Nhắn "ok" cho OA ít nhất 1 lần mỗi tuần để không bị gián đoạn nhé.');
+        const t = await accessToken(); if (t) await sendCS(t, uid, '✅ Đã đăng ký nhận thông báo khách mới của SPA Nàng Ba. Nhắn "ok" cho OA ít nhất 1 lần mỗi tuần để không bị gián đoạn nhé.');
       }
       const admins = JSON.parse((await kv('GET', 'zalo:admins')) || '[]');
       if (admins.includes(uid)) await kv('SET', 'zalo:admin_seen:' + uid, String(Date.now()));
