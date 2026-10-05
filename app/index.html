@@ -313,6 +313,7 @@ h2{font-size:16px;margin:0;font-weight:700}
 .input:focus{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px var(--accent-soft)}
 .form{display:flex;flex-direction:column;gap:12px}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.brrow{display:grid;grid-template-columns:1.3fr .5fr 1.6fr 1fr 1fr auto;gap:8px;align-items:center;margin-bottom:8px}.br-on{display:flex;gap:6px;align-items:center;font-size:13px;white-space:nowrap}@media(max-width:820px){.brrow{grid-template-columns:1fr 1fr}}.brbar{height:4px;background:rgba(0,0,0,.06);border-radius:4px;margin-top:4px;max-width:180px}.brbar i{display:block;height:100%;background:var(--accent);border-radius:4px}#br-pill select:disabled{opacity:1;cursor:default}
 .form-row3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
 @media (max-width:520px){.form-row3{grid-template-columns:1fr 1fr}}
 .search{position:relative}
@@ -1493,7 +1494,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "active": true,
    "name": "Hoa",
    "role": "Chăm sóc da",
-   "color": "#1E7A68"
+   "color": "#1E7A68",
+   "branchId": "b1"
   },
   "st2": {
    "phone": "0908111002",
@@ -1502,7 +1504,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "active": true,
    "name": "Mai",
    "role": "Body, massage",
-   "color": "#B0476A"
+   "color": "#B0476A",
+   "branchId": "b2"
   },
   "st3": {
    "phone": "0908111003",
@@ -1511,7 +1514,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "active": true,
    "name": "Linh",
    "role": "Mi, mày",
-   "color": "#3563B8"
+   "color": "#3563B8",
+   "branchId": "b3"
   },
   "st4": {
    "phone": "0908111004",
@@ -1520,7 +1524,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "active": true,
    "name": "Thảo",
    "role": "Gội, dưỡng sinh",
-   "color": "#A8690F"
+   "color": "#A8690F",
+   "branchId": "b1"
   }
  },
  "ws/nhakhoa/appointments": {
@@ -4328,7 +4333,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "transfer",
    "date": "2026-07-20",
    "label": "Trị mụn 10 buổi",
-   "createdAt": 1
+   "createdAt": 1,
+   "branchId": "b2"
   },
   "y10": {
    "customerId": "c08",
@@ -4337,7 +4343,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "cash",
    "date": "2026-09-05",
    "label": "Gội đầu dưỡng sinh",
-   "createdAt": 10
+   "createdAt": 10,
+   "branchId": "b3"
   },
   "y11": {
    "customerId": "c09",
@@ -4346,7 +4353,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "transfer",
    "date": "2026-09-01",
    "label": "Nối mi",
-   "createdAt": 11
+   "createdAt": 11,
+   "branchId": "b1"
   },
   "y12": {
    "customerId": "c11",
@@ -4355,7 +4363,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "card",
    "date": "2026-09-19",
    "label": "Peel da sinh học",
-   "createdAt": 12
+   "createdAt": 12,
+   "branchId": "b2"
   },
   "y13": {
    "customerId": "c12",
@@ -4364,7 +4373,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "transfer",
    "date": "2026-09-20",
    "label": "Massage body đá nóng",
-   "createdAt": 13
+   "createdAt": 13,
+   "branchId": "b3"
   },
   "y14": {
    "customerId": "c14",
@@ -4373,7 +4383,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "cash",
    "date": "2026-09-21",
    "label": "Gội đầu dưỡng sinh",
-   "createdAt": 14
+   "createdAt": 14,
+   "branchId": "b1"
   },
   "y15": {
    "customerId": "c03",
@@ -4382,7 +4393,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "transfer",
    "date": "2026-09-22",
    "label": "Chăm sóc da cơ bản",
-   "createdAt": 15
+   "createdAt": 15,
+   "branchId": "b2"
   },
   "y16": {
    "customerId": "c16",
@@ -4391,7 +4403,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "cash",
    "date": "2026-09-23",
    "label": "Massage body đá nóng",
-   "createdAt": 16
+   "createdAt": 16,
+   "branchId": "b3"
   },
   "y17": {
    "customerId": "c02",
@@ -4400,7 +4413,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "cash",
    "date": "2026-09-24",
    "label": "Thu nợ: Triệt lông nách 8 buổi",
-   "createdAt": 17
+   "createdAt": 17,
+   "branchId": "b1"
   },
   "y2": {
    "customerId": "c02",
@@ -4409,7 +4423,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "cash",
    "date": "2026-08-10",
    "label": "Triệt lông nách 8 buổi",
-   "createdAt": 2
+   "createdAt": 2,
+   "branchId": "b1"
   },
   "y3": {
    "customerId": "c05",
@@ -4418,7 +4433,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "card",
    "date": "2026-08-01",
    "label": "Chăm sóc da 12 buổi",
-   "createdAt": 3
+   "createdAt": 3,
+   "branchId": "b2"
   },
   "y4": {
    "customerId": "c07",
@@ -4427,7 +4443,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "transfer",
    "date": "2026-09-10",
    "label": "Trị mụn 10 buổi",
-   "createdAt": 4
+   "createdAt": 4,
+   "branchId": "b3"
   },
   "y5": {
    "customerId": "c10",
@@ -4436,7 +4453,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "cash",
    "date": "2026-07-05",
    "label": "Triệt lông nách 8 buổi",
-   "createdAt": 5
+   "createdAt": 5,
+   "branchId": "b1"
   },
   "y6": {
    "customerId": "c13",
@@ -4445,7 +4463,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "transfer",
    "date": "2026-06-20",
    "label": "Chăm sóc da 12 buổi",
-   "createdAt": 6
+   "createdAt": 6,
+   "branchId": "b2"
   },
   "y7": {
    "customerId": "c15",
@@ -4454,7 +4473,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "transfer",
    "date": "2026-09-25",
    "label": "Trị mụn 10 buổi",
-   "createdAt": 7
+   "createdAt": 7,
+   "branchId": "b3"
   },
   "y8": {
    "customerId": "c04",
@@ -4463,7 +4483,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "cash",
    "date": "2026-08-15",
    "label": "Massage body đá nóng",
-   "createdAt": 8
+   "createdAt": 8,
+   "branchId": "b1"
   },
   "y9": {
    "customerId": "c06",
@@ -4472,7 +4493,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "cash",
    "date": "2026-08-20",
    "label": "Chăm sóc da cơ bản",
-   "createdAt": 9
+   "createdAt": 9,
+   "branchId": "b2"
   },
   "gy1": {
    "customerId": "c11",
@@ -4481,7 +4503,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "ewallet",
    "date": "2026-09-13",
    "label": "Phun mày tán bột",
-   "createdAt": 1789316100000
+   "createdAt": 1789316100000,
+   "branchId": "b1"
   },
   "gy2": {
    "customerId": "c03",
@@ -4490,7 +4513,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "transfer",
    "date": "2026-09-14",
    "label": "Trị mụn chuyên sâu, Dầu gội thảo mộc 500ml",
-   "createdAt": 1789398000000
+   "createdAt": 1789398000000,
+   "branchId": "b1"
   },
   "gy3": {
    "customerId": "c03",
@@ -4499,7 +4523,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "card",
    "date": "2026-09-15",
    "label": "Nối mi, Sữa rửa mặt dịu nhẹ",
-   "createdAt": 1789469100000
+   "createdAt": 1789469100000,
+   "branchId": "b3"
   },
   "gy4": {
    "customerId": "c16",
@@ -4508,7 +4533,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "card",
    "date": "2026-09-15",
    "label": "Nối mi, Dưỡng mi Mi Xinh",
-   "createdAt": 1789491600000
+   "createdAt": 1789491600000,
+   "branchId": "b1"
   },
   "gy5": {
    "customerId": "c08",
@@ -4517,7 +4543,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "transfer",
    "date": "2026-09-15",
    "label": "Trị mụn chuyên sâu",
-   "createdAt": 1789469100000
+   "createdAt": 1789469100000,
+   "branchId": "b2"
   },
   "gy6": {
    "customerId": "c09",
@@ -4526,7 +4553,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "transfer",
    "date": "2026-09-16",
    "label": "Massage body đá nóng, Nối mi",
-   "createdAt": 1789549200000
+   "createdAt": 1789549200000,
+   "branchId": "b1"
   },
   "gy7": {
    "customerId": "c05",
@@ -4535,7 +4563,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "card",
    "date": "2026-09-16",
    "label": "Nối mi, Peel da sinh học",
-   "createdAt": 1789570800000
+   "createdAt": 1789570800000,
+   "branchId": "b1"
   },
   "gy8": {
    "customerId": "c10",
@@ -4544,7 +4573,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "card",
    "date": "2026-09-16",
    "label": "Trị mụn chuyên sâu, Dưỡng mi Mi Xinh",
-   "createdAt": 1789554600000
+   "createdAt": 1789554600000,
+   "branchId": "b3"
   },
   "gy9": {
    "customerId": "c16",
@@ -4553,7 +4583,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "cash",
    "date": "2026-09-16",
    "label": "Gội đầu dưỡng sinh",
-   "createdAt": 1789551900000
+   "createdAt": 1789551900000,
+   "branchId": "b3"
   },
   "gy10": {
    "customerId": "c07",
@@ -4562,7 +4593,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "transfer",
    "date": "2026-09-17",
    "label": "Chăm sóc da cơ bản",
-   "createdAt": 1789674300000
+   "createdAt": 1789674300000,
+   "branchId": "b2"
   },
   "gy11": {
    "customerId": "c08",
@@ -4571,7 +4603,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "card",
    "date": "2026-09-18",
    "label": "Triệt lông nách, Massage body đá nóng, Mặt nạ collagen (hộp 10)",
-   "createdAt": 1789744500000
+   "createdAt": 1789744500000,
+   "branchId": "b1"
   },
   "gy12": {
    "customerId": "",
@@ -4580,7 +4613,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "transfer",
    "date": "2026-09-18",
    "label": "Chăm sóc da cơ bản",
-   "createdAt": 1789759800000
+   "createdAt": 1789759800000,
+   "branchId": "b2"
   },
   "gy13": {
    "customerId": "c01",
@@ -4589,7 +4623,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "ewallet",
    "date": "2026-09-19",
    "label": "Massage body đá nóng",
-   "createdAt": 1789841700000
+   "createdAt": 1789841700000,
+   "branchId": "b1"
   },
   "gy14": {
    "customerId": "",
@@ -4598,7 +4633,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "cash",
    "date": "2026-09-20",
    "label": "Peel da sinh học",
-   "createdAt": 1789906500000
+   "createdAt": 1789906500000,
+   "branchId": "b2"
   },
   "gy15": {
    "customerId": "c02",
@@ -4607,7 +4643,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "ewallet",
    "date": "2026-09-20",
    "label": "Gội đầu dưỡng sinh",
-   "createdAt": 1789906500000
+   "createdAt": 1789906500000,
+   "branchId": "b1"
   },
   "gy16": {
    "customerId": "c06",
@@ -4616,7 +4653,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "transfer",
    "date": "2026-09-21",
    "label": "Phun mày tán bột",
-   "createdAt": 1789990200000
+   "createdAt": 1789990200000,
+   "branchId": "b1"
   },
   "gy17": {
    "customerId": "c15",
@@ -4625,7 +4663,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "ewallet",
    "date": "2026-09-21",
    "label": "Massage body đá nóng",
-   "createdAt": 1790011800000
+   "createdAt": 1790011800000,
+   "branchId": "b1"
   },
   "gy18": {
    "customerId": "c07",
@@ -4634,7 +4673,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "transfer",
    "date": "2026-09-22",
    "label": "Trị mụn chuyên sâu",
-   "createdAt": 1790069400000
+   "createdAt": 1790069400000,
+   "branchId": "b2"
   },
   "gy19": {
    "customerId": "c12",
@@ -4643,7 +4683,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "ewallet",
    "date": "2026-09-23",
    "label": "Massage body đá nóng",
-   "createdAt": 1790169300000
+   "createdAt": 1790169300000,
+   "branchId": "b2"
   },
   "gy20": {
    "customerId": "c04",
@@ -4652,7 +4693,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "cash",
    "date": "2026-09-23",
    "label": "Phun mày tán bột, Serum Vitamin C 30ml",
-   "createdAt": 1790184600000
+   "createdAt": 1790184600000,
+   "branchId": "b3"
   },
   "gy21": {
    "customerId": "c03",
@@ -4661,7 +4703,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "cash",
    "date": "2026-09-24",
    "label": "Triệt lông nách, Toner hoa hồng 200ml",
-   "createdAt": 1790240400000
+   "createdAt": 1790240400000,
+   "branchId": "b3"
   },
   "gy22": {
    "customerId": "c08",
@@ -4670,7 +4713,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "card",
    "date": "2026-09-24",
    "label": "Trị mụn chuyên sâu, Dưỡng mi Mi Xinh",
-   "createdAt": 1790272800000
+   "createdAt": 1790272800000,
+   "branchId": "b1"
   },
   "gy23": {
    "customerId": "c13",
@@ -4679,7 +4723,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "transfer",
    "date": "2026-09-24",
    "label": "Gội đầu dưỡng sinh, Nối mi, Toner hoa hồng 200ml",
-   "createdAt": 1790263800000
+   "createdAt": 1790263800000,
+   "branchId": "b3"
   },
   "gy24": {
    "customerId": "c02",
@@ -4688,7 +4733,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "card",
    "date": "2026-09-25",
    "label": "Massage body đá nóng",
-   "createdAt": 1790344800000
+   "createdAt": 1790344800000,
+   "branchId": "b1"
   },
   "gy25": {
    "customerId": "c11",
@@ -4697,7 +4743,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "transfer",
    "date": "2026-09-25",
    "label": "Chăm sóc da cơ bản, Trị mụn chuyên sâu, Toner hoa hồng 200ml",
-   "createdAt": 1790329500000
+   "createdAt": 1790329500000,
+   "branchId": "b2"
   },
   "gy26": {
    "customerId": "c05",
@@ -4706,7 +4753,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "cash",
    "date": "2026-09-25",
    "label": "Phun mày tán bột, Muối tắm thảo dược",
-   "createdAt": 1790365500000
+   "createdAt": 1790365500000,
+   "branchId": "b3"
   },
   "gy27": {
    "customerId": "c09",
@@ -4715,7 +4763,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "ewallet",
    "date": "2026-09-26",
    "label": "Chăm sóc da cơ bản, Dưỡng mi Mi Xinh",
-   "createdAt": 1790417700000
+   "createdAt": 1790417700000,
+   "branchId": "b2"
   },
   "gy28": {
    "customerId": "c02",
@@ -4724,7 +4773,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "method": "transfer",
    "date": "2026-09-26",
    "label": "Peel da sinh học, Serum Vitamin C 30ml",
-   "createdAt": 1790450100000
+   "createdAt": 1790450100000,
+   "branchId": "b3"
   }
  },
  "ws/spa/sales": {
@@ -4737,7 +4787,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "kind": "course",
    "courseId": "k1",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b2"
   },
   "x10": {
    "customerId": "c08",
@@ -4748,7 +4799,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "kind": "service",
    "courseId": "",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b3"
   },
   "x11": {
    "customerId": "c09",
@@ -4759,7 +4811,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "kind": "service",
    "courseId": "",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b1"
   },
   "x12": {
    "customerId": "c11",
@@ -4770,7 +4823,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "kind": "service",
    "courseId": "",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b2"
   },
   "x13": {
    "customerId": "c12",
@@ -4781,7 +4835,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "kind": "service",
    "courseId": "",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b3"
   },
   "x14": {
    "customerId": "c14",
@@ -4792,7 +4847,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "kind": "service",
    "courseId": "",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b1"
   },
   "x15": {
    "customerId": "c03",
@@ -4803,7 +4859,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "kind": "service",
    "courseId": "",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b2"
   },
   "x16": {
    "customerId": "c16",
@@ -4814,7 +4871,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "kind": "service",
    "courseId": "",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b3"
   },
   "x2": {
    "customerId": "c02",
@@ -4825,7 +4883,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "kind": "course",
    "courseId": "k2",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b1"
   },
   "x3": {
    "customerId": "c05",
@@ -4836,7 +4895,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "kind": "course",
    "courseId": "k3",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b2"
   },
   "x4": {
    "customerId": "c07",
@@ -4847,7 +4907,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "kind": "course",
    "courseId": "k4",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b3"
   },
   "x5": {
    "customerId": "c10",
@@ -4858,7 +4919,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "kind": "course",
    "courseId": "k5",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b1"
   },
   "x6": {
    "customerId": "c13",
@@ -4869,7 +4931,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "kind": "course",
    "courseId": "k6",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b2"
   },
   "x7": {
    "customerId": "c15",
@@ -4880,7 +4943,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "kind": "course",
    "courseId": "k7",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b3"
   },
   "x8": {
    "customerId": "c04",
@@ -4891,7 +4955,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "kind": "service",
    "courseId": "",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b1"
   },
   "x9": {
    "customerId": "c06",
@@ -4902,7 +4967,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "kind": "service",
    "courseId": "",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b2"
   },
   "gx1": {
    "customerId": "c11",
@@ -4933,7 +4999,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st1",
    "createdAt": 1789316100000,
    "invoiceNo": "HĐ260913-01",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx2": {
    "customerId": "c03",
@@ -4971,7 +5038,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st1",
    "createdAt": 1789398000000,
    "invoiceNo": "HĐ260914-01",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx3": {
    "customerId": "c03",
@@ -5009,7 +5077,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st3",
    "createdAt": 1789469100000,
    "invoiceNo": "HĐ260915-01",
-   "note": ""
+   "note": "",
+   "branchId": "b3"
   },
   "gx4": {
    "customerId": "c16",
@@ -5047,7 +5116,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st1",
    "createdAt": 1789491600000,
    "invoiceNo": "HĐ260915-02",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx5": {
    "customerId": "c08",
@@ -5078,7 +5148,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st2",
    "createdAt": 1789469100000,
    "invoiceNo": "HĐ260915-03",
-   "note": ""
+   "note": "",
+   "branchId": "b2"
   },
   "gx6": {
    "customerId": "c09",
@@ -5116,7 +5187,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st4",
    "createdAt": 1789549200000,
    "invoiceNo": "HĐ260916-01",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx7": {
    "customerId": "c05",
@@ -5154,7 +5226,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st4",
    "createdAt": 1789570800000,
    "invoiceNo": "HĐ260916-02",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx8": {
    "customerId": "c10",
@@ -5192,7 +5265,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st3",
    "createdAt": 1789554600000,
    "invoiceNo": "HĐ260916-03",
-   "note": ""
+   "note": "",
+   "branchId": "b3"
   },
   "gx9": {
    "customerId": "c16",
@@ -5223,7 +5297,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st3",
    "createdAt": 1789551900000,
    "invoiceNo": "HĐ260916-04",
-   "note": ""
+   "note": "",
+   "branchId": "b3"
   },
   "gx10": {
    "customerId": "c07",
@@ -5254,7 +5329,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st2",
    "createdAt": 1789674300000,
    "invoiceNo": "HĐ260917-01",
-   "note": ""
+   "note": "",
+   "branchId": "b2"
   },
   "gx11": {
    "customerId": "c08",
@@ -5299,7 +5375,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st4",
    "createdAt": 1789744500000,
    "invoiceNo": "HĐ260918-01",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx12": {
    "customerId": "",
@@ -5330,7 +5407,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st2",
    "createdAt": 1789759800000,
    "invoiceNo": "HĐ260918-02",
-   "note": ""
+   "note": "",
+   "branchId": "b2"
   },
   "gx13": {
    "customerId": "c01",
@@ -5361,7 +5439,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st4",
    "createdAt": 1789841700000,
    "invoiceNo": "HĐ260919-01",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx14": {
    "customerId": "",
@@ -5392,7 +5471,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st2",
    "createdAt": 1789906500000,
    "invoiceNo": "HĐ260920-01",
-   "note": ""
+   "note": "",
+   "branchId": "b2"
   },
   "gx15": {
    "customerId": "c02",
@@ -5423,7 +5503,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st1",
    "createdAt": 1789906500000,
    "invoiceNo": "HĐ260920-02",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx16": {
    "customerId": "c06",
@@ -5454,7 +5535,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st4",
    "createdAt": 1789990200000,
    "invoiceNo": "HĐ260921-01",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx17": {
    "customerId": "c15",
@@ -5485,7 +5567,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st4",
    "createdAt": 1790011800000,
    "invoiceNo": "HĐ260921-02",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx18": {
    "customerId": "c07",
@@ -5516,7 +5599,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st2",
    "createdAt": 1790069400000,
    "invoiceNo": "HĐ260922-01",
-   "note": ""
+   "note": "",
+   "branchId": "b2"
   },
   "gx19": {
    "customerId": "c12",
@@ -5547,7 +5631,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st2",
    "createdAt": 1790169300000,
    "invoiceNo": "HĐ260923-01",
-   "note": ""
+   "note": "",
+   "branchId": "b2"
   },
   "gx20": {
    "customerId": "c04",
@@ -5585,7 +5670,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st3",
    "createdAt": 1790184600000,
    "invoiceNo": "HĐ260923-02",
-   "note": ""
+   "note": "",
+   "branchId": "b3"
   },
   "gx21": {
    "customerId": "c03",
@@ -5623,7 +5709,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st3",
    "createdAt": 1790240400000,
    "invoiceNo": "HĐ260924-01",
-   "note": ""
+   "note": "",
+   "branchId": "b3"
   },
   "gx22": {
    "customerId": "c08",
@@ -5661,7 +5748,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st1",
    "createdAt": 1790272800000,
    "invoiceNo": "HĐ260924-02",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx23": {
    "customerId": "c13",
@@ -5706,7 +5794,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st3",
    "createdAt": 1790263800000,
    "invoiceNo": "HĐ260924-03",
-   "note": ""
+   "note": "",
+   "branchId": "b3"
   },
   "gx24": {
    "customerId": "c02",
@@ -5737,7 +5826,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st4",
    "createdAt": 1790344800000,
    "invoiceNo": "HĐ260925-01",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx25": {
    "customerId": "c11",
@@ -5782,7 +5872,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st2",
    "createdAt": 1790329500000,
    "invoiceNo": "HĐ260925-02",
-   "note": ""
+   "note": "",
+   "branchId": "b2"
   },
   "gx26": {
    "customerId": "c05",
@@ -5820,7 +5911,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st3",
    "createdAt": 1790365500000,
    "invoiceNo": "HĐ260925-03",
-   "note": ""
+   "note": "",
+   "branchId": "b3"
   },
   "gx27": {
    "customerId": "c09",
@@ -5858,7 +5950,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st2",
    "createdAt": 1790417700000,
    "invoiceNo": "HĐ260926-01",
-   "note": ""
+   "note": "",
+   "branchId": "b2"
   },
   "gx28": {
    "customerId": "c02",
@@ -5896,7 +5989,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "staffId": "st3",
    "createdAt": 1790450100000,
    "invoiceNo": "HĐ260926-02",
-   "note": ""
+   "note": "",
+   "branchId": "b3"
   }
  },
  "ws/spa/services": {
@@ -6766,7 +6860,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
     }
    ],
    "total": 2940000,
-   "expenseId": "e5"
+   "expenseId": "e5",
+   "branchId": "b1"
   },
   "po2": {
    "code": "PN-0002",
@@ -6786,7 +6881,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
     }
    ],
    "total": 1300000,
-   "note": "Giao trước thứ 7"
+   "note": "Giao trước thứ 7",
+   "branchId": "b2"
   }
  },
  "ws/nhakhoa/purchases": {
@@ -6819,7 +6915,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "title": "Tiền thuê mặt bằng tháng 9",
    "amount": 18000000,
    "method": "transfer",
-   "payee": "Chủ nhà"
+   "payee": "Chủ nhà",
+   "branchId": "b1"
   },
   "e2": {
    "date": "2026-09-03",
@@ -6827,7 +6924,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "title": "Tiền điện tháng 8",
    "amount": 3450000,
    "method": "transfer",
-   "payee": "EVN HCMC"
+   "payee": "EVN HCMC",
+   "branchId": "b1"
   },
   "e3": {
    "date": "2026-09-03",
@@ -6835,7 +6933,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "title": "Nước và internet tháng 8",
    "amount": 980000,
    "method": "transfer",
-   "payee": "Sawaco, FPT"
+   "payee": "Sawaco, FPT",
+   "branchId": "b2"
   },
   "e4": {
    "date": "2026-09-06",
@@ -6843,7 +6942,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "title": "Quảng cáo Facebook tuần 1-2",
    "amount": 2500000,
    "method": "card",
-   "payee": "Meta"
+   "payee": "Meta",
+   "branchId": "b3"
   },
   "e5": {
    "date": "2026-09-07",
@@ -6851,7 +6951,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "title": "Nhập hàng PN-0001 – Công ty Mỹ phẩm Hàn Việt",
    "amount": 2940000,
    "method": "transfer",
-   "payee": "Công ty Mỹ phẩm Hàn Việt"
+   "payee": "Công ty Mỹ phẩm Hàn Việt",
+   "branchId": "b1"
   },
   "e6": {
    "date": "2026-09-12",
@@ -6859,7 +6960,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "title": "Khăn, găng tay, bông tẩy trang",
    "amount": 1250000,
    "method": "cash",
-   "payee": "Vật tư Spa Sài Gòn"
+   "payee": "Vật tư Spa Sài Gòn",
+   "branchId": "b2"
   },
   "e7": {
    "date": "2026-09-18",
@@ -6867,7 +6969,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "title": "Bảo trì máy triệt lông",
    "amount": 1800000,
    "method": "cash",
-   "payee": "Kỹ thuật Minh"
+   "payee": "Kỹ thuật Minh",
+   "branchId": "b3"
   },
   "e8": {
    "date": "2026-09-20",
@@ -6875,7 +6978,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "title": "Quảng cáo Facebook tuần 3-4",
    "amount": 2500000,
    "method": "card",
-   "payee": "Meta"
+   "payee": "Meta",
+   "branchId": "b1"
   },
   "e9": {
    "date": "2026-08-01",
@@ -6883,7 +6987,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "title": "Tiền thuê mặt bằng tháng 8",
    "amount": 18000000,
    "method": "transfer",
-   "payee": "Chủ nhà"
+   "payee": "Chủ nhà",
+   "branchId": "b2"
   },
   "e10": {
    "date": "2026-08-05",
@@ -6891,7 +6996,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "title": "Thưởng doanh số tháng 7",
    "amount": 4000000,
    "method": "transfer",
-   "payee": "Nhân viên"
+   "payee": "Nhân viên",
+   "branchId": "b2"
   },
   "e11": {
    "date": "2026-08-15",
@@ -6899,7 +7005,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "title": "In tờ rơi khai trương dịch vụ mới",
    "amount": 1200000,
    "method": "cash",
-   "payee": "In Kỹ Thuật Số"
+   "payee": "In Kỹ Thuật Số",
+   "branchId": "b3"
   }
  },
  "ws/nhakhoa/expenses": {
@@ -6954,7 +7061,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "slot": "Sau 17h",
    "note": "Muốn đúng chị Mai làm",
    "status": "waiting",
-   "createdAt": "2026-09-25"
+   "createdAt": "2026-09-25",
+   "branchId": "b1"
   },
   "w2": {
    "name": "Lý Hoàng Oanh",
@@ -6965,7 +7073,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "slot": "Sáng",
    "note": "Khách cũ, báo khi có chỗ",
    "status": "waiting",
-   "createdAt": "2026-09-26"
+   "createdAt": "2026-09-26",
+   "branchId": "b2"
   },
   "w3": {
    "name": "Đặng Mỹ Linh",
@@ -6976,7 +7085,8 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "slot": "Chiều",
    "note": "",
    "status": "booked",
-   "createdAt": "2026-09-19"
+   "createdAt": "2026-09-19",
+   "branchId": "b3"
   }
  },
  "ws/nhakhoa/waitlist": {
@@ -7112,6 +7222,62 @@ body.locked .app,body.locked .tabbar{display:none!important}
    "active": true,
    "used": 1
   }
+ },
+ "ws/spa/branches": {
+  "b1": {
+   "name": "Nàng Ba – Trụ sở chính",
+   "code": "Q3",
+   "address": "Quận 3, TP. Hồ Chí Minh",
+   "phone": "0785568539",
+   "manager": "",
+   "order": 1,
+   "active": true
+  },
+  "b2": {
+   "name": "Nàng Ba – Gò Vấp",
+   "code": "GV",
+   "address": "Gò Vấp, TP. Hồ Chí Minh",
+   "phone": "0785568539",
+   "manager": "",
+   "order": 2,
+   "active": true
+  },
+  "b3": {
+   "name": "Nàng Ba – Thủ Đức",
+   "code": "TD",
+   "address": "TP. Thủ Đức, TP. Hồ Chí Minh",
+   "phone": "0785568539",
+   "manager": "",
+   "order": 3,
+   "active": true
+  },
+  "b4": {
+   "name": "Nàng Ba – Cầu Giấy",
+   "code": "CG",
+   "address": "Cầu Giấy, Hà Nội",
+   "phone": "0785568539",
+   "manager": "",
+   "order": 4,
+   "active": true
+  },
+  "b5": {
+   "name": "Nàng Ba – Biên Hòa",
+   "code": "BH",
+   "address": "Biên Hòa, Đồng Nai",
+   "phone": "0785568539",
+   "manager": "",
+   "order": 5,
+   "active": true
+  },
+  "b6": {
+   "name": "Nàng Ba – Ninh Kiều",
+   "code": "NK",
+   "address": "Ninh Kiều, Cần Thơ",
+   "phone": "0785568539",
+   "manager": "",
+   "order": 6,
+   "active": true
+  }
  }
 }</script>
 </head>
@@ -7136,7 +7302,7 @@ body.locked .app,body.locked .tabbar{display:none!important}
         <div class="gres" id="gres" hidden></div>
       </div>
       <div class="spacer"></div>
-      <label class="tb-pill tb-hide-sm" title="Giao diện màu"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r="1.3"/><circle cx="17.5" cy="10.5" r="1.3"/><circle cx="8.5" cy="7.5" r="1.3"/><circle cx="6.5" cy="12.5" r="1.3"/><path d="M12 2a10 10 0 0 0 0 20c1 0 1.7-.8 1.7-1.7 0-.5-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.1 0-.9.8-1.7 1.7-1.7h2A5.6 5.6 0 0 0 22 11c0-5-4.5-9-10-9z"/></svg><select id="theme-sel" aria-label="Giao diện màu"></select></label>
+      <label class="tb-pill" title="Chi nhánh" id="br-pill" hidden><svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><select id="br-sel" aria-label="Chi nhánh"></select></label><label class="tb-pill tb-hide-sm" title="Giao diện màu"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r="1.3"/><circle cx="17.5" cy="10.5" r="1.3"/><circle cx="8.5" cy="7.5" r="1.3"/><circle cx="6.5" cy="12.5" r="1.3"/><path d="M12 2a10 10 0 0 0 0 20c1 0 1.7-.8 1.7-1.7 0-.5-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.1 0-.9.8-1.7 1.7-1.7h2A5.6 5.6 0 0 0 22 11c0-5-4.5-9-10-9z"/></svg><select id="theme-sel" aria-label="Giao diện màu"></select></label>
       <div style="position:relative"><button class="tb-pill tb-round" type="button" data-act="bell" id="bell" aria-label="Thông báo"></button><div id="bellpop"></div></div>
       <button class="quick" type="button" data-act="new-appt">+ <span class="ql">Đặt lịch nhanh</span></button>
     </div></header>
@@ -7172,7 +7338,7 @@ const phoneFmt=p=>String(p||'').replace(/\D/g,'').replace(/^(\d{4})(\d{3})(\d+)$
 const zaloUrl=p=>'https://zalo.me/'+String(p||'').replace(/\D/g,'');
 const norm=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/đ/g,'d');
 
-const COLS=['settings','services','staff','packages','customers','appointments','courses','sales','payments','contacts','attendance','advances','roster','products','suppliers','purchases','expenses','waitlist','notes','promos','shiftreq','bonuses','users'];
+const COLS=['settings','services','staff','packages','customers','appointments','courses','sales','payments','contacts','attendance','advances','roster','products','suppliers','purchases','expenses','waitlist','notes','promos','shiftreq','bonuses','users','branches'];
 const TERMS={
   spa:{org:'Spa',customer:'Khách hàng',cust:'khách',staff:'Kỹ thuật viên',course:'Liệu trình',visit:'buổi',recall:'Lâu chưa quay lại',recallSub:'Đã quá thời gian thường quay lại, chưa có lịch mới',xung:'chị'},
   nhakhoa:{org:'Nha khoa',customer:'Bệnh nhân',cust:'bệnh nhân',staff:'Bác sĩ',course:'Phác đồ',visit:'lần',recall:'Đến hạn tái khám',recallSub:'Đã đến hạn tái khám theo dịch vụ, chưa có lịch hẹn',xung:'anh/chị'}
@@ -7183,14 +7349,40 @@ const SOURCES=['Facebook','Zalo','Giới thiệu','Google Maps','Vãng lai','Tik
 /* ---------- state ---------- */
 let mode='spa'; try{mode=localStorage.getItem('vua-mode')||'spa'}catch(e){}
 if(!TERMS[mode]) mode='spa';
-const S={tab:'dash',todayTab:'today',tq:{},sel:{},sort:{},gq:'',bell:false,navOpen:false,cartTab:'svc',posQ:'',calV:'week',calW:weekStartOf(TODAY),calStaff:'all',apR:'up',apS:'all',waitF:'waiting',noteF:'all',svcV:'svc',prodF:'all',suppV:'sup',poF:'all',invR:'month',invS:'all',expR:'month',promoV:'codes',camp:{seg:'bday',promoId:'',tpl:'{Xung} {ten} ơi, {spa} gửi {xung} lời chúc và ưu đãi đặc biệt tháng này. {Xung} ghé {spa} nhé!'},staffOff:false,data:{},ready:false,dbOk:null,apptDate:TODAY,apptStaff:'all',custQ:'',custF:'all',period:'cm',
+const S={branch:(()=>{try{return localStorage.getItem('vua-branch')||''}catch(e){return ''}})(),tab:'dash',todayTab:'today',tq:{},sel:{},sort:{},gq:'',bell:false,navOpen:false,cartTab:'svc',posQ:'',calV:'week',calW:weekStartOf(TODAY),calStaff:'all',apR:'up',apS:'all',waitF:'waiting',noteF:'all',svcV:'svc',prodF:'all',suppV:'sup',poF:'all',invR:'month',invS:'all',expR:'month',promoV:'codes',camp:{seg:'bday',promoId:'',tpl:'{Xung} {ten} ơi, {spa} gửi {xung} lời chúc và ưu đãi đặc biệt tháng này. {Xung} ghé {spa} nhé!'},staffOff:false,data:{},ready:false,dbOk:null,apptDate:TODAY,apptStaff:'all',custQ:'',custF:'all',period:'cm',
   pos:{kind:'service',customerId:'',q:'',serviceId:'',packageId:'',saleId:'',amount:'',paid:'',method:'cash',staffId:'',note:'',newName:'',newPhone:'',adding:false},
   hr:{view:'overview',date:TODAY,month:TODAY.slice(0,7),week:weekStartOf(TODAY),brush:''},sheetView:null};
 COLS.forEach(c=>S.data[c]=new Map());
 S.cart={items:[],customerId:'',q:'',adding:false,newName:'',newPhone:'',staffId:'',discPct:'',promoCode:'',promoId:'',taxPct:'0',tip:'',method:'cash',paid:'',appointmentId:'',note:''};
 let db=null, unsubs=[];
 const T=()=>TERMS[mode];
-const all=c=>Array.from(S.data[c].values());
+/* ---------- CHI NHÁNH (chế độ Spa) ----------
+   S.branch = '' (tất cả chi nhánh) hoặc id chi nhánh. all() tự lọc các bảng theo chi nhánh đang chọn,
+   allRaw() lấy toàn bộ chuỗi. Khách hàng, liệu trình, dịch vụ, sản phẩm dùng chung toàn chuỗi.
+   Bản ghi cũ chưa có branchId: lịch hẹn theo chi nhánh của nhân viên, thanh toán theo hóa đơn, còn lại thuộc chi nhánh đầu tiên. */
+const allRaw=c=>Array.from(S.data[c].values());
+const BR_OWN=['appointments','sales','payments','staff','expenses','purchases','waitlist'];
+const BR_STAFF=['attendance','roster','advances','bonuses','shiftreq'];
+function branchesList(){return allRaw('branches').sort((a,b)=>(a.order||0)-(b.order||0)||(a.name||'').localeCompare(b.name||''))}
+function activeBranches(){return branchesList().filter(b=>b.active!==false)}
+function defBranch(){const b=activeBranches()[0]||branchesList()[0];return b?b.id:''}
+function brName(id){const b=id&&S.data.branches.get(id);return b?b.name:''}
+function brOf(c,x){
+  if(x.branchId)return x.branchId;
+  if(c==='appointments'&&x.staffId){const s=S.data.staff.get(x.staffId);if(s&&s.branchId)return s.branchId}
+  if(c==='payments'&&x.saleId){const s=S.data.sales.get(x.saleId);if(s)return brOf('sales',s)}
+  return defBranch();
+}
+function userBranch(){const u=AU.user;if(!u||u.role==='admin')return '';if(u.branchId)return u.branchId;const s=u.staffId&&S.data.staff.get(u.staffId);return s&&s.branchId||''}
+function newBranchFor(col,o){
+  if(col==='appointments'&&o.staffId){const s=S.data.staff.get(o.staffId);if(s&&s.branchId)return s.branchId}
+  if(col==='payments'&&o.saleId){const s=S.data.sales.get(o.saleId);if(s)return brOf('sales',s)}
+  return S.branch||userBranch()||defBranch();
+}
+const all=c=>{const a=allRaw(c),b=S.branch;if(!b||mode!=='spa'||!S.data.branches.size)return a;
+  if(BR_OWN.includes(c))return a.filter(x=>brOf(c,x)===b);
+  if(BR_STAFF.includes(c)){const ids=new Set(allRaw('staff').filter(s=>brOf('staff',s)===b).map(s=>s.id));return a.filter(x=>x.staffId?ids.has(x.staffId):ids.has(String(x.id||'').split('_')[0]))}
+  return a};
 const get=(c,id)=>S.data[c].get(id);
 const settings=()=>get('settings','main')||{name:mode==='spa'?'Spa của bạn':'Nha khoa của bạn'};
 const serviceName=id=>(get('services',id)||{}).name||'Dịch vụ';
@@ -7216,6 +7408,7 @@ function subscribe(){
   });
 }
 async function put(col,id,obj){
+  if(mode==='spa'&&BR_OWN.includes(col)&&!obj.branchId&&S.data.branches&&S.data.branches.size){const prev=S.data[col].get(id);obj={...obj,branchId:prev&&prev.branchId||newBranchFor(col,obj)}}
   const body={...obj};delete body.id;
   if(db){
     try{await db.doc(`ws/${mode}/${col}/${id}`).set(body)}
@@ -7620,12 +7813,13 @@ function staffForm(id){
     <div class="field"><label for="sff-n">Họ tên</label><input class="input" id="sff-n" required value="${esc(s.name||'')}" placeholder="Nguyễn Thu Hoa"></div>
     <div class="form-row"><div class="field"><label for="sff-r">Vai trò</label><input class="input" id="sff-r" value="${esc(s.role||'')}" placeholder="${mode==='spa'?'Kỹ thuật viên da':'Bác sĩ chỉnh nha'}"></div><div class="field"><label for="sff-p">Điện thoại</label><input class="input" id="sff-p" inputmode="tel" value="${esc(s.phone||'')}"></div></div>
     <div class="form-row"><div class="field"><label for="sff-d">Ngày vào làm</label><input class="input" type="date" id="sff-d" value="${esc(s.startDate||'')}"></div><div class="field"><label for="sff-s">Lương cơ bản/tháng</label><input class="input num" id="sff-s" inputmode="numeric" value="${s.baseSalary||''}" placeholder="6000000"></div></div>
+    ${mode==='spa'&&S.data.branches.size?`<div class="field"><label for="sff-b">Chi nhánh làm việc</label><select class="input" id="sff-b">${activeBranches().map(b=>`<option value="${esc(b.id)}" ${(s.branchId||S.branch||defBranch())===b.id?'selected':''}>${esc(b.name)}</option>`).join('')}</select></div>`:''}
     <div class="field"><label>Màu trên lịch hẹn</label><div class="chips" id="sff-c">${PALETTE.map(c=>`<button type="button" class="chip" data-c="${c}" aria-pressed="${s.color===c}" style="width:34px;height:34px;padding:0;background:${c};border:3px solid ${s.color===c?'var(--ink)':'transparent'}" aria-label="Màu ${c}"></button>`).join('')}</div></div>
     <button class="btn primary" type="submit">${id?'Lưu thay đổi':'Thêm nhân viên'}</button></form>`,el=>{
     let color=s.color;
     el.querySelector('#sff-c').addEventListener('click',e=>{const b=e.target.closest('[data-c]');if(!b)return;color=b.dataset.c;el.querySelectorAll('#sff-c [data-c]').forEach(x=>{const on=x.dataset.c===color;x.setAttribute('aria-pressed',on);x.style.borderColor=on?'var(--ink)':'transparent'})});
     el.querySelector('#sff').addEventListener('submit',async e=>{e.preventDefault();const v=k=>el.querySelector('#sff-'+k).value.trim();if(!v('n'))return toast('Nhập họ tên.');
-      const nid=id||uid();await put('staff',nid,{...s,name:v('n'),role:v('r'),phone:v('p').replace(/\D/g,''),startDate:v('d'),baseSalary:Number(v('s').replace(/\D/g,''))||0,color,active:s.active!==false});
+      const nid=id||uid();await put('staff',nid,{...s,name:v('n'),role:v('r'),phone:v('p').replace(/\D/g,''),startDate:v('d'),baseSalary:Number(v('s').replace(/\D/g,''))||0,color,active:s.active!==false,...(el.querySelector('#sff-b')?{branchId:el.querySelector('#sff-b').value}:{})});
       toast(id?'Đã lưu hồ sơ':'Đã thêm '+v('n'));staffSheet(nid)});
     el.querySelector('#sff-n').focus();
   });
@@ -7984,6 +8178,8 @@ function renderShell(){
   const TB=[...TABBAR.filter(([k])=>k==='menu'||can(k))];if(TB.length<5)[['today','Hôm nay','today'],['me','Của tôi','staff'],['appts','Lịch hẹn','appts']].forEach(x=>{if(TB.length<5&&can(x[0])&&!TB.some(y=>y[0]===x[0]))TB.splice(TB.length-1,0,x)});
   $('#tabbar').innerHTML=TB.map(([k,l,ic])=>`<button type="button" data-act="${k==='menu'?'nav-open':'tab'}" data-tab="${k}" ${S.tab===k?'aria-current="page"':''}>${I(ic)}<span>${k==='customers'?(mode==='spa'?'Khách':'Bệnh nhân'):l}</span></button>`).join('');
   const cur=st.accent||(()=>{try{return localStorage.getItem('vua-accent')}catch(e){return ''}})()||'rose';
+  {const bp=$('#br-pill'),bs=$('#br-sel'),lock=userBranch(),list=activeBranches();bp.hidden=mode!=='spa'||!list.length;
+   if(!bp.hidden){bs.disabled=!!lock;bs.innerHTML=(lock?'':`<option value="">Tất cả chi nhánh (${list.length})</option>`)+list.map(b=>`<option value="${esc(b.id)}" ${S.branch===b.id?'selected':''}>${esc(b.name)}</option>`).join('')}}
   $('#theme-sel').innerHTML=THEMES.map(([k,l],i)=>`<option value="${k}" ${k===cur?'selected':''}>${i+1}. ${l}</option>`).join('');
   const nt=notifications().filter(n=>can(n[3]));$('#bell').innerHTML=I('bell')+(nt.length?`<span class="dotn">${nt.length}</span>`:'');$('#bell').setAttribute('aria-label',`Thông báo (${nt.length})`);
   $('#bellpop').innerHTML=S.bell?`<div class="bell-pop"><h4>Thông báo</h4>${nt.length?nt.map(([c,t,s,tab])=>`<button type="button" data-act="tab" data-tab="${tab}"><i style="background:${c}"></i><span><b style="display:block;font-weight:600">${esc(t)}</b>${s?`<span class="muted" style="font-size:12.5px">${esc(s)}</span>`:''}</span></button>`).join(''):'<div class="empty">Không có thông báo mới.</div>'}</div>`:'';
@@ -8091,7 +8287,8 @@ async function cartPay(){
     if(it.type==='svc'&&!it.apptId){const sv=get('services',it.refId)||{};for(let n=0;n<it.qty;n++){const value=Math.round(it.price*f);await put('appointments',uid(),{customerId:cid||'',serviceId:it.refId,staffId:C.staffId||'',date:TODAY,time:nowHM(),status:'done',value,commission:Math.round(value*(sv.commissionPct||0)/100),doneAt:TODAY,createdAt:TODAY,source:'pos',saleId})}}
   }
   const seq=all('sales').filter(s=>s.date===TODAY).length+1;
-  const invoiceNo='HĐ'+TODAY.slice(2).replace(/-/g,'')+'-'+pad(seq);
+  const brc=mode==='spa'&&S.data.branches.size?((S.data.branches.get(newBranchFor('sales',{}))||{}).code||''):'';
+  const invoiceNo='HĐ'+TODAY.slice(2).replace(/-/g,'')+'-'+(brc?brc+'-':'')+pad(seq);
   const label=C.items.map(i=>i.name+(i.qty>1?' ×'+i.qty:'')).join(', ');
   await put('sales',saleId,{customerId:cid||'',date:TODAY,label,items:C.items.map(i=>({type:i.type,refId:i.refId,name:i.name,qty:i.qty,price:i.price})),subtotal:k.sub,discPct:numIn(C.discPct),discount:k.discount,promoCode:k.promoDisc?k.promo.code:'',taxPct:numIn(C.taxPct),tax:k.tax,tip:k.tip,total:k.total,paid:k.paid,method:C.method,kind:C.items.every(i=>i.type==='pkg')?'course':'pos',courseId:courseIds[0]||'',appointmentId:C.appointmentId||'',staffId:C.staffId||'',createdAt:now,invoiceNo,note:C.note||''});
   if(k.paid>0)await put('payments',uid(),{customerId:cid||'',saleId,amount:k.paid,method:C.method,date:TODAY,label,createdAt:now});
@@ -8592,7 +8789,21 @@ function viewExp(){
 
 /* ---------- REPORTS ---------- */
 function periodRange(P){if(P==='today')return [TODAY,TODAY];if(P==='week')return [addDays(TODAY,-6),TODAY];if(P==='month')return [addDays(TODAY,-29),TODAY];if(P==='cm')return [CUR_M+'-01',TODAY];const pm=prevMonth(CUR_M);return [pm+'-01',pm+'-'+pad(daysInMonth(pm))]}
-function viewReport(){
+function viewReport(){return viewReportBase()+branchCompare()}
+function branchCompare(){
+  if(mode!=='spa'||userBranch()||activeBranches().length<2)return '';
+  const [from,to]=periodRange(S.period),inR=d=>d&&d>=from&&d<=to;
+  const rows=activeBranches().map(b=>{const of=c=>allRaw(c).filter(x=>brOf(c,x)===b.id);
+    const ap=of('appointments').filter(a=>inR(a.date)&&a.status!=='cancelled'),rev=of('payments').filter(p=>inR(p.date)).reduce((s,p)=>s+(p.amount||0),0),exp=of('expenses').filter(x=>inR(x.date)).reduce((s,x)=>s+(x.amount||0),0);
+    return {b,ap:ap.length,done:ap.filter(a=>a.status==='done').length,inv:of('sales').filter(x=>inR(x.date)).length,rev,exp,staff:of('staff').filter(s=>s.active!==false).length,cust:new Set(ap.map(a=>a.customerId).filter(Boolean)).size}});
+  const T0=rows.reduce((t,r)=>{['ap','done','inv','rev','exp','staff','cust'].forEach(k=>t[k]=(t[k]||0)+r[k]);return t},{}),max=Math.max(1,...rows.map(r=>r.rev));
+  const td=v=>`<td class="num" style="text-align:right">${v}</td>`;
+  return `<section class="panel" style="margin-top:16px"><div class="panel-h accent"><span class="ic">${I('building')}</span><h2>So sánh chi nhánh</h2><span class="count">${esc(typeof periodLabel==='function'?periodLabel(S.period):'')}</span></div>
+   <div class="dt-wrap"><table class="dt"><thead><tr><th>Chi nhánh</th><th style="text-align:right">Lịch hẹn</th><th style="text-align:right">Hoàn thành</th><th style="text-align:right">Khách</th><th style="text-align:right">Hóa đơn</th><th style="text-align:right">Doanh thu</th><th style="text-align:right">Chi phí</th><th style="text-align:right">Lợi nhuận</th><th style="text-align:right">Nhân viên</th></tr></thead><tbody>
+   ${rows.map(r=>`<tr${S.branch===r.b.id?' style="background:var(--soft,rgba(0,0,0,.04))"':''}><td><b>${esc(r.b.name)}</b><div class="brbar"><i style="width:${Math.round(r.rev*100/max)}%"></i></div></td>${td(r.ap)}${td(r.done)}${td(r.cust)}${td(r.inv)}${td(money(r.rev))}${td(money(r.exp))}${td(money(r.rev-r.exp))}${td(r.staff)}</tr>`).join('')}
+   <tr style="font-weight:700"><td>Toàn chuỗi</td>${td(T0.ap)}${td(T0.done)}${td(T0.cust)}${td(T0.inv)}${td(money(T0.rev))}${td(money(T0.exp))}${td(money(T0.rev-T0.exp))}${td(T0.staff)}</tr></tbody></table></div></section>`;
+}
+function viewReportBase(){
   const t=T(),P=S.period,[from,to]=periodRange(P),inR=d=>d&&d>=from&&d<=to;
   const pays=all('payments').filter(p=>inR(p.date)),rev=pays.reduce((s,p)=>s+p.amount,0);
   const exps=all('expenses').filter(e=>inR(e.date)),expT=exps.reduce((s,e)=>s+(e.amount||0),0);
@@ -8679,6 +8890,9 @@ function viewSettings(){
   const shifts=shiftsList();
   h+=card('var(--b-blue)','staff','Nhân sự & ca làm việc',`<form class="form" id="st-hr"><div class="form-row3"><div class="field"><label for="hr-wd">Công chuẩn/tháng</label><input class="input num" id="hr-wd" inputmode="numeric" value="${st.workDays||26}"></div><div class="field"><label for="hr-lp">Phạt đi muộn (đ/lần)</label><input class="input num" id="hr-lp" inputmode="numeric" value="${st.latePenalty!=null?st.latePenalty:30000}"></div><div class="field"><label for="hr-ss">Giờ vào ca chung</label><input class="input" type="time" id="hr-ss" value="${esc(st.shiftStart||'08:30')}"></div></div><div><button class="btn primary" type="submit">Lưu cài đặt nhân sự</button></div></form>
    <form class="form" id="st-sh"><b>Ca làm việc</b>${[...shifts,{id:'',name:'',start:'',end:''}].map(s=>`<div class="form-row shrow" data-id="${esc(s.id)}"><input class="input" data-k="name" value="${esc(s.name)}" placeholder="${s.id?'Tên ca':'Thêm ca mới, ví dụ: Ca tối'}" aria-label="Tên ca"><input class="input" type="time" data-k="start" value="${esc(s.start)}" aria-label="Giờ bắt đầu"><input class="input" type="time" data-k="end" value="${esc(s.end)}" aria-label="Giờ kết thúc"></div>`).join('')}<span class="muted" style="font-size:12.5px">Xóa tên ca để bỏ ca đó.</span><div><button class="btn" type="submit">Lưu ca làm việc</button></div></form>`);
+  if(mode==='spa'&&AU.user&&AU.user.role==='admin')h+=card('var(--b-cyan)','building','Chi nhánh ('+activeBranches().length+' đang hoạt động)',`<p class="muted" style="margin:0 0 10px;font-size:13px">Khách hàng, liệu trình, dịch vụ, sản phẩm dùng chung toàn chuỗi. Lịch hẹn, hóa đơn, chi phí, nhân viên, chấm công, lương tách theo chi nhánh. Chọn chi nhánh ở thanh trên cùng; nhân viên chỉ thấy chi nhánh của mình.</p>
+   <form class="form" id="st-br">${[...branchesList(),{id:'',name:'',code:'',address:'',phone:'',manager:'',active:true}].map(b=>`<div class="brrow" data-id="${esc(b.id)}"><input class="input" data-k="name" value="${esc(b.name)}" placeholder="${b.id?'Tên chi nhánh':'+ Thêm chi nhánh mới'}" aria-label="Tên chi nhánh"><input class="input" data-k="code" value="${esc(b.code||'')}" placeholder="Mã" maxlength="4" aria-label="Mã chi nhánh"><input class="input" data-k="address" value="${esc(b.address||'')}" placeholder="Địa chỉ" aria-label="Địa chỉ"><input class="input" data-k="phone" value="${esc(b.phone||'')}" placeholder="Điện thoại" inputmode="tel" aria-label="Điện thoại"><input class="input" data-k="manager" value="${esc(b.manager||'')}" placeholder="Quản lý" aria-label="Quản lý"><label class="br-on"><input type="checkbox" data-k="active" ${b.active!==false?'checked':''}>Hoạt động</label></div>`).join('')}
+   <div><button class="btn primary" type="submit">Lưu chi nhánh</button></div></form>`);
   h+=usersCardHTML();
   h+=card('var(--b-red)','db','Dữ liệu & sao lưu',`<p style="margin:0;font-size:14px">${S.dbOk?'Dữ liệu được lưu tập trung và đồng bộ giữa các máy.':'Dữ liệu đang lưu trên trình duyệt của máy này. Hãy sao lưu thường xuyên.'}</p>
    <div class="toolbar"><button class="tbtn csv" type="button" data-act="backup">${I('csv')}Sao lưu (tải file .json)</button><label class="tbtn add" style="cursor:pointer">${I('box')}Khôi phục từ file<input type="file" id="restore-f" accept="application/json,.json" hidden></label><button class="tbtn xls" type="button" data-act="reseed">Nạp lại dữ liệu mẫu</button><button class="tbtn del" type="button" data-act="wipe">${I('trash')}Xóa toàn bộ dữ liệu</button></div>
@@ -8688,6 +8902,11 @@ function viewSettings(){
 }
 function bindSettings(){
   const el=$('#view');const f=id=>el.querySelector('#'+id);if(!f('set-info'))return;
+  const brf=f('st-br');if(brf)brf.addEventListener('submit',async e=>{e.preventDefault();let n=0;
+    for(const row of brf.querySelectorAll('.brrow')){const g=k=>row.querySelector(`[data-k="${k}"]`),name=g('name').value.trim(),id=row.dataset.id;if(!name)continue;
+      const cur=id?get('branches',id):{order:branchesList().length+1};
+      await put('branches',id||('b'+uid()),{...cur,name,code:g('code').value.trim().toUpperCase().slice(0,4),address:g('address').value.trim(),phone:g('phone').value.replace(/\D/g,''),manager:g('manager').value.trim(),active:g('active').checked});n++}
+    toast('Đã lưu '+n+' chi nhánh');render()});
   const val=id=>(f(id).value||'').trim(),num=id=>numIn(f(id).value);
   f('set-info').addEventListener('submit',async e=>{e.preventDefault();await put('settings','main',{...settings(),name:val('si-name')||settings().name,owner:val('si-owner'),phone:val('si-phone').replace(/\D/g,''),address:val('si-addr')});toast('Đã lưu thông tin')});
   f('si-logo').addEventListener('change',async e=>{const file=e.target.files[0];if(!file)return;try{const d=await readImage(file,320);await put('settings','main',{...settings(),logo:d});toast('Đã cập nhật logo')}catch(x){toast('Không đọc được ảnh.')}});
@@ -9062,6 +9281,9 @@ async function ensureDefaultUsers(){
 }
 /* dữ liệu cũ (trước khi có bộ phận): tạo 1 lần các tài khoản chung còn thiếu */
 let _ensD=false;
+/* 6 chi nhánh mặc định = danh sách trên website (data.js). Sửa tên, địa chỉ, SĐT ở Cài đặt → Chi nhánh. */
+const DEFAULT_BRANCHES=[['b1','Nàng Ba – Trụ sở chính','Q3','Quận 3, TP. Hồ Chí Minh'],['b2','Nàng Ba – Gò Vấp','GV','Gò Vấp, TP. Hồ Chí Minh'],['b3','Nàng Ba – Thủ Đức','TD','TP. Thủ Đức, TP. Hồ Chí Minh'],['b4','Nàng Ba – Cầu Giấy','CG','Cầu Giấy, Hà Nội'],['b5','Nàng Ba – Biên Hòa','BH','Biên Hòa, Đồng Nai'],['b6','Nàng Ba – Ninh Kiều','NK','Ninh Kiều, Cần Thơ']];
+async function ensureBranches(){for(const [id,name,code,address] of DEFAULT_BRANCHES.map((b,i)=>[...b,i]))await put('branches',id,{name,code,address,phone:'0785568539',manager:'',order:Number(id.slice(1)),active:true})}
 async function ensureDeptAccounts(){
   if(_ensD||_ensU||!S.ready||!S.seedOk||settings().deptAcc)return;const us=all('users');if(!us.some(u=>u.role==='admin'))return;_ensD=true;const m0=mode;
   try{const taken=new Set(us.map(u=>u.username));for(const d of DEPTS){if(mode!==m0)return;if(taken.has(DEPT_ACC[d])||all('users').some(u=>u.username===DEPT_ACC[d]))continue;taken.add(DEPT_ACC[d]);const salt=newSalt();await put('users',uid(),{username:DEPT_ACC[d],name:'Tài khoản chung '+roleName(d),role:d,staffId:'',salt,hash:pwHash('123456',salt),mustChange:true,active:true,createdAt:TODAY})}
@@ -9208,6 +9430,7 @@ async function importOrder(o){
     o.payClaim?`Tổng ${money(o.total||0)} · KHÁCH BÁO ĐÃ CHUYỂN KHOẢN ${money(o.payClaim.amount)} (ưu đãi thanh toán ngay −${o.payClaim.pct}%) – cần kiểm tra tài khoản`:`Tổng ${money(o.total||0)} · thanh toán tại spa`,
     o.email?'Email: '+o.email:'',o.address?'Đ/c: '+o.address:'',o.notes?'Ghi chú: '+o.notes:''].filter(Boolean).join(' · ');
   const rec={name:String(o.name||'').trim(),phone:String(o.phone||'').replace(/\D/g,''),serviceId:svc?svc.id:'',staffId:st?st.id:'',date:/^\d{4}-\d{2}-\d{2}$/.test(o.date||'')?o.date:TODAY,slot:o.kind==='lead'?'Gọi lại tư vấn':(o.time?('lúc '+o.time):''),status:'waiting',note,webCode:o.code||'',webTotal:o.total||0,payClaim:o.payClaim||null,source:'Website',createdAt:TODAY};
+  if(mode==='spa'&&S.data.branches.size){const bn=norm(String(o.branch||'').replace(/^Phục vụ tại nhà$/i,''));const br=bn&&branchesList().find(b=>norm(b.name)===bn);rec.branchId=br?br.id:defBranch();if(/tại nhà/i.test(o.branch||''))rec.note='PHỤC VỤ TẠI NHÀ · '+rec.note}
   if(!rec.name&&!rec.phone)return false;
   const cid=await syncWaitCustomer({...rec,id:o.id},{source:'Website',xung:o.xung?String(o.xung).toLowerCase():'',birthday:o.birthday||''});
   await put('waitlist',o.id,{...rec,customerId:cid});
@@ -9250,8 +9473,8 @@ async function recordPaid(o){
     const items=[...(o.items||[]).map(i=>{const s=activeServices().find(x=>norm(x.name)===norm(i.name));return {type:'svc',refId:s?s.id:'',name:i.name+(i.pack&&i.pack!=='Gói đơn buổi'?' · '+i.pack:''),qty:1,price:i.price||0}}),
       ...(o.products||[]).map(pr=>{const x=all('products').find(y=>y.id===pr.id||norm(y.name)===norm(pr.name));return {type:'prod',refId:x?x.id:'',name:pr.name,qty:pr.qty||1,price:pr.price||0}})];
     const label=`Đặt online ${o.code} (SePay)`;
-    await put('sales',saleId,{customerId:cid,date:TODAY,label,items,subtotal:o.total||amt,discPct:p.discount?Math.round(p.discount*100/(o.total||1)):0,discount:p.discount||0,promoCode:p.discount?'THANH-TOAN-TRUOC':'',taxPct:0,tax:0,tip:0,total:amt,paid:amt,method:'transfer',kind:'online',staffId:w.staffId||'',createdAt:Date.now(),note:'Thanh toán trước qua SePay'+(ref?' · '+ref:'')});
-    await put('payments','pay_'+saleId,{customerId:cid,saleId,amount:amt,method:'transfer',date:TODAY,label,createdAt:Date.now()});
+    await put('sales',saleId,{...(w.branchId?{branchId:w.branchId}:{}),customerId:cid,date:TODAY,label,items,subtotal:o.total||amt,discPct:p.discount?Math.round(p.discount*100/(o.total||1)):0,discount:p.discount||0,promoCode:p.discount?'THANH-TOAN-TRUOC':'',taxPct:0,tax:0,tip:0,total:amt,paid:amt,method:'transfer',kind:'online',staffId:w.staffId||'',createdAt:Date.now(),note:'Thanh toán trước qua SePay'+(ref?' · '+ref:'')});
+    await put('payments','pay_'+saleId,{...(w.branchId?{branchId:w.branchId}:{}),customerId:cid,saleId,amount:amt,method:'transfer',date:TODAY,label,createdAt:Date.now()});
   }
   if(cid)await put('notes','webpaid_'+o.code,{customerId:cid,kind:'Nhắc việc',text:`Đã thanh toán trước ${money(amt)} qua SePay cho lịch ${o.time||''} ${o.date?dm(o.date):''} (đơn ${o.code}). Không thu lại khi khách đến.`,author:'SePay',date:TODAY,pinned:true});
   return true;
@@ -9360,10 +9583,12 @@ function render(){
   if(S.ready&&S.seedOk&&!all('users').some(u=>u.role==='admin'&&u.active!==false))ensureDefaultUsers();
   if(S.ready&&S.seedOk&&mode==='spa'){importWebInbox();if(AU.user&&lsGet('vua-crm-key'))startSync()}
   if(S.ready&&S.seedOk&&!settings().deptAcc)ensureDeptAccounts();
+  if(S.ready&&S.seedOk&&mode==='spa'&&!S.data.branches.size&&!S._brInit){S._brInit=true;ensureBranches()}
   if(AU.user){AU.user=get('users',AU.user.id)||null;if(AU.user&&AU.user.active===false){AU.user=null;sessSet(null)}}
   if(!AU.user&&S.ready)AU.user=resolveSession();
   if(!AU.user||AU.user.mustChange){document.body.classList.add('locked');$('#view').innerHTML='';renderAuth();return}
   document.body.classList.remove('locked');$('#auth').hidden=true;$('#auth').innerHTML='';
+  if(mode==='spa'){const ub=userBranch();if(ub)S.branch=ub;else if(S.branch&&!S.data.branches.get(S.branch))S.branch=''}else S.branch='';
   if(!VIEWS[S.tab]||!can(S.tab))S.tab=firstTab();
   renderShell();
   let html='';
@@ -9504,6 +9729,7 @@ document.addEventListener('input',e=>{
 document.addEventListener('change',e=>{
   const id=e.target.id||'';
   if(id==='theme-sel'){setThemePref({accent:e.target.value});return}
+  if(id==='br-sel'){S.branch=e.target.value;try{localStorage.setItem('vua-branch',S.branch)}catch(x){}render();toast(S.branch?'Đang xem chi nhánh '+brName(S.branch):'Đang xem tất cả chi nhánh');return}
   if(id==='camp-promo'){S.camp.promoId=e.target.value;const p=get('promos',e.target.value);if(p&&!S.camp.tpl.includes('{ma}'))S.camp.tpl+=' Mã ưu đãi: {ma}.';render();return}
 });
 document.addEventListener('keydown',e=>{

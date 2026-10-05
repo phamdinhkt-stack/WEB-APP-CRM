@@ -52,12 +52,12 @@ module.exports = async (req, res) => {
       const payAmount = Math.round(total * (100 - PAYNOW_PCT) / 100 / 1000) * 1000;
       const now = Date.now();
       const o = { id: 'web_' + code, code, xung: str(b.xung, 10), name: str(b.name, 80), phone, email: str(b.email, 120), birthday: str(b.birthday, 10), address: str(b.address, 200), notes: str(b.notes, 500),
-        date: b.date, time: b.time, duration: Math.max(15, Math.min(600, parseInt(b.duration) || 60)), staffId: str(b.staffId, 20), staffName: str(b.staffName, 40),
+        date: b.date, time: b.time, duration: Math.max(15, Math.min(600, parseInt(b.duration) || 60)), staffId: str(b.staffId, 20), staffName: str(b.staffName, 40), branch: str(b.branch, 80),
         items, products, total, payAmount, clientTotal: Number(b.total) || 0, status: 'new', pay: { status: 'unpaid', received: 0, txs: [] }, createdAt: now, updatedAt: now };
       const ok = await kv('SET', 'order:' + code, JSON.stringify(o), 'NX'); if (!ok) return send(res, 409, { error: 'Mã đơn đã tồn tại' });
       await kv('ZADD', 'orders_upd', now, code);
       zaloAdmin(`🗓 LỊCH ĐẶT ONLINE MỚI ${code}\n👤 ${o.xung} ${o.name}\n📞 ${phone}\n🕒 ${o.time} ${o.date.split('-').reverse().join('/')}${o.staffName ? ' · ' + o.staffName : ''}\n${items.map(i => '• ' + i.name + ' (' + vnd(i.price) + ')').join('\n')}${products.length ? '\n' + products.map(p => '• ' + p.name + ' × ' + p.qty).join('\n') : ''}\nTổng: ${vnd(total)}${o.notes ? '\nGhi chú: ' + o.notes : ''}`, { ten_khach: o.name.slice(0, 30), sdt_khach: phone, noi_dung: ('Đặt lịch ' + items.map(i => i.name).join(', ')).slice(0, 90), thoi_gian: o.time + ' ' + o.date.split('-').reverse().join('/') }).catch(() => {});
-      telegram(['letan'], `🗓 <b>Lịch đặt online mới ${code}</b>\n${esc(o.xung)} ${esc(o.name)} · ${phone}\n${o.time} ${o.date.split('-').reverse().join('/')}${o.staffName ? ' · ' + esc(o.staffName) : ''}\n${items.map(i => '• ' + esc(i.name) + ' (' + vnd(i.price) + ')').join('\n')}${products.length ? '\n' + products.map(p => '• ' + esc(p.name) + ' × ' + p.qty).join('\n') : ''}\nTổng: <b>${vnd(total)}</b>${o.notes ? '\nGhi chú: ' + esc(o.notes) : ''}`).catch(() => {});
+      telegram(['letan'], `🗓 <b>Lịch đặt online mới ${code}</b>${o.branch ? '\n📍 ' + esc(o.branch) : ''}\n${esc(o.xung)} ${esc(o.name)} · ${phone}\n${o.time} ${o.date.split('-').reverse().join('/')}${o.staffName ? ' · ' + esc(o.staffName) : ''}\n${items.map(i => '• ' + esc(i.name) + ' (' + vnd(i.price) + ')').join('\n')}${products.length ? '\n' + products.map(p => '• ' + esc(p.name) + ' × ' + p.qty).join('\n') : ''}\nTổng: <b>${vnd(total)}</b>${o.notes ? '\nGhi chú: ' + esc(o.notes) : ''}`).catch(() => {});
       return send(res, 201, { ok: true, ...pub(o) });
     }
     if (req.method === 'GET') {

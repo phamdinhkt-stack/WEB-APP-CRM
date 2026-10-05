@@ -915,7 +915,8 @@
    "active": true,
    "name": "Hoa",
    "role": "Chăm sóc da",
-   "color": "#1E7A68"
+   "color": "#1E7A68",
+   "branchId": "b1"
   },
   "st2": {
    "phone": "0908111002",
@@ -924,7 +925,8 @@
    "active": true,
    "name": "Mai",
    "role": "Body, massage",
-   "color": "#B0476A"
+   "color": "#B0476A",
+   "branchId": "b2"
   },
   "st3": {
    "phone": "0908111003",
@@ -933,7 +935,8 @@
    "active": true,
    "name": "Linh",
    "role": "Mi, mày",
-   "color": "#3563B8"
+   "color": "#3563B8",
+   "branchId": "b3"
   },
   "st4": {
    "phone": "0908111004",
@@ -942,7 +945,8 @@
    "active": true,
    "name": "Thảo",
    "role": "Gội, dưỡng sinh",
-   "color": "#A8690F"
+   "color": "#A8690F",
+   "branchId": "b1"
   }
  },
  "ws/nhakhoa/appointments": {
@@ -3750,7 +3754,8 @@
    "method": "transfer",
    "date": "2026-07-20",
    "label": "Trị mụn 10 buổi",
-   "createdAt": 1
+   "createdAt": 1,
+   "branchId": "b2"
   },
   "y10": {
    "customerId": "c08",
@@ -3759,7 +3764,8 @@
    "method": "cash",
    "date": "2026-09-05",
    "label": "Gội đầu dưỡng sinh",
-   "createdAt": 10
+   "createdAt": 10,
+   "branchId": "b3"
   },
   "y11": {
    "customerId": "c09",
@@ -3768,7 +3774,8 @@
    "method": "transfer",
    "date": "2026-09-01",
    "label": "Nối mi",
-   "createdAt": 11
+   "createdAt": 11,
+   "branchId": "b1"
   },
   "y12": {
    "customerId": "c11",
@@ -3777,7 +3784,8 @@
    "method": "card",
    "date": "2026-09-19",
    "label": "Peel da sinh học",
-   "createdAt": 12
+   "createdAt": 12,
+   "branchId": "b2"
   },
   "y13": {
    "customerId": "c12",
@@ -3786,7 +3794,8 @@
    "method": "transfer",
    "date": "2026-09-20",
    "label": "Massage body đá nóng",
-   "createdAt": 13
+   "createdAt": 13,
+   "branchId": "b3"
   },
   "y14": {
    "customerId": "c14",
@@ -3795,7 +3804,8 @@
    "method": "cash",
    "date": "2026-09-21",
    "label": "Gội đầu dưỡng sinh",
-   "createdAt": 14
+   "createdAt": 14,
+   "branchId": "b1"
   },
   "y15": {
    "customerId": "c03",
@@ -3804,7 +3814,8 @@
    "method": "transfer",
    "date": "2026-09-22",
    "label": "Chăm sóc da cơ bản",
-   "createdAt": 15
+   "createdAt": 15,
+   "branchId": "b2"
   },
   "y16": {
    "customerId": "c16",
@@ -3813,7 +3824,8 @@
    "method": "cash",
    "date": "2026-09-23",
    "label": "Massage body đá nóng",
-   "createdAt": 16
+   "createdAt": 16,
+   "branchId": "b3"
   },
   "y17": {
    "customerId": "c02",
@@ -3822,7 +3834,8 @@
    "method": "cash",
    "date": "2026-09-24",
    "label": "Thu nợ: Triệt lông nách 8 buổi",
-   "createdAt": 17
+   "createdAt": 17,
+   "branchId": "b1"
   },
   "y2": {
    "customerId": "c02",
@@ -3831,7 +3844,8 @@
    "method": "cash",
    "date": "2026-08-10",
    "label": "Triệt lông nách 8 buổi",
-   "createdAt": 2
+   "createdAt": 2,
+   "branchId": "b1"
   },
   "y3": {
    "customerId": "c05",
@@ -3840,7 +3854,8 @@
    "method": "card",
    "date": "2026-08-01",
    "label": "Chăm sóc da 12 buổi",
-   "createdAt": 3
+   "createdAt": 3,
+   "branchId": "b2"
   },
   "y4": {
    "customerId": "c07",
@@ -3849,7 +3864,8 @@
    "method": "transfer",
    "date": "2026-09-10",
    "label": "Trị mụn 10 buổi",
-   "createdAt": 4
+   "createdAt": 4,
+   "branchId": "b3"
   },
   "y5": {
    "customerId": "c10",
@@ -3858,7 +3874,8 @@
    "method": "cash",
    "date": "2026-07-05",
    "label": "Triệt lông nách 8 buổi",
-   "createdAt": 5
+   "createdAt": 5,
+   "branchId": "b1"
   },
   "y6": {
    "customerId": "c13",
@@ -3867,7 +3884,8 @@
    "method": "transfer",
    "date": "2026-06-20",
    "label": "Chăm sóc da 12 buổi",
-   "createdAt": 6
+   "createdAt": 6,
+   "branchId": "b2"
   },
   "y7": {
    "customerId": "c15",
@@ -3876,7 +3894,8 @@
    "method": "transfer",
    "date": "2026-09-25",
    "label": "Trị mụn 10 buổi",
-   "createdAt": 7
+   "createdAt": 7,
+   "branchId": "b3"
   },
   "y8": {
    "customerId": "c04",
@@ -3885,7 +3904,8 @@
    "method": "cash",
    "date": "2026-08-15",
    "label": "Massage body đá nóng",
-   "createdAt": 8
+   "createdAt": 8,
+   "branchId": "b1"
   },
   "y9": {
    "customerId": "c06",
@@ -3894,7 +3914,8 @@
    "method": "cash",
    "date": "2026-08-20",
    "label": "Chăm sóc da cơ bản",
-   "createdAt": 9
+   "createdAt": 9,
+   "branchId": "b2"
   },
   "gy1": {
    "customerId": "c11",
@@ -3903,7 +3924,8 @@
    "method": "ewallet",
    "date": "2026-09-13",
    "label": "Phun mày tán bột",
-   "createdAt": 1789316100000
+   "createdAt": 1789316100000,
+   "branchId": "b1"
   },
   "gy2": {
    "customerId": "c03",
@@ -3912,7 +3934,8 @@
    "method": "transfer",
    "date": "2026-09-14",
    "label": "Trị mụn chuyên sâu, Dầu gội thảo mộc 500ml",
-   "createdAt": 1789398000000
+   "createdAt": 1789398000000,
+   "branchId": "b1"
   },
   "gy3": {
    "customerId": "c03",
@@ -3921,7 +3944,8 @@
    "method": "card",
    "date": "2026-09-15",
    "label": "Nối mi, Sữa rửa mặt dịu nhẹ",
-   "createdAt": 1789469100000
+   "createdAt": 1789469100000,
+   "branchId": "b3"
   },
   "gy4": {
    "customerId": "c16",
@@ -3930,7 +3954,8 @@
    "method": "card",
    "date": "2026-09-15",
    "label": "Nối mi, Dưỡng mi Mi Xinh",
-   "createdAt": 1789491600000
+   "createdAt": 1789491600000,
+   "branchId": "b1"
   },
   "gy5": {
    "customerId": "c08",
@@ -3939,7 +3964,8 @@
    "method": "transfer",
    "date": "2026-09-15",
    "label": "Trị mụn chuyên sâu",
-   "createdAt": 1789469100000
+   "createdAt": 1789469100000,
+   "branchId": "b2"
   },
   "gy6": {
    "customerId": "c09",
@@ -3948,7 +3974,8 @@
    "method": "transfer",
    "date": "2026-09-16",
    "label": "Massage body đá nóng, Nối mi",
-   "createdAt": 1789549200000
+   "createdAt": 1789549200000,
+   "branchId": "b1"
   },
   "gy7": {
    "customerId": "c05",
@@ -3957,7 +3984,8 @@
    "method": "card",
    "date": "2026-09-16",
    "label": "Nối mi, Peel da sinh học",
-   "createdAt": 1789570800000
+   "createdAt": 1789570800000,
+   "branchId": "b1"
   },
   "gy8": {
    "customerId": "c10",
@@ -3966,7 +3994,8 @@
    "method": "card",
    "date": "2026-09-16",
    "label": "Trị mụn chuyên sâu, Dưỡng mi Mi Xinh",
-   "createdAt": 1789554600000
+   "createdAt": 1789554600000,
+   "branchId": "b3"
   },
   "gy9": {
    "customerId": "c16",
@@ -3975,7 +4004,8 @@
    "method": "cash",
    "date": "2026-09-16",
    "label": "Gội đầu dưỡng sinh",
-   "createdAt": 1789551900000
+   "createdAt": 1789551900000,
+   "branchId": "b3"
   },
   "gy10": {
    "customerId": "c07",
@@ -3984,7 +4014,8 @@
    "method": "transfer",
    "date": "2026-09-17",
    "label": "Chăm sóc da cơ bản",
-   "createdAt": 1789674300000
+   "createdAt": 1789674300000,
+   "branchId": "b2"
   },
   "gy11": {
    "customerId": "c08",
@@ -3993,7 +4024,8 @@
    "method": "card",
    "date": "2026-09-18",
    "label": "Triệt lông nách, Massage body đá nóng, Mặt nạ collagen (hộp 10)",
-   "createdAt": 1789744500000
+   "createdAt": 1789744500000,
+   "branchId": "b1"
   },
   "gy12": {
    "customerId": "",
@@ -4002,7 +4034,8 @@
    "method": "transfer",
    "date": "2026-09-18",
    "label": "Chăm sóc da cơ bản",
-   "createdAt": 1789759800000
+   "createdAt": 1789759800000,
+   "branchId": "b2"
   },
   "gy13": {
    "customerId": "c01",
@@ -4011,7 +4044,8 @@
    "method": "ewallet",
    "date": "2026-09-19",
    "label": "Massage body đá nóng",
-   "createdAt": 1789841700000
+   "createdAt": 1789841700000,
+   "branchId": "b1"
   },
   "gy14": {
    "customerId": "",
@@ -4020,7 +4054,8 @@
    "method": "cash",
    "date": "2026-09-20",
    "label": "Peel da sinh học",
-   "createdAt": 1789906500000
+   "createdAt": 1789906500000,
+   "branchId": "b2"
   },
   "gy15": {
    "customerId": "c02",
@@ -4029,7 +4064,8 @@
    "method": "ewallet",
    "date": "2026-09-20",
    "label": "Gội đầu dưỡng sinh",
-   "createdAt": 1789906500000
+   "createdAt": 1789906500000,
+   "branchId": "b1"
   },
   "gy16": {
    "customerId": "c06",
@@ -4038,7 +4074,8 @@
    "method": "transfer",
    "date": "2026-09-21",
    "label": "Phun mày tán bột",
-   "createdAt": 1789990200000
+   "createdAt": 1789990200000,
+   "branchId": "b1"
   },
   "gy17": {
    "customerId": "c15",
@@ -4047,7 +4084,8 @@
    "method": "ewallet",
    "date": "2026-09-21",
    "label": "Massage body đá nóng",
-   "createdAt": 1790011800000
+   "createdAt": 1790011800000,
+   "branchId": "b1"
   },
   "gy18": {
    "customerId": "c07",
@@ -4056,7 +4094,8 @@
    "method": "transfer",
    "date": "2026-09-22",
    "label": "Trị mụn chuyên sâu",
-   "createdAt": 1790069400000
+   "createdAt": 1790069400000,
+   "branchId": "b2"
   },
   "gy19": {
    "customerId": "c12",
@@ -4065,7 +4104,8 @@
    "method": "ewallet",
    "date": "2026-09-23",
    "label": "Massage body đá nóng",
-   "createdAt": 1790169300000
+   "createdAt": 1790169300000,
+   "branchId": "b2"
   },
   "gy20": {
    "customerId": "c04",
@@ -4074,7 +4114,8 @@
    "method": "cash",
    "date": "2026-09-23",
    "label": "Phun mày tán bột, Serum Vitamin C 30ml",
-   "createdAt": 1790184600000
+   "createdAt": 1790184600000,
+   "branchId": "b3"
   },
   "gy21": {
    "customerId": "c03",
@@ -4083,7 +4124,8 @@
    "method": "cash",
    "date": "2026-09-24",
    "label": "Triệt lông nách, Toner hoa hồng 200ml",
-   "createdAt": 1790240400000
+   "createdAt": 1790240400000,
+   "branchId": "b3"
   },
   "gy22": {
    "customerId": "c08",
@@ -4092,7 +4134,8 @@
    "method": "card",
    "date": "2026-09-24",
    "label": "Trị mụn chuyên sâu, Dưỡng mi Mi Xinh",
-   "createdAt": 1790272800000
+   "createdAt": 1790272800000,
+   "branchId": "b1"
   },
   "gy23": {
    "customerId": "c13",
@@ -4101,7 +4144,8 @@
    "method": "transfer",
    "date": "2026-09-24",
    "label": "Gội đầu dưỡng sinh, Nối mi, Toner hoa hồng 200ml",
-   "createdAt": 1790263800000
+   "createdAt": 1790263800000,
+   "branchId": "b3"
   },
   "gy24": {
    "customerId": "c02",
@@ -4110,7 +4154,8 @@
    "method": "card",
    "date": "2026-09-25",
    "label": "Massage body đá nóng",
-   "createdAt": 1790344800000
+   "createdAt": 1790344800000,
+   "branchId": "b1"
   },
   "gy25": {
    "customerId": "c11",
@@ -4119,7 +4164,8 @@
    "method": "transfer",
    "date": "2026-09-25",
    "label": "Chăm sóc da cơ bản, Trị mụn chuyên sâu, Toner hoa hồng 200ml",
-   "createdAt": 1790329500000
+   "createdAt": 1790329500000,
+   "branchId": "b2"
   },
   "gy26": {
    "customerId": "c05",
@@ -4128,7 +4174,8 @@
    "method": "cash",
    "date": "2026-09-25",
    "label": "Phun mày tán bột, Muối tắm thảo dược",
-   "createdAt": 1790365500000
+   "createdAt": 1790365500000,
+   "branchId": "b3"
   },
   "gy27": {
    "customerId": "c09",
@@ -4137,7 +4184,8 @@
    "method": "ewallet",
    "date": "2026-09-26",
    "label": "Chăm sóc da cơ bản, Dưỡng mi Mi Xinh",
-   "createdAt": 1790417700000
+   "createdAt": 1790417700000,
+   "branchId": "b2"
   },
   "gy28": {
    "customerId": "c02",
@@ -4146,7 +4194,8 @@
    "method": "transfer",
    "date": "2026-09-26",
    "label": "Peel da sinh học, Serum Vitamin C 30ml",
-   "createdAt": 1790450100000
+   "createdAt": 1790450100000,
+   "branchId": "b3"
   }
  },
  "ws/spa/sales": {
@@ -4159,7 +4208,8 @@
    "kind": "course",
    "courseId": "k1",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b2"
   },
   "x10": {
    "customerId": "c08",
@@ -4170,7 +4220,8 @@
    "kind": "service",
    "courseId": "",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b3"
   },
   "x11": {
    "customerId": "c09",
@@ -4181,7 +4232,8 @@
    "kind": "service",
    "courseId": "",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b1"
   },
   "x12": {
    "customerId": "c11",
@@ -4192,7 +4244,8 @@
    "kind": "service",
    "courseId": "",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b2"
   },
   "x13": {
    "customerId": "c12",
@@ -4203,7 +4256,8 @@
    "kind": "service",
    "courseId": "",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b3"
   },
   "x14": {
    "customerId": "c14",
@@ -4214,7 +4268,8 @@
    "kind": "service",
    "courseId": "",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b1"
   },
   "x15": {
    "customerId": "c03",
@@ -4225,7 +4280,8 @@
    "kind": "service",
    "courseId": "",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b2"
   },
   "x16": {
    "customerId": "c16",
@@ -4236,7 +4292,8 @@
    "kind": "service",
    "courseId": "",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b3"
   },
   "x2": {
    "customerId": "c02",
@@ -4247,7 +4304,8 @@
    "kind": "course",
    "courseId": "k2",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b1"
   },
   "x3": {
    "customerId": "c05",
@@ -4258,7 +4316,8 @@
    "kind": "course",
    "courseId": "k3",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b2"
   },
   "x4": {
    "customerId": "c07",
@@ -4269,7 +4328,8 @@
    "kind": "course",
    "courseId": "k4",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b3"
   },
   "x5": {
    "customerId": "c10",
@@ -4280,7 +4340,8 @@
    "kind": "course",
    "courseId": "k5",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b1"
   },
   "x6": {
    "customerId": "c13",
@@ -4291,7 +4352,8 @@
    "kind": "course",
    "courseId": "k6",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b2"
   },
   "x7": {
    "customerId": "c15",
@@ -4302,7 +4364,8 @@
    "kind": "course",
    "courseId": "k7",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b3"
   },
   "x8": {
    "customerId": "c04",
@@ -4313,7 +4376,8 @@
    "kind": "service",
    "courseId": "",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b1"
   },
   "x9": {
    "customerId": "c06",
@@ -4324,7 +4388,8 @@
    "kind": "service",
    "courseId": "",
    "staffId": "",
-   "createdAt": 0
+   "createdAt": 0,
+   "branchId": "b2"
   },
   "gx1": {
    "customerId": "c11",
@@ -4355,7 +4420,8 @@
    "staffId": "st1",
    "createdAt": 1789316100000,
    "invoiceNo": "HĐ260913-01",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx2": {
    "customerId": "c03",
@@ -4393,7 +4459,8 @@
    "staffId": "st1",
    "createdAt": 1789398000000,
    "invoiceNo": "HĐ260914-01",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx3": {
    "customerId": "c03",
@@ -4431,7 +4498,8 @@
    "staffId": "st3",
    "createdAt": 1789469100000,
    "invoiceNo": "HĐ260915-01",
-   "note": ""
+   "note": "",
+   "branchId": "b3"
   },
   "gx4": {
    "customerId": "c16",
@@ -4469,7 +4537,8 @@
    "staffId": "st1",
    "createdAt": 1789491600000,
    "invoiceNo": "HĐ260915-02",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx5": {
    "customerId": "c08",
@@ -4500,7 +4569,8 @@
    "staffId": "st2",
    "createdAt": 1789469100000,
    "invoiceNo": "HĐ260915-03",
-   "note": ""
+   "note": "",
+   "branchId": "b2"
   },
   "gx6": {
    "customerId": "c09",
@@ -4538,7 +4608,8 @@
    "staffId": "st4",
    "createdAt": 1789549200000,
    "invoiceNo": "HĐ260916-01",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx7": {
    "customerId": "c05",
@@ -4576,7 +4647,8 @@
    "staffId": "st4",
    "createdAt": 1789570800000,
    "invoiceNo": "HĐ260916-02",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx8": {
    "customerId": "c10",
@@ -4614,7 +4686,8 @@
    "staffId": "st3",
    "createdAt": 1789554600000,
    "invoiceNo": "HĐ260916-03",
-   "note": ""
+   "note": "",
+   "branchId": "b3"
   },
   "gx9": {
    "customerId": "c16",
@@ -4645,7 +4718,8 @@
    "staffId": "st3",
    "createdAt": 1789551900000,
    "invoiceNo": "HĐ260916-04",
-   "note": ""
+   "note": "",
+   "branchId": "b3"
   },
   "gx10": {
    "customerId": "c07",
@@ -4676,7 +4750,8 @@
    "staffId": "st2",
    "createdAt": 1789674300000,
    "invoiceNo": "HĐ260917-01",
-   "note": ""
+   "note": "",
+   "branchId": "b2"
   },
   "gx11": {
    "customerId": "c08",
@@ -4721,7 +4796,8 @@
    "staffId": "st4",
    "createdAt": 1789744500000,
    "invoiceNo": "HĐ260918-01",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx12": {
    "customerId": "",
@@ -4752,7 +4828,8 @@
    "staffId": "st2",
    "createdAt": 1789759800000,
    "invoiceNo": "HĐ260918-02",
-   "note": ""
+   "note": "",
+   "branchId": "b2"
   },
   "gx13": {
    "customerId": "c01",
@@ -4783,7 +4860,8 @@
    "staffId": "st4",
    "createdAt": 1789841700000,
    "invoiceNo": "HĐ260919-01",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx14": {
    "customerId": "",
@@ -4814,7 +4892,8 @@
    "staffId": "st2",
    "createdAt": 1789906500000,
    "invoiceNo": "HĐ260920-01",
-   "note": ""
+   "note": "",
+   "branchId": "b2"
   },
   "gx15": {
    "customerId": "c02",
@@ -4845,7 +4924,8 @@
    "staffId": "st1",
    "createdAt": 1789906500000,
    "invoiceNo": "HĐ260920-02",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx16": {
    "customerId": "c06",
@@ -4876,7 +4956,8 @@
    "staffId": "st4",
    "createdAt": 1789990200000,
    "invoiceNo": "HĐ260921-01",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx17": {
    "customerId": "c15",
@@ -4907,7 +4988,8 @@
    "staffId": "st4",
    "createdAt": 1790011800000,
    "invoiceNo": "HĐ260921-02",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx18": {
    "customerId": "c07",
@@ -4938,7 +5020,8 @@
    "staffId": "st2",
    "createdAt": 1790069400000,
    "invoiceNo": "HĐ260922-01",
-   "note": ""
+   "note": "",
+   "branchId": "b2"
   },
   "gx19": {
    "customerId": "c12",
@@ -4969,7 +5052,8 @@
    "staffId": "st2",
    "createdAt": 1790169300000,
    "invoiceNo": "HĐ260923-01",
-   "note": ""
+   "note": "",
+   "branchId": "b2"
   },
   "gx20": {
    "customerId": "c04",
@@ -5007,7 +5091,8 @@
    "staffId": "st3",
    "createdAt": 1790184600000,
    "invoiceNo": "HĐ260923-02",
-   "note": ""
+   "note": "",
+   "branchId": "b3"
   },
   "gx21": {
    "customerId": "c03",
@@ -5045,7 +5130,8 @@
    "staffId": "st3",
    "createdAt": 1790240400000,
    "invoiceNo": "HĐ260924-01",
-   "note": ""
+   "note": "",
+   "branchId": "b3"
   },
   "gx22": {
    "customerId": "c08",
@@ -5083,7 +5169,8 @@
    "staffId": "st1",
    "createdAt": 1790272800000,
    "invoiceNo": "HĐ260924-02",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx23": {
    "customerId": "c13",
@@ -5128,7 +5215,8 @@
    "staffId": "st3",
    "createdAt": 1790263800000,
    "invoiceNo": "HĐ260924-03",
-   "note": ""
+   "note": "",
+   "branchId": "b3"
   },
   "gx24": {
    "customerId": "c02",
@@ -5159,7 +5247,8 @@
    "staffId": "st4",
    "createdAt": 1790344800000,
    "invoiceNo": "HĐ260925-01",
-   "note": ""
+   "note": "",
+   "branchId": "b1"
   },
   "gx25": {
    "customerId": "c11",
@@ -5204,7 +5293,8 @@
    "staffId": "st2",
    "createdAt": 1790329500000,
    "invoiceNo": "HĐ260925-02",
-   "note": ""
+   "note": "",
+   "branchId": "b2"
   },
   "gx26": {
    "customerId": "c05",
@@ -5242,7 +5332,8 @@
    "staffId": "st3",
    "createdAt": 1790365500000,
    "invoiceNo": "HĐ260925-03",
-   "note": ""
+   "note": "",
+   "branchId": "b3"
   },
   "gx27": {
    "customerId": "c09",
@@ -5280,7 +5371,8 @@
    "staffId": "st2",
    "createdAt": 1790417700000,
    "invoiceNo": "HĐ260926-01",
-   "note": ""
+   "note": "",
+   "branchId": "b2"
   },
   "gx28": {
    "customerId": "c02",
@@ -5318,7 +5410,8 @@
    "staffId": "st3",
    "createdAt": 1790450100000,
    "invoiceNo": "HĐ260926-02",
-   "note": ""
+   "note": "",
+   "branchId": "b3"
   }
  },
  "ws/spa/services": {
@@ -6188,7 +6281,8 @@
     }
    ],
    "total": 2940000,
-   "expenseId": "e5"
+   "expenseId": "e5",
+   "branchId": "b1"
   },
   "po2": {
    "code": "PN-0002",
@@ -6208,7 +6302,8 @@
     }
    ],
    "total": 1300000,
-   "note": "Giao trước thứ 7"
+   "note": "Giao trước thứ 7",
+   "branchId": "b2"
   }
  },
  "ws/nhakhoa/purchases": {
@@ -6241,7 +6336,8 @@
    "title": "Tiền thuê mặt bằng tháng 9",
    "amount": 18000000,
    "method": "transfer",
-   "payee": "Chủ nhà"
+   "payee": "Chủ nhà",
+   "branchId": "b1"
   },
   "e2": {
    "date": "2026-09-03",
@@ -6249,7 +6345,8 @@
    "title": "Tiền điện tháng 8",
    "amount": 3450000,
    "method": "transfer",
-   "payee": "EVN HCMC"
+   "payee": "EVN HCMC",
+   "branchId": "b1"
   },
   "e3": {
    "date": "2026-09-03",
@@ -6257,7 +6354,8 @@
    "title": "Nước và internet tháng 8",
    "amount": 980000,
    "method": "transfer",
-   "payee": "Sawaco, FPT"
+   "payee": "Sawaco, FPT",
+   "branchId": "b2"
   },
   "e4": {
    "date": "2026-09-06",
@@ -6265,7 +6363,8 @@
    "title": "Quảng cáo Facebook tuần 1-2",
    "amount": 2500000,
    "method": "card",
-   "payee": "Meta"
+   "payee": "Meta",
+   "branchId": "b3"
   },
   "e5": {
    "date": "2026-09-07",
@@ -6273,7 +6372,8 @@
    "title": "Nhập hàng PN-0001 – Công ty Mỹ phẩm Hàn Việt",
    "amount": 2940000,
    "method": "transfer",
-   "payee": "Công ty Mỹ phẩm Hàn Việt"
+   "payee": "Công ty Mỹ phẩm Hàn Việt",
+   "branchId": "b1"
   },
   "e6": {
    "date": "2026-09-12",
@@ -6281,7 +6381,8 @@
    "title": "Khăn, găng tay, bông tẩy trang",
    "amount": 1250000,
    "method": "cash",
-   "payee": "Vật tư Spa Sài Gòn"
+   "payee": "Vật tư Spa Sài Gòn",
+   "branchId": "b2"
   },
   "e7": {
    "date": "2026-09-18",
@@ -6289,7 +6390,8 @@
    "title": "Bảo trì máy triệt lông",
    "amount": 1800000,
    "method": "cash",
-   "payee": "Kỹ thuật Minh"
+   "payee": "Kỹ thuật Minh",
+   "branchId": "b3"
   },
   "e8": {
    "date": "2026-09-20",
@@ -6297,7 +6399,8 @@
    "title": "Quảng cáo Facebook tuần 3-4",
    "amount": 2500000,
    "method": "card",
-   "payee": "Meta"
+   "payee": "Meta",
+   "branchId": "b1"
   },
   "e9": {
    "date": "2026-08-01",
@@ -6305,7 +6408,8 @@
    "title": "Tiền thuê mặt bằng tháng 8",
    "amount": 18000000,
    "method": "transfer",
-   "payee": "Chủ nhà"
+   "payee": "Chủ nhà",
+   "branchId": "b2"
   },
   "e10": {
    "date": "2026-08-05",
@@ -6313,7 +6417,8 @@
    "title": "Thưởng doanh số tháng 7",
    "amount": 4000000,
    "method": "transfer",
-   "payee": "Nhân viên"
+   "payee": "Nhân viên",
+   "branchId": "b2"
   },
   "e11": {
    "date": "2026-08-15",
@@ -6321,7 +6426,8 @@
    "title": "In tờ rơi khai trương dịch vụ mới",
    "amount": 1200000,
    "method": "cash",
-   "payee": "In Kỹ Thuật Số"
+   "payee": "In Kỹ Thuật Số",
+   "branchId": "b3"
   }
  },
  "ws/nhakhoa/expenses": {
@@ -6376,7 +6482,8 @@
    "slot": "Sau 17h",
    "note": "Muốn đúng chị Mai làm",
    "status": "waiting",
-   "createdAt": "2026-09-25"
+   "createdAt": "2026-09-25",
+   "branchId": "b1"
   },
   "w2": {
    "name": "Lý Hoàng Oanh",
@@ -6387,7 +6494,8 @@
    "slot": "Sáng",
    "note": "Khách cũ, báo khi có chỗ",
    "status": "waiting",
-   "createdAt": "2026-09-26"
+   "createdAt": "2026-09-26",
+   "branchId": "b2"
   },
   "w3": {
    "name": "Đặng Mỹ Linh",
@@ -6398,7 +6506,8 @@
    "slot": "Chiều",
    "note": "",
    "status": "booked",
-   "createdAt": "2026-09-19"
+   "createdAt": "2026-09-19",
+   "branchId": "b3"
   }
  },
  "ws/nhakhoa/waitlist": {
@@ -6533,6 +6642,62 @@
    "end": "2026-10-31",
    "active": true,
    "used": 1
+  }
+ },
+ "ws/spa/branches": {
+  "b1": {
+   "name": "Nàng Ba – Trụ sở chính",
+   "code": "Q3",
+   "address": "Quận 3, TP. Hồ Chí Minh",
+   "phone": "0785568539",
+   "manager": "",
+   "order": 1,
+   "active": true
+  },
+  "b2": {
+   "name": "Nàng Ba – Gò Vấp",
+   "code": "GV",
+   "address": "Gò Vấp, TP. Hồ Chí Minh",
+   "phone": "0785568539",
+   "manager": "",
+   "order": 2,
+   "active": true
+  },
+  "b3": {
+   "name": "Nàng Ba – Thủ Đức",
+   "code": "TD",
+   "address": "TP. Thủ Đức, TP. Hồ Chí Minh",
+   "phone": "0785568539",
+   "manager": "",
+   "order": 3,
+   "active": true
+  },
+  "b4": {
+   "name": "Nàng Ba – Cầu Giấy",
+   "code": "CG",
+   "address": "Cầu Giấy, Hà Nội",
+   "phone": "0785568539",
+   "manager": "",
+   "order": 4,
+   "active": true
+  },
+  "b5": {
+   "name": "Nàng Ba – Biên Hòa",
+   "code": "BH",
+   "address": "Biên Hòa, Đồng Nai",
+   "phone": "0785568539",
+   "manager": "",
+   "order": 5,
+   "active": true
+  },
+  "b6": {
+   "name": "Nàng Ba – Ninh Kiều",
+   "code": "NK",
+   "address": "Ninh Kiều, Cần Thơ",
+   "phone": "0785568539",
+   "manager": "",
+   "order": 6,
+   "active": true
   }
  }
 }

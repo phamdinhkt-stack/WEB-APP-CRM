@@ -117,7 +117,7 @@ function submitBooking(form) {
   const order = {
     id: 'web_' + code, code, createdAt: new Date().toISOString(), xung: '', name: d.name.trim(), phone, email: d.email || '', address: '',
     notes: [d.branch ? 'Chi nhánh: ' + d.branch : '', d.note || ''].filter(Boolean).join(' · '),
-    date: d.date, time: d.time, duration: o.min, staffId: '', staffName: '',
+    date: d.date, time: d.time, duration: o.min, staffId: '', staffName: '', branch: d.branch || '',
     items: [{ code: o.code, name: o.name, duration: o.min + ' phút', pack: 'Gói đơn buổi', oil: 'Không chọn', price: o.price }],
     products, total: o.price + products.reduce((s, p) => s + p.price * p.qty, 0), status: 'new'
   };
