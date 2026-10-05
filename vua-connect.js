@@ -3,7 +3,7 @@
 // Đặt lịch / đặt hàng → máy chủ /api/orders (tự tính tiền theo api/_catalog.js)
 // → báo Telegram, vào phần mềm quản lý (/app/), thanh toán VietQR ACB giảm 20%,
 // SePay báo tiền về /api/sepay-webhook → trang tự hiện "Thanh toán thành công".
-// Chat với khách: nút Zalo 0918 340 751 (góc phải). Form hợp tác gửi SĐT qua /api/chat → Telegram.
+// Chat với khách: nút Zalo 0325 637 863 (góc phải). Form hợp tác gửi SĐT qua /api/chat → Telegram.
 // =====================================================
 const INBOX = 'vua-web-inbox';           // hộp thư phần mềm quản lý đọc khi mở trên cùng trình duyệt
 const SPA_PHONE = '0785568539';
