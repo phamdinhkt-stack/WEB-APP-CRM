@@ -78,7 +78,7 @@
           </ul>
         </li>
         <li><a href="#dao-tao" data-nav="train">Đào tạo</a></li>
-        <li><a href="#" data-open="partnerModal">Hợp tác</a></li>
+        <li><a href="#hop-tac" data-nav="partner">Hợp tác</a></li>
         <li class="has-sub">
           <a href="#news">Tin tức <i class="fa-solid fa-chevron-down"></i></a>
           <ul class="submenu">
@@ -378,6 +378,9 @@
 <!-- TRANG ĐÀO TẠO (#dao-tao) – landing Học viện Nàng Ba, nội dung do training.js dựng từ COURSES (data.js) -->
 <div class="train-page" id="trainPage" hidden></div>
 
+<!-- TRANG HỢP TÁC (#hop-tac) – landing hợp tác cùng Nàng Ba, nội dung do partner.js dựng từ PARTNER_PROGRAMS (data.js) -->
+<div class="train-page" id="partnerPage" hidden></div>
+
 <!-- =====================================================
      FOOTER
 ====================================================== -->
@@ -472,30 +475,6 @@
       <button class="btn btn-primary" aria-label="Tìm"><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
     <div class="search-results" id="searchResults"></div>
-  </div>
-</div>
-
-<!-- Tư vấn hợp tác -->
-<div class="overlay" id="partnerModal">
-  <div class="modal-box">
-    <button class="close-x" data-close aria-label="Đóng">&times;</button>
-    <div class="modal-side" style="background-image:url('https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=700&q=80')">
-      <div><h3>Tư vấn hợp tác</h3><p>Cùng Nàng Ba lan tỏa giá trị chăm sóc mẹ & bé đến mọi miền.</p></div>
-    </div>
-    <form class="modal-form" id="partnerForm">
-      <h3>Tư vấn hợp tác</h3>
-      <label>Họ và tên <b>*</b><input type="text" name="name" required></label>
-      <label>Điện thoại <b>*</b><input type="tel" name="phone" required pattern="[0-9 +.]{9,14}"></label>
-      <label>Địa chỉ<input type="text" name="address"></label>
-      <fieldset>
-        <legend>Chọn mục bạn mong muốn hợp tác cùng Nàng Ba <b>*</b></legend>
-        <label class="radio"><input type="radio" name="type" value="Đào tạo & Quản lý" required> ĐÀO TẠO & QUẢN LÝ</label>
-        <label class="radio"><input type="radio" name="type" value="Khởi nghiệp"> KHỞI NGHIỆP</label>
-        <label class="radio"><input type="radio" name="type" value="Phân phối"> PHÂN PHỐI</label>
-        <label class="radio"><input type="radio" name="type" value="Đầu tư"> ĐẦU TƯ</label>
-      </fieldset>
-      <button type="submit" class="btn btn-primary btn-block">Gửi thông tin</button>
-    </form>
   </div>
 </div>
 
@@ -601,5 +580,6 @@
 <script src="script.js"></script>
 <script src="vua-connect.js"></script>
 <script src="training.js"></script>
+<script src="partner.js"></script>
 </body>
 </html>

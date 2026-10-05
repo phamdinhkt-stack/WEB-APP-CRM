@@ -260,6 +260,27 @@ const COURSES = [
     outcomes: ['Tự vận hành spa trên phần mềm từ ngày đầu', 'Đọc báo cáo, kiểm soát doanh thu – chi phí', 'Được hỗ trợ khi mở spa hoặc nhượng quyền Nàng Ba'] }
 ];
 
+// ---------- HỢP TÁC CÙNG NÀNG BA (trang #hop-tac) ----------
+// invest: vốn/điều kiện tham khảo – để 'Liên hệ' hoặc ghi con số thật. Sửa nội dung từng mô hình tại đây.
+const PARTNER_PROGRAMS = [
+  { id: 'dao-tao-quan-ly', icon: 'fa-chalkboard-user', name: 'Đào tạo & Quản lý', tagline: 'Nâng tay nghề đội ngũ và chuẩn hóa vận hành cho spa của bạn',
+    img: IMG('1544161515-4ab6ce6db874'), invest: 'Liên hệ', forWho: 'Chủ spa, thẩm mỹ viện, phòng khám mẹ & bé đang hoạt động muốn mở thêm dịch vụ mẹ bầu – sau sinh – em bé.',
+    benefits: ['Đào tạo kỹ thuật viên theo quy trình chuẩn y khoa của Nàng Ba', 'Chuyển giao quy trình dịch vụ mẹ bầu, sau sinh, tắm bé, thông tắc tia sữa', 'Triển khai phần mềm quản lý VUA APP: lịch hẹn, khách hàng, thu ngân, lương, nhiều chi nhánh', 'Đánh giá định kỳ chất lượng dịch vụ và tay nghề'],
+    support: ['Giảng viên đến tận cơ sở hoặc học tại Học viện Nàng Ba', 'Bộ tài liệu quy trình, biểu mẫu, kịch bản tư vấn khách', 'Hỗ trợ cài đặt phần mềm và đào tạo lễ tân, thu ngân'] },
+  { id: 'khoi-nghiep', icon: 'fa-rocket', name: 'Khởi nghiệp', tagline: 'Mở spa mẹ & bé mang thương hiệu Nàng Ba – có người đồng hành từ ngày đầu',
+    img: IMG('1600948836101-f9ffda59d250'), invest: 'Liên hệ', forWho: 'Cá nhân muốn mở spa mẹ & bé, kỹ thuật viên lâu năm muốn tự kinh doanh, mẹ bỉm muốn khởi nghiệp.',
+    benefits: ['Sử dụng thương hiệu, hình ảnh và bộ nhận diện Nàng Ba', 'Tư vấn chọn mặt bằng, thiết kế không gian, danh mục thiết bị', 'Đào tạo trọn gói kỹ thuật viên, lễ tân và người quản lý', 'Kế hoạch khai trương, marketing và chương trình khách hàng đầu tiên'],
+    support: ['Cung cấp sản phẩm, vật tư theo giá hệ thống', 'Phần mềm VUA APP, website đặt lịch và thanh toán QR', 'Đồng hành vận hành trong những tháng đầu sau khai trương'] },
+  { id: 'phan-phoi', icon: 'fa-truck-fast', name: 'Phân phối', tagline: 'Trở thành đại lý, nhà phân phối sản phẩm Nàng Ba Care, Herbal, Mom, Baby',
+    img: IMG('1617897903246-719242758050'), invest: 'Liên hệ', forWho: 'Cửa hàng mẹ & bé, nhà thuốc, spa, cộng tác viên bán hàng online.',
+    benefits: ['Chiết khấu theo cấp đại lý và sản lượng', 'Sản phẩm thảo dược lành tính, phù hợp mẹ bầu, mẹ sau sinh và em bé', 'Hình ảnh, nội dung bán hàng, video hướng dẫn sử dụng có sẵn', 'Khu vực phân phối được bảo vệ theo thỏa thuận'],
+    support: ['Đào tạo kiến thức sản phẩm và tư vấn khách', 'Hỗ trợ vận chuyển, đổi trả theo chính sách', 'Chương trình khuyến mãi theo mùa cho đại lý'] },
+  { id: 'dau-tu', icon: 'fa-chart-line', name: 'Đầu tư', tagline: 'Đồng hành mở rộng hệ thống chi nhánh Nàng Ba',
+    img: IMG('1519823551278-64ac92734fb1'), invest: 'Liên hệ', forWho: 'Nhà đầu tư cá nhân, doanh nghiệp quan tâm lĩnh vực chăm sóc sức khỏe mẹ & bé.',
+    benefits: ['Góp vốn mở chi nhánh mới hoặc mở rộng chi nhánh hiện có', 'Minh bạch số liệu: doanh thu, chi phí, lợi nhuận từng chi nhánh trên phần mềm quản lý', 'Báo cáo định kỳ, quyền theo dõi trực tuyến', 'Phương án hợp tác, phân chia lợi nhuận thỏa thuận theo hợp đồng'],
+    support: ['Nàng Ba trực tiếp vận hành chi nhánh theo quy chuẩn hệ thống', 'Khảo sát thị trường, lập phương án kinh doanh cho từng địa điểm', 'Tư vấn pháp lý, hợp đồng rõ ràng'] }
+];
+
 // ---------- TRANG NỘI DUNG (mở dạng popup) ----------
 const PAGES = {
   about: { title: 'Câu chuyện Nàng Ba', html: `<p><strong>SPA Nàng Ba</strong> được thành lập bởi những người phụ nữ từng trải qua hành trình mang thai và nuôi con nhỏ, thấu hiểu những mệt mỏi, lo âu mà người mẹ phải đối mặt.</p><p>Chúng tôi mong muốn xây dựng một “ngôi nhà thứ hai”, nơi mọi người phụ nữ đều được chăm sóc bằng sự chuyên nghiệp của y khoa và sự ấm áp của người thân.</p><h4>Tầm nhìn</h4><p>Trở thành hệ thống chăm sóc mẹ & bé được tin yêu hàng đầu Việt Nam.</p><h4>Sứ mệnh</h4><p>Mang dịch vụ chăm sóc an toàn, tận tâm và giá hợp lý đến mọi gia đình Việt.</p><h4>Giá trị cốt lõi</h4><ul><li>Tận tâm</li><li>Chuyên nghiệp</li><li>Minh bạch</li><li>Sẻ chia</li></ul>` },

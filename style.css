@@ -906,3 +906,25 @@ main, .footer { overflow-x: clip; }
 .tr-out i { color: var(--green-2); margin-right: 8px; }
 @media (max-width: 980px) { .tr-why, .tr-courses, .tr-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } .tr-team { grid-template-columns: repeat(3, minmax(0, 1fr)); } .tr-job, .tr-faqform { grid-template-columns: 1fr; } }
 @media (max-width: 600px) { .tr-why, .tr-courses, .tr-steps, .tr-2 { grid-template-columns: 1fr; } .tr-team { grid-template-columns: repeat(2, minmax(0, 1fr)); } .tr-hero-in { padding: 60px 0 50px; } .tr-sec { padding: 50px 0; } }
+
+/* =====================================================
+   TRANG HỢP TÁC (#hop-tac) – dùng chung .tr-* của trang Đào tạo
+====================================================== */
+.pt-hero { background: linear-gradient(100deg, rgba(4, 70, 30, .92) 0%, rgba(4, 110, 48, .78) 55%, rgba(4, 110, 48, .35) 100%), url('https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=1920&q=70') center/cover; }
+.pt-models { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.tr-out.sm { font-size: 13px; gap: 6px; margin: 0; }
+.tr-out.sm i { font-size: 12px; }
+.pt-sup { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; }
+.pt-sup > div { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 22px 12px; text-align: center; display: grid; justify-items: center; gap: 10px; }
+.pt-sup span { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; font-size: 22px; color: #fff; background: linear-gradient(135deg, var(--green), var(--lime)); }
+.pt-sup b { font-size: 14px; color: var(--green); }
+.pt-call { margin-top: 16px; font-weight: 600; } .pt-call i { color: var(--green-2); margin-right: 6px; } .pt-call a { color: var(--red); }
+.pt-types { border: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.pt-types legend { font-size: 13px; font-weight: 600; margin-bottom: 6px; } .pt-types legend b { color: var(--red); }
+.pt-types label { display: flex !important; align-items: center; gap: 8px; border: 1px solid #dfe7d6; border-radius: 10px; padding: 10px 12px; cursor: pointer; font-weight: 600; font-size: 13px; }
+.pt-types label i { color: var(--green-2); }
+.pt-types label:has(input:checked) { border-color: var(--green); background: var(--bg-soft); }
+.pt-types input { width: auto !important; accent-color: var(--green); }
+@media (max-width: 980px) { .pt-models { grid-template-columns: repeat(2, minmax(0, 1fr)); } .pt-sup { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .pt-models, .pt-types { grid-template-columns: 1fr; } .pt-sup { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.pt-models .tr-acts { flex-direction: column; }

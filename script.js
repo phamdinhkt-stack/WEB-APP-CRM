@@ -205,6 +205,7 @@ $$('.news-tabs .tab').forEach(b => b.addEventListener('click', () => switchTab(b
 // POPUP / MODAL
 // =====================================================
 function openModal(id) {
+  if (id === 'partnerModal') { closeAll(); if (location.hash === '#hop-tac') renderPartner(); else location.hash = 'hop-tac'; return; } // trang hợp tác riêng
   if (id === 'bookingModal') { closeAll(); if (location.hash === '#dat-lich') renderBooking(); else location.hash = 'dat-lich'; return; } // trang đặt lịch riêng
   $$('.overlay.open').forEach(m => m.classList.remove('open'));
   $('#' + id).classList.add('open');
@@ -380,13 +381,15 @@ $('#productContent').addEventListener('click', e => {
 // ---------- Điều hướng: trang chủ <-> trang sản phẩm ----------
 function route() {
   const h = location.hash.slice(1);
-  const onShop = h === 'san-pham' || h.startsWith('san-pham-'), onBook = h === 'dat-lich', onTrain = h === 'dao-tao';
-  $('#top').hidden = onShop || onBook || onTrain;
+  const onShop = h === 'san-pham' || h.startsWith('san-pham-'), onBook = h === 'dat-lich', onTrain = h === 'dao-tao', onPartner = h === 'hop-tac';
+  $('#top').hidden = onShop || onBook || onTrain || onPartner;
   $('#trainPage').hidden = !onTrain;
+  $('#partnerPage').hidden = !onPartner;
   $('#shopPage').hidden = !onShop;
   $('#bookPage').hidden = !onBook;
   document.body.classList.toggle('on-book', onBook); // ẩn nút nổi "Đặt lịch" khi đang ở trang đặt lịch
   if (onBook) { if (typeof renderBooking === 'function') renderBooking(); scrollTo({ top: 0 }); return; } // vua-connect.js nạp sau sẽ tự vẽ
+  if (onPartner) { if (typeof renderPartner === 'function') renderPartner(); $$('.menu > li > a').forEach(a => a.classList.toggle('active', a.dataset.nav === 'partner')); scrollTo({ top: 0 }); return; } // partner.js
   if (onTrain) { if (typeof renderTraining === 'function') renderTraining(); $$('.menu > li > a').forEach(a => a.classList.toggle('active', a.dataset.nav === 'train')); scrollTo({ top: 0 }); return; } // training.js
   $$('.menu > li > a').forEach(a => a.classList.remove('active'));
   if (onShop) {
@@ -530,15 +533,6 @@ function saveLead(type, data) {
   store.set('nangba_leads', list);
   console.log('[SPA Nàng Ba]', type, data);
 }
-$('#partnerForm').addEventListener('submit', e => {
-  e.preventDefault();
-  const pd = Object.fromEntries(new FormData(e.target));
-  saveLead('partner', pd);
-  sendLead(pd.phone || '', pd.name || pd.fullname || 'Khách hợp tác', 'Hợp tác: ' + (pd.type || ''), Object.entries(pd).map(([k, v]) => k + ': ' + v).join(' | '));
-  e.target.reset(); closeAll();
-  toast('Đã gửi thông tin hợp tác. Nàng Ba sẽ liên hệ trong 24h!');
-});
-
 let authMode = 'login';
 $$('[data-auth]').forEach(b => b.addEventListener('click', () => {
   authMode = b.dataset.auth;
