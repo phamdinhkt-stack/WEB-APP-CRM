@@ -588,46 +588,6 @@ $('.nav-search input').addEventListener('keydown', e => {
 });
 
 // =====================================================
-// TRỢ LÝ AI (trả lời theo từ khóa – có thể nối API thật sau)
-// =====================================================
-const ai = $('#aiWidget');
-$('#aiToggle').addEventListener('click', () => ai.classList.toggle('open'));
-$('#aiClose').addEventListener('click', () => ai.classList.remove('open'));
-function aiReply(q) {
-  const n = norm(q);
-  if (/dat lich|book|hen/.test(n)) { setTimeout(() => openModal('bookingModal'), 600); return 'Em mở form đặt lịch cho chị ngay nhé!'; }
-  if (/gio|mo cua|dong cua/.test(n)) return 'Spa mở cửa T2–T7: 9:00–20:00, Chủ nhật: 9:00–19:00. Dịch vụ sau sinh & Home Spa: 7:30–18:30 hằng ngày ạ.';
-  if (/chi nhanh|dia chi|o dau/.test(n)) { setTimeout(() => openModal('branchModal'), 600); return 'Em gửi chị danh sách chi nhánh và bản đồ ạ.'; }
-  if (/tia sua|tac sua/.test(n)) return 'Dịch vụ thông tắc tia sữa tại nhà giá 500.000đ/lần, nữ hộ sinh có thể đến trong ngày. Chị gọi 0785 568 539 để được hỗ trợ nhanh nhất ạ.';
-  if (/sau sinh|o cu/.test(n)) return 'Gói chăm sóc sau sinh tại nhà: 1 buổi 650.000đ, gói 7 buổi 4.290.000đ, 15 buổi 8.490.000đ, 30 buổi 15.990.000đ (gồm chăm mẹ và tắm bé) ạ.';
-  if (/bau|mang thai/.test(n)) return 'Massage bầu 60 phút giá 450.000đ, kèm gội đầu 90 phút 590.000đ, gói 10 buổi 4.990.000đ. Áp dụng từ tuần thai 14 ạ.';
-  if (/be|tam be|so sinh/.test(n)) return 'Tắm + massage bé 250.000đ/buổi, gói 10 buổi 1.990.000đ, dành cho bé 0–12 tháng ạ.';
-  if (/gia|bao nhieu|bang gia/.test(n)) return 'Chị quan tâm dịch vụ nào ạ? Massage bầu, sau sinh, tắm bé, facial, gội đầu… em báo giá chi tiết ngay.';
-  if (/hop tac|nhuong quyen|dao tao/.test(n)) { setTimeout(() => openModal('partnerModal'), 600); return 'Em mở form tư vấn hợp tác cho chị nhé!'; }
-  return 'Cảm ơn chị đã nhắn tin! Để được tư vấn chi tiết, chị vui lòng để lại số điện thoại hoặc gọi hotline 0785 568 539 ạ.';
-}
-function aiSend(q) {
-  if (!q.trim()) return;
-  const body = $('#aiBody');
-  body.insertAdjacentHTML('beforeend', `<div class="msg user"></div>`);
-  body.lastElementChild.textContent = q;
-  body.insertAdjacentHTML('beforeend', `<div class="msg bot typing"><span></span><span></span><span></span></div>`);
-  body.scrollTop = body.scrollHeight;
-  aiAsk(q).then(reply => { // vua-connect.js
-    const last = body.lastElementChild;
-    last.classList.remove('typing');
-    aiShow(last, reply);
-    body.scrollTop = body.scrollHeight;
-  });
-}
-$('#aiForm').addEventListener('submit', e => {
-  e.preventDefault();
-  const inp = $('input', e.target);
-  aiSend(inp.value); inp.value = '';
-});
-$$('.ai-quick button').forEach(b => b.addEventListener('click', () => aiSend(b.textContent)));
-
-// =====================================================
 // HIỆU ỨNG XUẤT HIỆN KHI CUỘN
 // =====================================================
 const io = new IntersectionObserver(es => es.forEach(en => {

@@ -3,7 +3,7 @@
 // Đặt lịch / đặt hàng → máy chủ /api/orders (tự tính tiền theo api/_catalog.js)
 // → báo Telegram, vào phần mềm quản lý (/app/), thanh toán VietQR ACB giảm 20%,
 // SePay báo tiền về /api/sepay-webhook → trang tự hiện "Thanh toán thành công".
-// Chatbot: AI qua /api/chat (nếu có ANTHROPIC_API_KEY), không có thì trả lời có sẵn.
+// Chat với khách: nút Zalo 0918 340 751 (góc phải). Form hợp tác gửi SĐT qua /api/chat → Telegram.
 // =====================================================
 const INBOX = 'vua-web-inbox';           // hộp thư phần mềm quản lý đọc khi mở trên cùng trình duyệt
 const SPA_PHONE = '0785568539';
@@ -219,40 +219,3 @@ function sendLead(phone, name, topic, note) {
   inboxPush({ id: 'lead_' + code, kind: 'lead', code, xung: '', name, phone: p, topic, notes: (topic ? topic + '. ' : '') + note, items: [], products: [], total: 0, createdAt: new Date().toISOString() });
   fetch('api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ lead: { phone: p, name, topic, note: String(note).slice(0, 1500) } }) }).catch(() => {});
 }
-
-// ---------- Chatbot ----------
-const AI = { msgs: [], ai: null, leadSent: false };
-async function aiAsk(q) {
-  AI.msgs.push({ role: 'user', content: q });
-  const digits = q.replace(/[\s.]/g, '').match(/0\d{8,10}/);
-  if (digits && !AI.leadSent) { AI.leadSent = true; sendLead(digits[0], 'Khách chat', '', 'Nội dung chat: ' + AI.msgs.filter(m => m.role === 'user').slice(-8).map(m => m.content).join(' | ')); }
-  const started = Date.now(); let reply = null;
-  if (AI.ai !== false) {
-    try {
-      const ctl = new AbortController(); const t = setTimeout(() => ctl.abort(), 20000);
-      const r = await fetch('api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ messages: AI.msgs.slice(-14) }), signal: ctl.signal });
-      clearTimeout(t); const j = await r.json().catch(() => null);
-      if (r.ok && j && j.reply) { reply = j.reply; AI.ai = true; } else if ([404, 405, 503].includes(r.status)) AI.ai = false;
-    } catch (e) {}
-  }
-  if (!reply) reply = digits ? 'Dạ em đã nhận số điện thoại của chị, tư vấn viên Nàng Ba sẽ gọi lại cho chị sớm nhất ạ! [[DAT_LICH]]' : aiReply(q);
-  AI.msgs.push({ role: 'assistant', content: reply });
-  const wait = 700 - (Date.now() - started); if (wait > 0) await new Promise(r => setTimeout(r, wait));
-  return reply;
-}
-function aiShow(el, reply) {
-  const acts = {
-    DAT_LICH: '<button data-open="bookingModal"><i class="fa-regular fa-calendar-check"></i> Đặt lịch</button>',
-    BANG_GIA: '<a href="#services">Xem dịch vụ & giá</a>',
-    ZALO: `<a href="https://zalo.me/${SPA_PHONE}" target="_blank" rel="noopener">Nhắn Zalo</a>`,
-    GOI_LAI: '<button data-ai-lead>Để lại số điện thoại</button>'
-  };
-  const found = [];
-  const text = reply.replace(/\[\[(\w+)\]\]/g, (m, k) => { if (acts[k] && !found.includes(acts[k])) found.push(acts[k]); return ''; }).trim();
-  el.textContent = text;
-  if (found.length) el.insertAdjacentHTML('beforeend', `<div class="ai-acts">${found.join('')}</div>`);
-}
-$('#aiBody').addEventListener('click', e => {
-  if (!e.target.closest('[data-ai-lead]')) return;
-  const i = $('#aiForm input'); i.placeholder = 'Nhập số điện thoại của chị…'; i.focus();
-});
