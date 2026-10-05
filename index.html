@@ -361,6 +361,21 @@
 </div>
 
 <!-- =====================================================
+     TRANG ĐẶT LỊCH (#dat-lich) – nội dung do vua-connect.js dựng
+====================================================== -->
+<div class="book-page" id="bookPage" hidden>
+  <section class="page-hero" style="--bg:url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1920&q=70')">
+    <div class="container page-hero-inner">
+      <div>
+        <h1>Đặt lịch hẹn</h1>
+        <nav class="breadcrumb" aria-label="Đường dẫn"><a href="#top">Trang chủ</a><span>/</span><span>Đặt lịch trực tuyến</span></nav>
+      </div>
+    </div>
+  </section>
+  <div class="container bk-wrap" id="bookRoot"></div>
+</div>
+
+<!-- =====================================================
      FOOTER
 ====================================================== -->
 <footer class="footer">
@@ -499,32 +514,6 @@
       </div>
       <div class="branch-map"><iframe id="branchMap" title="Bản đồ" loading="lazy"></iframe></div>
     </div>
-  </div>
-</div>
-
-<!-- Đặt lịch -->
-<div class="overlay" id="bookingModal">
-  <div class="modal-box">
-    <button class="close-x" data-close aria-label="Đóng">&times;</button>
-    <div class="modal-side" style="background-image:url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=700&q=80')">
-      <div><h3>Đặt lịch hẹn</h3><p>Giảm 20% cho khách hàng lần đầu trải nghiệm. Nàng Ba sẽ gọi xác nhận trong 15 phút.</p></div>
-    </div>
-    <form class="modal-form" id="bookingForm">
-      <h3>Thông tin đặt lịch</h3>
-      <label>Họ và tên <b>*</b><input type="text" name="name" required></label>
-      <label>Số điện thoại <b>*</b><input type="tel" name="phone" required pattern="[0-9 +.]{9,14}"></label>
-      <label>Dịch vụ <b>*</b><select name="service" id="bookingService" required></select></label>
-      <label>Chi nhánh <b>*</b><select name="branch" id="bookingBranch" required></select></label>
-      <div class="row2">
-        <label>Ngày <b>*</b><input type="date" name="date" id="bookingDate" required></label>
-        <label>Giờ <b>*</b><input type="time" name="time" min="07:30" max="20:00" required></label>
-      </div>
-      <label>Email (nhận xác nhận)<input type="email" name="email" placeholder="Không bắt buộc"></label>
-      <label>Ghi chú<textarea name="note" rows="2" placeholder="Tuần thai, số ngày sau sinh, tình trạng sức khỏe..."></textarea></label>
-      <p class="bk-cart" id="bookingCart" hidden></p>
-      <button type="submit" class="btn btn-primary btn-block">Xác nhận đặt lịch</button>
-      <p class="bk-note">Không cần trả trước. Chuyển khoản ngay sau khi đặt được <b>giảm 20%</b>.</p>
-    </form>
   </div>
 </div>
 

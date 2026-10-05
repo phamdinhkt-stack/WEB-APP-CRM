@@ -160,13 +160,14 @@ const PARTNERS = [
 ];
 
 // ---------- CHI NHÁNH (thay bằng địa chỉ thật) ----------
+// staff: nhân viên hiện ở bước "Nhân viên phục vụ" khi đặt lịch – id trùng mã nhân viên trong phần mềm quản lý (st1…st12)
 const BRANCHES = [
-  { name: 'Nàng Ba – Trụ sở chính', area: 'TP. Hồ Chí Minh', address: '[Số nhà, đường], Quận 3, TP. Hồ Chí Minh', map: 'Quận 3, TP. Hồ Chí Minh', phone: '0785 568 539' },
-  { name: 'Nàng Ba – Gò Vấp', area: 'TP. Hồ Chí Minh', address: '[Số nhà, đường], Gò Vấp, TP. Hồ Chí Minh', map: 'Gò Vấp, TP. Hồ Chí Minh', phone: '0785 568 539' },
-  { name: 'Nàng Ba – Thủ Đức', area: 'TP. Hồ Chí Minh', address: '[Số nhà, đường], TP. Thủ Đức', map: 'Thủ Đức, TP. Hồ Chí Minh', phone: '0785 568 539' },
-  { name: 'Nàng Ba – Cầu Giấy', area: 'Hà Nội', address: '[Số nhà, đường], Cầu Giấy, Hà Nội', map: 'Cầu Giấy, Hà Nội', phone: '0785 568 539' },
-  { name: 'Nàng Ba – Biên Hòa', area: 'Đồng Nai', address: '[Số nhà, đường], Biên Hòa, Đồng Nai', map: 'Biên Hòa, Đồng Nai', phone: '0785 568 539' },
-  { name: 'Nàng Ba – Ninh Kiều', area: 'Cần Thơ', address: '[Số nhà, đường], Ninh Kiều, Cần Thơ', map: 'Ninh Kiều, Cần Thơ', phone: '0785 568 539' }
+  { name: 'Nàng Ba – Trụ sở chính', area: 'TP. Hồ Chí Minh', address: '[Số nhà, đường], Quận 3, TP. Hồ Chí Minh', map: 'Quận 3, TP. Hồ Chí Minh', phone: '0785 568 539' , staff: [{ id: 'st1', name: 'Hoa', role: 'Chăm sóc da' }, { id: 'st2', name: 'Mai', role: 'Body, massage' }] },
+  { name: 'Nàng Ba – Gò Vấp', area: 'TP. Hồ Chí Minh', address: '[Số nhà, đường], Gò Vấp, TP. Hồ Chí Minh', map: 'Gò Vấp, TP. Hồ Chí Minh', phone: '0785 568 539' , staff: [{ id: 'st3', name: 'Linh', role: 'Mi, mày' }, { id: 'st5', name: 'Ngọc', role: 'Massage bầu & sau sinh' }] },
+  { name: 'Nàng Ba – Thủ Đức', area: 'TP. Hồ Chí Minh', address: '[Số nhà, đường], TP. Thủ Đức', map: 'Thủ Đức, TP. Hồ Chí Minh', phone: '0785 568 539' , staff: [{ id: 'st4', name: 'Thảo', role: 'Gội, dưỡng sinh' }, { id: 'st6', name: 'Hằng', role: 'Chăm sóc da' }] },
+  { name: 'Nàng Ba – Cầu Giấy', area: 'Hà Nội', address: '[Số nhà, đường], Cầu Giấy, Hà Nội', map: 'Cầu Giấy, Hà Nội', phone: '0785 568 539' , staff: [{ id: 'st7', name: 'Trang', role: 'Nữ hộ sinh' }, { id: 'st8', name: 'Yến', role: 'Tắm bé, massage bé' }] },
+  { name: 'Nàng Ba – Biên Hòa', area: 'Đồng Nai', address: '[Số nhà, đường], Biên Hòa, Đồng Nai', map: 'Biên Hòa, Đồng Nai', phone: '0785 568 539' , staff: [{ id: 'st9', name: 'Nhung', role: 'Massage body' }, { id: 'st10', name: 'Vân', role: 'Gội đầu dưỡng sinh' }] },
+  { name: 'Nàng Ba – Ninh Kiều', area: 'Cần Thơ', address: '[Số nhà, đường], Ninh Kiều, Cần Thơ', map: 'Ninh Kiều, Cần Thơ', phone: '0785 568 539' , staff: [{ id: 'st11', name: 'Hạnh', role: 'Chăm sóc mẹ sau sinh' }, { id: 'st12', name: 'Duyên', role: 'Chăm sóc da' }] }
 ];
 
 // ---------- DANH MỤC SẢN PHẨM ----------

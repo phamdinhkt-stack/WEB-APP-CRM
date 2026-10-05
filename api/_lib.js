@@ -36,6 +36,7 @@ function memKv([op, k, ...a]) {
   if (op === 'MGET') return [k, ...a].map(x => (MEM.has(x) ? MEM.get(x) : null));
   if (op === 'LPUSH') { const l = MEM.get(k) || []; l.unshift(a[0]); MEM.set(k, l); return l.length; }
   if (op === 'LTRIM') return 'OK';
+  if (op === 'LRANGE') return (MEM.get(k) || []).slice(Number(a[0]), Number(a[1]) < 0 ? undefined : Number(a[1]) + 1);
   throw new Error('mock op ' + op);
 }
 const getJSON = async k => { const v = await kv('GET', k); try { return v ? JSON.parse(v) : null } catch (e) { return null } };

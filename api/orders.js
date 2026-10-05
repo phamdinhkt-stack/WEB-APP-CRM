@@ -56,6 +56,8 @@ module.exports = async (req, res) => {
         items, products, total, payAmount, clientTotal: Number(b.total) || 0, status: 'new', pay: { status: 'unpaid', received: 0, txs: [] }, createdAt: now, updatedAt: now };
       const ok = await kv('SET', 'order:' + code, JSON.stringify(o), 'NX'); if (!ok) return send(res, 409, { error: 'Mã đơn đã tồn tại' });
       await kv('ZADD', 'orders_upd', now, code);
+      // giờ đã có khách đặt (theo ngày) – trang Đặt lịch làm mờ giờ kín, không chứa thông tin khách
+      if (items.length) { const bk = 'busy:' + o.date; await kv('LPUSH', bk, JSON.stringify({ branch: o.branch, time: o.time, duration: o.duration, staffId: o.staffId })); await kv('EXPIRE', bk, 60 * 60 * 24 * 60); }
       zaloAdmin(`🗓 LỊCH ĐẶT ONLINE MỚI ${code}\n👤 ${o.xung} ${o.name}\n📞 ${phone}\n🕒 ${o.time} ${o.date.split('-').reverse().join('/')}${o.staffName ? ' · ' + o.staffName : ''}\n${items.map(i => '• ' + i.name + ' (' + vnd(i.price) + ')').join('\n')}${products.length ? '\n' + products.map(p => '• ' + p.name + ' × ' + p.qty).join('\n') : ''}\nTổng: ${vnd(total)}${o.notes ? '\nGhi chú: ' + o.notes : ''}`, { ten_khach: o.name.slice(0, 30), sdt_khach: phone, noi_dung: ('Đặt lịch ' + items.map(i => i.name).join(', ')).slice(0, 90), thoi_gian: o.time + ' ' + o.date.split('-').reverse().join('/') }).catch(() => {});
       telegram(['letan'], `🗓 <b>Lịch đặt online mới ${code}</b>${o.branch ? '\n📍 ' + esc(o.branch) : ''}\n${esc(o.xung)} ${esc(o.name)} · ${phone}\n${o.time} ${o.date.split('-').reverse().join('/')}${o.staffName ? ' · ' + esc(o.staffName) : ''}\n${items.map(i => '• ' + esc(i.name) + ' (' + vnd(i.price) + ')').join('\n')}${products.length ? '\n' + products.map(p => '• ' + esc(p.name) + ' × ' + p.qty).join('\n') : ''}\nTổng: <b>${vnd(total)}</b>${o.notes ? '\nGhi chú: ' + esc(o.notes) : ''}`).catch(() => {});
       return send(res, 201, { ok: true, ...pub(o) });
@@ -69,6 +71,11 @@ module.exports = async (req, res) => {
         const codes = await kv('ZRANGEBYSCORE', 'orders_upd', '(' + since, '+inf', 'LIMIT', 0, 200);
         const list = codes && codes.length ? (await kv('MGET', ...codes.map(c => 'order:' + c))).map(v => { try { return JSON.parse(v) } catch (e) { return null } }).filter(Boolean) : [];
         return send(res, 200, { orders: list, now: Date.now() });
+      }
+      if (q.get('busy')) { // ?busy=1&date=YYYY-MM-DD&branch=Tên chi nhánh → [{time, duration, staffId}]
+        const date = String(q.get('date') || ''); if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) return send(res, 400, { error: 'Ngày không hợp lệ' });
+        const br = String(q.get('branch') || ''); const list = (await kv('LRANGE', 'busy:' + date, 0, 499) || []).map(x => { try { return JSON.parse(x) } catch (e) { return null } }).filter(x => x && (!br || x.branch === br));
+        return send(res, 200, { busy: list.map(x => ({ time: x.time, duration: x.duration, staffId: x.staffId || '' })) });
       }
       const code = normCode(q.get('code')); const phone = String(q.get('phone') || '').replace(/\D/g, '');
       const o = code && await getJSON('order:' + code);

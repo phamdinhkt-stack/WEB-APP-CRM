@@ -103,13 +103,7 @@ const partnerHTML = PARTNERS.map(([ic, n]) => `<span class="partner-logo"><i cla
 $('#partnerTrack').innerHTML = partnerHTML + partnerHTML; // nhân đôi để chạy vòng liên tục
 
 // Select trong form đặt lịch
-// value = mã mức giá (NBsso) – máy chủ tính tiền theo mã này (api/_catalog.js)
-$('#bookingService').innerHTML = '<option value="">-- Chọn dịch vụ --</option>' +
-  SERVICES.map(s => `<optgroup label="${s.name}">${s.prices.map(([n, p, code]) => `<option value="${code}">${n} – ${p}</option>`).join('')}</optgroup>`).join('');
-$('#bookingBranch').innerHTML = '<option value="">-- Chọn chi nhánh --</option>' +
-  BRANCHES.map(b => `<option>${b.name}</option>`).join('') + '<option>Phục vụ tại nhà</option>';
-const today = new Date(); today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
-$('#bookingDate').min = today.toISOString().slice(0, 10);
+// Đặt lịch: trang riêng #dat-lich (vua-connect.js). Nút data-book="mã mức giá" thêm sẵn dịch vụ đó.
 
 // =====================================================
 // HEADER, MENU, BACK TO TOP
@@ -211,6 +205,7 @@ $$('.news-tabs .tab').forEach(b => b.addEventListener('click', () => switchTab(b
 // POPUP / MODAL
 // =====================================================
 function openModal(id) {
+  if (id === 'bookingModal') { closeAll(); if (location.hash === '#dat-lich') renderBooking(); else location.hash = 'dat-lich'; return; } // trang đặt lịch riêng
   $$('.overlay.open').forEach(m => m.classList.remove('open'));
   $('#' + id).classList.add('open');
   document.body.classList.add('lock');
@@ -385,9 +380,12 @@ $('#productContent').addEventListener('click', e => {
 // ---------- Điều hướng: trang chủ <-> trang sản phẩm ----------
 function route() {
   const h = location.hash.slice(1);
-  const onShop = h === 'san-pham' || h.startsWith('san-pham-');
-  $('#top').hidden = onShop;
+  const onShop = h === 'san-pham' || h.startsWith('san-pham-'), onBook = h === 'dat-lich';
+  $('#top').hidden = onShop || onBook;
   $('#shopPage').hidden = !onShop;
+  $('#bookPage').hidden = !onBook;
+  document.body.classList.toggle('on-book', onBook); // ẩn nút nổi "Đặt lịch" khi đang ở trang đặt lịch
+  if (onBook) { if (typeof renderBooking === 'function') renderBooking(); scrollTo({ top: 0 }); return; } // vua-connect.js nạp sau sẽ tự vẽ
   $$('.menu > li > a').forEach(a => a.classList.remove('active'));
   if (onShop) {
     const cat = h.slice('san-pham-'.length);
@@ -413,7 +411,7 @@ document.addEventListener('click', e => {
   if (el('[data-close]') || t.classList.contains('overlay')) return closeAll();
 
   const book = el('[data-book]');
-  if (book) { openModal('bookingModal'); $('#bookingService').value = book.dataset.book; return; }
+  if (book) { bookAdd(book.dataset.book); openModal('bookingModal'); return; }
 
   const open = el('[data-open]');
   if (open) { e.preventDefault(); setNav(false); return openModal(open.dataset.open); }
@@ -530,10 +528,6 @@ function saveLead(type, data) {
   store.set('nangba_leads', list);
   console.log('[SPA Nàng Ba]', type, data);
 }
-$('#bookingForm').addEventListener('submit', e => {
-  e.preventDefault();
-  submitBooking(e.target); // vua-connect.js: gửi lịch về máy chủ, phần mềm quản lý, Telegram
-});
 $('#partnerForm').addEventListener('submit', e => {
   e.preventDefault();
   const pd = Object.fromEntries(new FormData(e.target));

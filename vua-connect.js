@@ -107,23 +107,6 @@ async function sendOrder(order, btn) {
   ORDER = order; openModal('payModal'); renderPay(); return true;
 }
 
-// Đặt lịch dịch vụ (form #bookingForm). Sản phẩm trong giỏ được mua kèm, nhận tại spa.
-function submitBooking(form) {
-  const d = Object.fromEntries(new FormData(form));
-  const phone = phoneOk(d.phone); if (!phone) return toast('Số điện thoại chưa đúng (9–11 số).');
-  const o = OPTS[d.service]; if (!o) return toast('Vui lòng chọn dịch vụ.');
-  const products = cartProducts();
-  const code = newCode();
-  const order = {
-    id: 'web_' + code, code, createdAt: new Date().toISOString(), xung: '', name: d.name.trim(), phone, email: d.email || '', address: '',
-    notes: [d.branch ? 'Chi nhánh: ' + d.branch : '', d.note || ''].filter(Boolean).join(' · '),
-    date: d.date, time: d.time, duration: o.min, staffId: '', staffName: '', branch: d.branch || '',
-    items: [{ code: o.code, name: o.name, duration: o.min + ' phút', pack: 'Gói đơn buổi', oil: 'Không chọn', price: o.price }],
-    products, total: o.price + products.reduce((s, p) => s + p.price * p.qty, 0), status: 'new'
-  };
-  sendOrder(order, form.querySelector('[type=submit]')).then(ok => { if (ok) { form.reset(); if (products.length) { cart = {}; renderCart(); } } });
-}
-
 // Đặt mua sản phẩm từ giỏ hàng
 function openCheckout() {
   const ps = cartProducts(); if (!ps.length) return toast('Giỏ hàng đang trống.');
@@ -147,13 +130,121 @@ $('#checkoutForm').addEventListener('submit', e => {
   sendOrder(order, f.querySelector('[type=submit]')).then(ok => { if (ok) { f.reset(); cart = {}; renderCart(); } });
 });
 
-// Mở form đặt lịch: hiện sản phẩm trong giỏ sẽ được mua kèm
-new MutationObserver(() => {
-  if (!$('#bookingModal').classList.contains('open')) return;
-  const ps = cartProducts(), el = $('#bookingCart');
-  el.hidden = !ps.length;
-  if (ps.length) el.innerHTML = '<i class="fa-solid fa-bag-shopping"></i> Mua kèm (nhận tại spa): ' + ps.map(p => `${escH(p.name)} × ${p.qty}`).join(', ');
-}).observe($('#bookingModal'), { attributes: true, attributeFilter: ['class'] });
+// ---------- TRANG ĐẶT LỊCH (#dat-lich) ----------
+// 1 Thông tin khách · 2 Dịch vụ (nhiều) · 3 Sản phẩm mua kèm (đồng bộ giỏ hàng) · 4 Chi nhánh & thời gian (giờ kín làm mờ)
+// · 5 Nhân viên + ghi chú · khung tóm tắt + Xác nhận → gửi /api/orders → bảng thanh toán QR (giảm 20%).
+const HOME = 'Phục vụ tại nhà';
+const SLOTS = []; for (let m = 8 * 60 + 30; m <= 20 * 60; m += 30) SLOTS.push(String(Math.floor(m / 60)).padStart(2, '0') + ':' + String(m % 60).padStart(2, '0'));
+const WD = ['CN', 'Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7'];
+const ymdOf = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+const hm = t => { const [h, m] = String(t).split(':').map(Number); return h * 60 + m; };
+const BK = { xung: 'Chị', name: '', phone: '', birthday: '', email: '', address: '', svcs: [], branch: '', date: ymdOf(new Date()), time: '', staff: '', notes: '', addSvc: '' };
+const BUSYMAP = {};   // 'ngày|chi nhánh' → [{time, duration, staffId}] (lịch khách đã đặt online)
+function bookAdd(code) { if (OPTS[code] && !BK.svcs.includes(code)) BK.svcs.push(code); }
+const bkBranch = () => BRANCHES.find(b => b.name === BK.branch);
+const bkStaff = () => (bkBranch() || {}).staff || [];
+const bkDur = () => BK.svcs.reduce((s, c) => s + OPTS[c].min, 0) || 60;
+const bkTotals = () => { const ps = cartProducts(); const sv = BK.svcs.reduce((s, c) => s + OPTS[c].price, 0), pr = ps.reduce((s, p) => s + p.price * p.qty, 0); return { ps, sv, pr, total: sv + pr }; };
+async function loadBusy() {
+  if (!BK.branch || BK.branch === HOME) return;
+  const k = BK.date + '|' + BK.branch; if (BUSYMAP[k]) return;
+  const j = await apiCall('GET', null, `?busy=1&date=${BK.date}&branch=${encodeURIComponent(BK.branch)}`);
+  BUSYMAP[k] = (j && j.busy) || []; bkPaint();
+}
+// trạng thái 1 khung giờ: '' trống | 'past' đã qua | 'full' kín (hết nhân viên / nhân viên đã chọn bận)
+function slotState(t) {
+  const now = new Date(), start = hm(t), end = start + bkDur();
+  if (BK.date === ymdOf(now) && start <= now.getHours() * 60 + now.getMinutes() + 30) return 'past';
+  if (!BK.branch || BK.branch === HOME) return '';
+  const over = (BUSYMAP[BK.date + '|' + BK.branch] || []).filter(b => { const s = hm(b.time), e = s + (b.duration || 60); return s < end && start < e; });
+  if (BK.staff) return over.some(b => b.staffId === BK.staff) ? 'full' : '';
+  return over.length >= Math.max(1, bkStaff().length) ? 'full' : '';
+}
+const step = (n, title, sub, body) => `<section class="bk-card"><div class="bk-h"><span class="bk-n">${n}</span><div><h2>${title}</h2>${sub ? `<p>${sub}</p>` : ''}</div></div>${body}</section>`;
+const fld = (label, html, req) => `<label class="bk-f"><span>${label}${req ? ' <b>*</b>' : ''}</span>${html}</label>`;
+function renderBooking() {
+  const root = $('#bookRoot'); if (!root) return;
+  if (!BK.branch) BK.branch = BRANCHES[0].name;
+  const days = [...Array(14)].map((_, i) => { const d = new Date(); d.setDate(d.getDate() + i); return d; });
+  root.innerHTML = `<div class="bk-grid"><div class="bk-main">
+   ${step(1, 'Thông tin khách hàng', '', `<div class="bk-row3">
+     ${fld('Xưng hô', `<select data-bk="xung">${['Chị', 'Anh', 'Em', 'Cô'].map(x => `<option ${BK.xung === x ? 'selected' : ''}>${x}</option>`).join('')}</select>`)}
+     ${fld('Họ và tên', `<input data-bk="name" value="${escH(BK.name)}" placeholder="VD: Nguyễn Thu Trang" autocomplete="name">`, 1)}
+     ${fld('Số điện thoại / Zalo', `<input data-bk="phone" value="${escH(BK.phone)}" placeholder="VD: 0912 345 678" inputmode="tel" autocomplete="tel">`, 1)}
+     ${fld('Ngày sinh', `<input type="date" data-bk="birthday" value="${escH(BK.birthday)}">`)}
+     ${fld('Email', `<input type="email" data-bk="email" value="${escH(BK.email)}" placeholder="Không bắt buộc">`)}
+     ${fld('Địa chỉ', `<input data-bk="address" value="${escH(BK.address)}" placeholder="Bắt buộc nếu phục vụ tại nhà">`)}</div>`)}
+   ${step(2, 'Dịch vụ', 'Chọn một hoặc nhiều dịch vụ, mỗi mức giá có thời lượng riêng', `<div id="bkSvcs"></div>
+     <select class="bk-add" data-bk="addSvc"><option value="">+ Thêm dịch vụ</option>${SERVICES.map(s => `<optgroup label="${escH(s.name)}">${s.prices.map(([n, p, c]) => `<option value="${c}">${escH(n)} – ${p}</option>`).join('')}</optgroup>`).join('')}</select>`)}
+   ${step(3, 'Sản phẩm mua kèm', 'Không bắt buộc, nhận tại spa khi đến', `<div class="bk-prods" id="bkProds"></div>`)}
+   ${step(4, 'Chi nhánh & thời gian', '<span id="bkWhen"></span>', `<div class="bk-chips" id="bkBranches">${[...BRANCHES.map(b => b.name), HOME].map(n => `<button type="button" class="bk-chip" data-branch="${escH(n)}">${n === HOME ? '<i class="fa-solid fa-house"></i> ' : '<i class="fa-solid fa-location-dot"></i> '}${escH(n.replace('Nàng Ba – ', ''))}</button>`).join('')}</div>
+     <div class="bk-days">${days.map(d => `<button type="button" class="bk-day" data-day="${ymdOf(d)}"><small>${WD[d.getDay()]}</small><b>${d.getDate()}</b><small>Th${d.getMonth() + 1}</small></button>`).join('')}</div>
+     <div class="bk-slots" id="bkSlots"></div>`)}
+   ${step(5, 'Nhân viên phục vụ', '', `<div class="bk-staff" id="bkStaff"></div>${fld('Ghi chú cho spa', `<textarea data-bk="notes" rows="3" placeholder="VD: mang thai tuần 20, sau sinh 1 tháng, da nhạy cảm, muốn phòng yên tĩnh…">${escH(BK.notes)}</textarea>`)}`)}
+  </div><aside class="bk-side" id="bkSide"></aside></div>`;
+  bkPaint(); loadBusy();
+}
+// vẽ lại các phần phụ thuộc lựa chọn (giữ nguyên ô đang gõ)
+function bkPaint() {
+  if ($('#bookPage').hidden) return;
+  const { ps, sv, pr, total } = bkTotals(), dt = new Date(BK.date + 'T00:00'), st = bkStaff().find(s => s.id === BK.staff);
+  $('#bkSvcs').innerHTML = BK.svcs.length ? BK.svcs.map(c => `<div class="bk-item"><div><b>${escH(OPTS[c].name)}</b><small>${OPTS[c].min} phút</small></div><span>${vnd(OPTS[c].price)}</span><button type="button" data-rm="${c}" aria-label="Bỏ dịch vụ">&times;</button></div>`).join('')
+    : `<div class="bk-empty">Chưa chọn dịch vụ nào. Chọn ở ô bên dưới hoặc xem <a href="#services">bảng giá</a>.</div>`;
+  $('#bkProds').innerHTML = PRODUCTS.map(p => `<div class="bk-prod"><div><b>${escH(p.name)}</b><small>${vnd(p.price)}</small></div><div class="bk-qty"><button type="button" data-q="${p.id}" data-d="-1" ${cart[p.id] ? '' : 'disabled'}>−</button><span>${cart[p.id] || 0}</span><button type="button" data-q="${p.id}" data-d="1">+</button></div></div>`).join('');
+  $$('#bkBranches .bk-chip').forEach(b => b.classList.toggle('on', b.dataset.branch === BK.branch));
+  $$('.bk-day').forEach(b => b.classList.toggle('on', b.dataset.day === BK.date));
+  $('#bkWhen').textContent = `${WD[dt.getDay()]}, ${BK.date.split('-').reverse().join('/')} · dự kiến ${bkDur()} phút · giờ mờ là đã kín lịch`;
+  if (BK.time && slotState(BK.time)) BK.time = '';
+  $('#bkSlots').innerHTML = SLOTS.map(t => { const s = slotState(t); return `<button type="button" class="bk-slot${BK.time === t ? ' on' : ''}${s ? ' off' : ''}" data-time="${t}" ${s ? 'disabled' : ''} title="${s === 'full' ? 'Đã kín lịch' : s === 'past' ? 'Đã qua' : ''}">${t}</button>`; }).join('');
+  if (BK.staff && !st) BK.staff = '';
+  $('#bkStaff').innerHTML = [{ id: '', name: 'Ai cũng được', role: BK.branch === HOME ? 'Spa cử người đến nhà' : 'Spa sắp xếp người phù hợp' }, ...(BK.branch === HOME ? [] : bkStaff())].map(s => `<button type="button" class="bk-st${BK.staff === s.id ? ' on' : ''}" data-staff="${s.id}"><span class="av">${s.id ? escH(s.name[0]) : '<i class="fa-solid fa-star"></i>'}</span><b>${escH(s.name)}</b><small>${escH(s.role)}</small></button>`).join('');
+  const row = (a, b) => `<div class="bk-sr"><span>${a}</span><span>${b}</span></div>`, none = '<i>Chưa nhập</i>';
+  $('#bkSide').innerHTML = `<h3>Thông tin đặt lịch</h3>
+   <h4>Khách hàng</h4>${row('Họ tên', BK.name ? escH(BK.xung + ' ' + BK.name) : none)}${row('Điện thoại', BK.phone ? escH(BK.phone) : none)}
+   <h4>Dịch vụ</h4>${BK.svcs.length ? BK.svcs.map(c => row(escH(OPTS[c].name), vnd(OPTS[c].price))).join('') : '<p class="bk-mut">Chưa có</p>'}
+   ${ps.length ? `<h4>Sản phẩm</h4>${ps.map(p => row(escH(p.name) + ' × ' + p.qty, vnd(p.price * p.qty))).join('')}` : ''}
+   <h4>Chi nhánh, thời gian & nhân viên</h4>${row('Chi nhánh', escH(BK.branch.replace('Nàng Ba – ', '')))}${row('Ngày', `${WD[dt.getDay()]}, ${BK.date.split('-').reverse().join('/')}`)}${row('Giờ', BK.time || '<i>Chưa chọn</i>')}${row('Nhân viên', escH(st ? st.name : 'Ai cũng được'))}
+   <div class="bk-tot">${row('Tiền dịch vụ', vnd(sv))}${pr ? row('Tiền sản phẩm', vnd(pr)) : ''}<div class="bk-sr big"><span>Tổng cộng</span><b>${vnd(total)}</b></div></div>
+   <button type="button" class="btn btn-primary btn-block" id="bkGo"><i class="fa-solid fa-check"></i> Xác nhận đặt lịch</button>
+   <p class="bk-note"><b>Không cần thanh toán trước.</b> Bấm xác nhận là lịch hẹn được gửi ngay về chi nhánh, nhân viên sẽ gọi hoặc nhắn Zalo xác nhận. Muốn thanh toán ngay sau khi đặt được <b>giảm ${PAYNOW_PCT}%</b>.</p>`;
+}
+$('#bookRoot').addEventListener('input', e => { const k = e.target.dataset.bk; if (!k || k === 'addSvc') return; BK[k] = e.target.value; if (['name', 'phone', 'xung'].includes(k)) bkPaint(); });
+$('#bookRoot').addEventListener('change', e => {
+  const k = e.target.dataset.bk; if (k === 'xung') { BK.xung = e.target.value; bkPaint(); }
+  if (k === 'addSvc' && e.target.value) { bookAdd(e.target.value); e.target.value = ''; bkPaint(); }
+});
+$('#bookRoot').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.rm) { BK.svcs = BK.svcs.filter(c => c !== b.dataset.rm); bkPaint(); }
+  else if (b.dataset.q) { const id = b.dataset.q, n = Math.max(0, (cart[id] || 0) + Number(b.dataset.d)); if (n) cart[id] = n; else delete cart[id]; renderCart(); bkPaint(); }
+  else if (b.dataset.branch !== undefined) { BK.branch = b.dataset.branch; BK.staff = ''; bkPaint(); loadBusy(); }
+  else if (b.dataset.day) { BK.date = b.dataset.day; bkPaint(); loadBusy(); }
+  else if (b.dataset.time) { BK.time = b.dataset.time; bkPaint(); }
+  else if (b.dataset.staff !== undefined) { BK.staff = b.dataset.staff; bkPaint(); }
+  else if (b.id === 'bkGo') submitBooking(b);
+});
+function submitBooking(btn) {
+  const bad = (m, sel) => { toast(m); const el = sel && $(sel); if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'center' }); if (el.focus) el.focus(); } };
+  const phone = phoneOk(BK.phone);
+  if (!BK.name.trim()) return bad('Vui lòng nhập họ tên.', '[data-bk="name"]');
+  if (!phone) return bad('Số điện thoại chưa đúng (9–11 số).', '[data-bk="phone"]');
+  if (BK.email && !/^\S+@\S+\.\S+$/.test(BK.email)) return bad('Email chưa đúng.', '[data-bk="email"]');
+  if (!BK.svcs.length) return bad('Vui lòng chọn ít nhất một dịch vụ.', '[data-bk="addSvc"]');
+  if (BK.branch === HOME && !BK.address.trim()) return bad('Phục vụ tại nhà cần địa chỉ.', '[data-bk="address"]');
+  if (!BK.time) return bad('Vui lòng chọn giờ hẹn.', '#bkSlots');
+  const { ps, total } = bkTotals(), st = bkStaff().find(s => s.id === BK.staff), code = newCode();
+  const order = {
+    id: 'web_' + code, code, createdAt: new Date().toISOString(), xung: BK.xung, name: BK.name.trim(), phone, email: BK.email || '', birthday: BK.birthday || '', address: BK.address || '',
+    notes: BK.notes || '', date: BK.date, time: BK.time, duration: bkDur(), staffId: st ? st.id : '', staffName: st ? st.name : '', branch: BK.branch,
+    items: BK.svcs.map(c => ({ code: c, name: OPTS[c].name, duration: OPTS[c].min + ' phút', pack: 'Gói đơn buổi', oil: 'Không chọn', price: OPTS[c].price })),
+    products: ps, total, status: 'new'
+  };
+  sendOrder(order, btn).then(ok => {
+    if (!ok) return;
+    const k = BK.date + '|' + BK.branch; (BUSYMAP[k] = BUSYMAP[k] || []).push({ time: BK.time, duration: order.duration, staffId: order.staffId });
+    cart = {}; renderCart(); Object.assign(BK, { svcs: [], time: '', staff: '', notes: '' }); renderBooking();
+  });
+}
 
 // ---------- Kết quả + thanh toán ----------
 const payAmt = d => d.server ? d.server.payAmount : Math.round(d.total * (100 - PAYNOW_PCT) / 100 / 1000) * 1000;
@@ -219,3 +310,6 @@ function sendLead(phone, name, topic, note) {
   inboxPush({ id: 'lead_' + code, kind: 'lead', code, xung: '', name, phone: p, topic, notes: (topic ? topic + '. ' : '') + note, items: [], products: [], total: 0, createdAt: new Date().toISOString() });
   fetch('api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ lead: { phone: p, name, topic, note: String(note).slice(0, 1500) } }) }).catch(() => {});
 }
+
+// Mở thẳng link …/#dat-lich: script.js chạy route() trước khi file này nạp xong
+if (location.hash === '#dat-lich') renderBooking();
