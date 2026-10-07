@@ -2768,6 +2768,9 @@ async function importWebInbox(){
    Website trên Vercel lưu đơn vào /api/orders; SePay báo tiền về /api/sepay-webhook.
    Phần mềm hỏi máy chủ mỗi 30 giây bằng khóa CRM_SYNC_KEY (lưu riêng trên máy này). */
 const SYNC={busy:false,timer:null,last:'',err:''};
+/* Link kết nối một chạm: mở …/app/#crm=<CRM_SYNC_KEY> trên máy cần dùng → lưu khóa (không nằm trong mã nguồn), xóa khỏi thanh địa chỉ */
+function crmLinkKey(){try{const m=location.hash.match(/(?:^#|&)crm=([^&]+)/);if(!m)return false;localStorage.setItem('vua-crm-key',decodeURIComponent(m[1]));localStorage.setItem('vua-sync-since','0');localStorage.removeItem('vua-crm-hide');history.replaceState(null,'',location.pathname+location.search);return true}catch(e){return false}}
+crmLinkKey();window.addEventListener('hashchange',()=>{if(crmLinkKey()){SYNC.err='';if(typeof toast==='function')toast('Đã kết nối website trên máy này');if(AU.user){startSync();syncServer(false)}render()}});
 const lsGet=(k,d='')=>{try{return localStorage.getItem(k)??d}catch(e){return d}};
 const lsSet=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};
 function syncUrl(){const u=lsGet('vua-sync-url');if(u)return u;try{return new URL(WEB_HOME+'api/orders',location.href).href}catch(e){return ''}}
@@ -2900,12 +2903,12 @@ function render(){
   if(!VIEWS[S.tab]||!can(S.tab))S.tab=firstTab();
   renderShell();
   let html='';
-  if(S.dbOk===false&&!S.bannerHidden)html+=`<div class="banner" style="display:flex;gap:10px;align-items:center">Bản chạy độc lập: dữ liệu được lưu trên trình duyệt của máy này. Nhớ sao lưu trong Cài đặt.<button class="btn sm ghost" type="button" data-act="banner-x" style="margin-left:auto" aria-label="Ẩn">${I('x')}</button></div>`;
-  if(S.ready&&mode==='spa'&&!lsGet('vua-crm-key'))html+=`<form class="banner crm-quick" id="crm-quick"><span><b>⚠️ Máy này chưa kết nối website.</b> Lịch khách đặt online ở mọi chi nhánh mới chỉ báo Telegram, chưa vào phần mềm. Dán khóa kết nối CRM một lần để tự lấy về đúng chi nhánh:</span><input class="input" id="crm-quick-k" type="password" autocomplete="off" placeholder="Khóa kết nối CRM"><button class="btn sm primary" type="submit">Kết nối</button></form>`;
+  if(S.ready&&mode==='spa'&&!lsGet('vua-crm-key')&&!(Number(lsGet('vua-crm-hide','0'))>Date.now()))html+=`<form class="banner crm-quick" id="crm-quick"><span><b>⚠️ Máy này chưa kết nối website.</b> Lịch khách đặt online ở mọi chi nhánh mới chỉ báo Telegram, chưa vào phần mềm. Dán khóa kết nối CRM một lần để tự lấy về đúng chi nhánh:</span><input class="input" id="crm-quick-k" type="password" autocomplete="off" placeholder="Khóa kết nối CRM"><button class="btn sm primary" type="submit">Kết nối</button><button class="btn sm ghost" type="button" id="crm-quick-x" aria-label="Ẩn 7 ngày" title="Ẩn 7 ngày">${I('x')}</button></form>`;
   else if(S.ready&&mode==='spa'&&SYNC.err)html+=`<div class="banner crm-quick"><span><b>⚠️ Không lấy được đơn từ website:</b> ${esc(SYNC.err)}. Kiểm tra khóa ở Cài đặt → Kết nối website & thanh toán SePay.</span><button class="btn sm" type="button" data-act="settings">Mở Cài đặt</button></div>`;
   if(!S.ready)html+=`<div class="empty">Đang tải dữ liệu…</div>`;
   else{try{html+=VIEWS[S.tab]()}catch(err){console.error(err);html+=`<div class="warnbox">Có lỗi khi hiển thị trang này: ${esc(err.message)}</div>`}}
   $('#view').innerHTML=html;
+  {const cx=$('#crm-quick-x');if(cx)cx.addEventListener('click',()=>{lsSet('vua-crm-hide',String(Date.now()+7*864e5));render()})}
   {const cq=$('#crm-quick');if(cq)cq.addEventListener('submit',async e=>{e.preventDefault();const k=$('#crm-quick-k').value.trim();if(!k)return toast('Dán khóa kết nối CRM.');
     lsSet('vua-crm-key',k);lsSet('vua-sync-since','0');SYNC.err='';toast('Đang lấy lịch đặt online về phần mềm…');startSync();await syncServer(true);render()})}
   if(S.ready&&S.tab==='pos')bindPOS();
