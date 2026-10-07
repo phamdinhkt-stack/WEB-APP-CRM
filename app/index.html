@@ -1731,11 +1731,11 @@ async function syncWaitCustomer(w,extra){
   const tagAdd=t=>{const tags=String((cu&&cu.tags)||'').split(',').map(x=>x.trim()).filter(Boolean);if(!tags.includes(t))tags.push(t);return tags.join(', ')};
   if(cu){const upd={};
     if(name&&name!==cu.name)upd.name=name;if(phone&&phone!==cu.phone)upd.phone=phone;
-    if(extra.xung)upd.xung=extra.xung;if(extra.birthday&&!cu.birthday)upd.birthday=extra.birthday;if(extra.source&&!cu.source)upd.source=extra.source;
+    if(extra.xung)upd.xung=extra.xung;if(extra.birthday&&!cu.birthday)upd.birthday=extra.birthday;if(extra.address&&!cu.address)upd.address=extra.address;if(extra.source&&!cu.source)upd.source=extra.source;
     if(w.status==='waiting')upd.tags=tagAdd('Chờ lịch');else if(/Chờ lịch/.test(cu.tags||''))upd.tags=String(cu.tags).split(',').map(x=>x.trim()).filter(x=>x&&x!=='Chờ lịch').join(', ');
     if(upd.tags===cu.tags)delete upd.tags;
     if(Object.keys(upd).length)await put('customers',cu.id,{...cu,...upd});
-  }else{const id=uid();cu={id};await put('customers',id,{name:name||phone,phone,xung:extra.xung||T().xung,birthday:extra.birthday||'',source:extra.source||'Vãng lai',tags:w.status==='waiting'?'Chờ lịch':'',note:'',createdAt:TODAY,fromWaitlist:true})}
+  }else{const id=uid();cu={id};await put('customers',id,{name:name||phone,phone,xung:extra.xung||T().xung,birthday:extra.birthday||'',source:extra.source||'Vãng lai',tags:w.status==='waiting'?'Chờ lịch':'',address:extra.address||'',note:extra.address?'Địa chỉ: '+extra.address:'',createdAt:TODAY,fromWaitlist:true})}
   const noteTxt=`Danh sách chờ: ${svc||'chưa rõ dịch vụ'}${w.date?' · muốn ngày '+dm(w.date):''}${w.slot?' · '+w.slot:''}${w.staffId?' · muốn '+staffOf(w.staffId).name:''}${w.note?' · '+w.note:''}`;
   const nid=`wl_${w.id}`;const ex=get('notes',nid);
   if(!ex||ex.text!==noteTxt)await put('notes',nid,{customerId:cu.id,kind:'Nhắc việc',text:noteTxt,author:'Danh sách chờ',date:(ex&&ex.date)||TODAY,pinned:false});
@@ -2734,13 +2734,13 @@ async function importOrder(o){
   const itemsTxt=items.map(it=>`${it.name}${it.duration?' '+it.duration:''}${it.pack&&it.pack!=='Gói đơn buổi'?' · '+it.pack:''}${it.oil&&it.oil!=='Không chọn'?' · dầu '+it.oil:''} (${money(it.price||0)})`).join('; ');
   const prodTxt=(Array.isArray(o.products)?o.products:[]).map(p=>`${p.name} × ${p.qty} (${money((p.price||0)*(p.qty||1))})`).join('; ');
   const st=(o.staffId&&get('staff',o.staffId))||(o.staffName&&activeStaff().find(s=>norm(s.name)===norm(o.staffName)))||null;
-  const note=o.kind==='lead'?`Khách chat "Tư vấn trực tiếp" để lại SĐT – cần gọi lại tư vấn. ${o.notes||''}`.trim():[`Đặt online ${o.code}: ${itemsTxt}`,prodTxt?'Mua kèm: '+prodTxt:'',o.duration?'Dự kiến '+o.duration+' phút':'',
+  const note=o.kind==='lead'?`Khách để lại SĐT qua ${o.source||'chat website'} – cần gọi lại tư vấn.${o.topic?' Quan tâm: '+o.topic+'.':''}${o.address?' Địa chỉ: '+o.address+'.':''} ${o.notes||''}`.trim():[`Đặt online ${o.code}: ${itemsTxt}`,prodTxt?'Mua kèm: '+prodTxt:'',o.duration?'Dự kiến '+o.duration+' phút':'',
     o.payClaim?`Tổng ${money(o.total||0)} · KHÁCH BÁO ĐÃ CHUYỂN KHOẢN ${money(o.payClaim.amount)} (ưu đãi thanh toán ngay −${o.payClaim.pct}%) – cần kiểm tra tài khoản`:`Tổng ${money(o.total||0)} · thanh toán tại spa`,
     o.email?'Email: '+o.email:'',o.address?'Đ/c: '+o.address:'',o.notes?'Ghi chú: '+o.notes:''].filter(Boolean).join(' · ');
   const rec={name:String(o.name||'').trim(),phone:String(o.phone||'').replace(/\D/g,''),serviceId:svc?svc.id:'',staffId:st?st.id:'',date:/^\d{4}-\d{2}-\d{2}$/.test(o.date||'')?o.date:TODAY,slot:o.kind==='lead'?'Gọi lại tư vấn':(o.time?('lúc '+o.time):''),status:'waiting',note,webCode:o.code||'',webTotal:o.total||0,payClaim:o.payClaim||null,source:'Website',createdAt:TODAY};
   if(mode==='spa'&&S.data.branches.size){const bn=norm(String(o.branch||'').replace(/^Phục vụ tại nhà$/i,''));const br=bn&&branchesList().find(b=>norm(b.name)===bn);rec.branchId=br?br.id:defBranch();if(/tại nhà/i.test(o.branch||''))rec.note='PHỤC VỤ TẠI NHÀ · '+rec.note}
   if(!rec.name&&!rec.phone)return false;
-  S._brHint=rec.branchId||'';let cid;try{cid=await syncWaitCustomer({...rec,id:o.id},{source:'Website',xung:o.xung?String(o.xung).toLowerCase():'',birthday:o.birthday||''})}finally{S._brHint=''}
+  S._brHint=rec.branchId||'';let cid;try{cid=await syncWaitCustomer({...rec,id:o.id},{source:o.kind==='lead'?(o.source||'Chat website'):'Website',xung:o.xung?String(o.xung).toLowerCase():'',birthday:o.birthday||'',address:o.address||''})}finally{S._brHint=''}
   await put('waitlist',o.id,{...rec,customerId:cid});
   return true;
 }
